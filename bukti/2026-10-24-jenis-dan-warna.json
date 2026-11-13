@@ -1,0 +1,1929 @@
+{
+ "rencana": 33,
+ "potongan": {
+  "bahan": [
+   "tangkapan-owner",
+   "dataset-roboflow-vehicle-license-plate",
+   "dataset-roboflow-merk-warna-motor"
+  ],
+  "min_sisi": 24,
+  "bagian_validasi": 4,
+  "sumber": {
+   "v": {
+    "potongan": 3033,
+    "per_sisi": {
+     "latih": 2732,
+     "validasi": 301
+    },
+    "per_kelas": {
+     "jenis": {
+      "mobil": 1700,
+      "motor": 1144,
+      "truk": 189
+     },
+     "warna": {}
+    },
+    "kelas_dilewati": 4067,
+    "warna_tidak_dipetakan": 0,
+    "terlalu_kecil": 0,
+    "dibatasi": 2938,
+    "tak_terbaca": 0
+   },
+   "m": {
+    "potongan": 3084,
+    "per_sisi": {
+     "latih": 2638,
+     "validasi": 446
+    },
+    "per_kelas": {
+     "jenis": {
+      "motor": 3084
+     },
+     "warna": {
+      "kuning": 262,
+      "putih": 877,
+      "hitam": 1186,
+      "merah": 373,
+      "abu_perak": 196,
+      "hijau": 190
+     }
+    },
+    "kelas_dilewati": 0,
+    "warna_tidak_dipetakan": 208,
+    "terlalu_kecil": 0,
+    "dibatasi": 4951,
+    "tak_terbaca": 0
+   }
+  },
+  "owner": {
+   "potongan": 172,
+   "per_sisi": {
+    "uji": 37,
+    "latih": 102,
+    "validasi": 33
+   },
+   "per_kelas": {
+    "jenis": {
+     "motor": 101,
+     "mobil": 66,
+     "truk": 2,
+     "pikap": 3
+    },
+    "warna": {
+     "hitam": 69,
+     "merah": 28,
+     "putih": 38,
+     "abu_perak": 15,
+     "kuning": 2,
+     "lainnya": 6,
+     "hijau": 4,
+     "biru": 8
+    }
+   },
+   "dibuang": {
+    "kotak_tidak_pas": 8,
+    "bukan_kendaraan": 0,
+    "belum_lengkap": 0,
+    "terlalu_kecil": 0,
+    "tak_terbaca": 0
+   },
+   "tak_yakin": {
+    "jenis": 0,
+    "warna": 2
+   }
+  }
+ },
+ "mesin": {
+  "ciri-jenis-j1": {
+   "nama": "ciri-jenis-j1",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor"
+   ],
+   "ciri": "jenis",
+   "kelas": [
+    "mobil",
+    "motor",
+    "pikap",
+    "truk"
+   ],
+   "sumber_latih": null,
+   "zaman": 30,
+   "zaman_terbaik": 6,
+   "gambar": {
+    "latih": 5472,
+    "validasi_owner": 33
+   },
+   "validasi_owner": {
+    "gambar": 33,
+    "benar": 32,
+    "salah": 1,
+    "tak_yakin": 0,
+    "nilai": 31
+   },
+   "sha256_bobot": "236f0b43e66318f5a670f1f6d139ffb0caf88113059e280fc00d3fae408a71be",
+   "sha256_onnx": "f3b268906fc012a78bac659618d4e57590f870c06ac92cc99387ff2356bd98a8",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 4.76837158203125e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 0.6879,
+     "benar": 24,
+     "salah": 9,
+     "tak_yakin": 0,
+     "nilai": 15
+    },
+    {
+     "zaman": 2,
+     "rugi": 0.4288,
+     "benar": 24,
+     "salah": 9,
+     "tak_yakin": 0,
+     "nilai": 15
+    },
+    {
+     "zaman": 3,
+     "rugi": 0.3661,
+     "benar": 26,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 19
+    },
+    {
+     "zaman": 4,
+     "rugi": 0.3292,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 5,
+     "rugi": 0.3179,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 6,
+     "rugi": 0.3058,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 7,
+     "rugi": 0.2913,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 8,
+     "rugi": 0.2807,
+     "benar": 26,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 19
+    },
+    {
+     "zaman": 9,
+     "rugi": 0.2725,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 10,
+     "rugi": 0.2686,
+     "benar": 26,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 19
+    },
+    {
+     "zaman": 11,
+     "rugi": 0.2664,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 12,
+     "rugi": 0.2566,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.2546,
+     "benar": 28,
+     "salah": 5,
+     "tak_yakin": 0,
+     "nilai": 23
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.2489,
+     "benar": 30,
+     "salah": 3,
+     "tak_yakin": 0,
+     "nilai": 27
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.2398,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.2463,
+     "benar": 29,
+     "salah": 4,
+     "tak_yakin": 0,
+     "nilai": 25
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.2354,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.2351,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.2326,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.2266,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.2254,
+     "benar": 31,
+     "salah": 2,
+     "tak_yakin": 0,
+     "nilai": 29
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.2256,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.224,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.2231,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.2212,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.22,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.2184,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.2188,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.2191,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.2187,
+     "benar": 32,
+     "salah": 1,
+     "tak_yakin": 0,
+     "nilai": 31
+    }
+   ]
+  },
+  "ciri-jenis-j2": {
+   "nama": "ciri-jenis-j2",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor"
+   ],
+   "ciri": "jenis",
+   "kelas": [
+    "mobil",
+    "motor",
+    "pikap"
+   ],
+   "sumber_latih": [
+    "o"
+   ],
+   "zaman": 30,
+   "zaman_terbaik": 22,
+   "gambar": {
+    "latih": 102,
+    "validasi_owner": 33
+   },
+   "validasi_owner": {
+    "gambar": 33,
+    "benar": 30,
+    "salah": 3,
+    "tak_yakin": 0,
+    "nilai": 27
+   },
+   "sha256_bobot": "dc38aa8d17228356dc657641c41d06e824d56e8ffc6a18175c084d076cfb6b34",
+   "sha256_onnx": "e51d9c60b08793cb3225ea27dec61a68dd3006f0ca84d74aad3a92036dd98993",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 2.980232238769531e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 1.195,
+     "benar": 0,
+     "salah": 33,
+     "tak_yakin": 0,
+     "nilai": -33
+    },
+    {
+     "zaman": 2,
+     "rugi": 1.0123,
+     "benar": 0,
+     "salah": 33,
+     "tak_yakin": 0,
+     "nilai": -33
+    },
+    {
+     "zaman": 3,
+     "rugi": 0.8533,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 4,
+     "rugi": 0.724,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 5,
+     "rugi": 0.6445,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 6,
+     "rugi": 0.5599,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 7,
+     "rugi": 0.5392,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 8,
+     "rugi": 0.5371,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 9,
+     "rugi": 0.497,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 10,
+     "rugi": 0.4853,
+     "benar": 21,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": 9
+    },
+    {
+     "zaman": 11,
+     "rugi": 0.466,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 12,
+     "rugi": 0.4014,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.3908,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.3865,
+     "benar": 26,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 19
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.3464,
+     "benar": 27,
+     "salah": 6,
+     "tak_yakin": 0,
+     "nilai": 21
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.3522,
+     "benar": 21,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": 9
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.3224,
+     "benar": 22,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": 11
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.3305,
+     "benar": 29,
+     "salah": 4,
+     "tak_yakin": 0,
+     "nilai": 25
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.3339,
+     "benar": 29,
+     "salah": 4,
+     "tak_yakin": 0,
+     "nilai": 25
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.3195,
+     "benar": 28,
+     "salah": 5,
+     "tak_yakin": 0,
+     "nilai": 23
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.3054,
+     "benar": 27,
+     "salah": 6,
+     "tak_yakin": 0,
+     "nilai": 21
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.3191,
+     "benar": 30,
+     "salah": 3,
+     "tak_yakin": 0,
+     "nilai": 27
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.3049,
+     "benar": 29,
+     "salah": 4,
+     "tak_yakin": 0,
+     "nilai": 25
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.2786,
+     "benar": 27,
+     "salah": 6,
+     "tak_yakin": 0,
+     "nilai": 21
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.2965,
+     "benar": 26,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 19
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.2836,
+     "benar": 27,
+     "salah": 6,
+     "tak_yakin": 0,
+     "nilai": 21
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.2816,
+     "benar": 29,
+     "salah": 4,
+     "tak_yakin": 0,
+     "nilai": 25
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.2833,
+     "benar": 30,
+     "salah": 3,
+     "tak_yakin": 0,
+     "nilai": 27
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.2791,
+     "benar": 30,
+     "salah": 3,
+     "tak_yakin": 0,
+     "nilai": 27
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.2889,
+     "benar": 30,
+     "salah": 3,
+     "tak_yakin": 0,
+     "nilai": 27
+    }
+   ]
+  },
+  "ciri-warna-w1": {
+   "nama": "ciri-warna-w1",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor"
+   ],
+   "ciri": "warna",
+   "kelas": [
+    "abu_perak",
+    "biru",
+    "hijau",
+    "hitam",
+    "kuning",
+    "lainnya",
+    "merah",
+    "putih"
+   ],
+   "sumber_latih": null,
+   "zaman": 30,
+   "zaman_terbaik": 25,
+   "gambar": {
+    "latih": 2738,
+    "validasi_owner": 33
+   },
+   "validasi_owner": {
+    "gambar": 33,
+    "benar": 21,
+    "salah": 12,
+    "tak_yakin": 0,
+    "nilai": 9
+   },
+   "sha256_bobot": "5e0942681fed2106aceb92578d625d385ec0abae2360290a7f196ef665f3af3b",
+   "sha256_onnx": "f424bea4764da9ddceb8ac7d7320a1e59053e92e8845d9092463b7ca5c3106c1",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 2.980232238769531e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 1.7222,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 2,
+     "rugi": 1.1759,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 3,
+     "rugi": 0.9327,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 4,
+     "rugi": 0.8084,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 5,
+     "rugi": 0.7322,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 6,
+     "rugi": 0.7071,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 7,
+     "rugi": 0.6527,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 8,
+     "rugi": 0.6526,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 9,
+     "rugi": 0.6027,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 10,
+     "rugi": 0.5737,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 11,
+     "rugi": 0.5609,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 12,
+     "rugi": 0.5416,
+     "benar": 7,
+     "salah": 26,
+     "tak_yakin": 0,
+     "nilai": -19
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.5025,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.4821,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.4642,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.4404,
+     "benar": 11,
+     "salah": 22,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.4349,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.4209,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.3921,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.385,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.3719,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.3607,
+     "benar": 19,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": 5
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.3607,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.351,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.35,
+     "benar": 21,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": 9
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.3431,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.339,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.3354,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.3342,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.3337,
+     "benar": 18,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 3
+    }
+   ]
+  },
+  "ciri-warna-w2": {
+   "nama": "ciri-warna-w2",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor"
+   ],
+   "ciri": "warna",
+   "kelas": [
+    "abu_perak",
+    "biru",
+    "hijau",
+    "hitam",
+    "lainnya",
+    "merah",
+    "putih"
+   ],
+   "sumber_latih": [
+    "o"
+   ],
+   "zaman": 30,
+   "zaman_terbaik": 30,
+   "gambar": {
+    "latih": 100,
+    "validasi_owner": 33
+   },
+   "validasi_owner": {
+    "gambar": 33,
+    "benar": 20,
+    "salah": 13,
+    "tak_yakin": 0,
+    "nilai": 7
+   },
+   "sha256_bobot": "0ff3200701ad7970e316c848facf48483089483a90c2417d520926fd9c0c2f85",
+   "sha256_onnx": "97b7b6978ff428103341bf4fc4768abad3d7f8a57a955e63203c5572cbe2e42f",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 3.5762786865234375e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 2.4013,
+     "benar": 1,
+     "salah": 32,
+     "tak_yakin": 0,
+     "nilai": -31
+    },
+    {
+     "zaman": 2,
+     "rugi": 2.2257,
+     "benar": 1,
+     "salah": 32,
+     "tak_yakin": 0,
+     "nilai": -31
+    },
+    {
+     "zaman": 3,
+     "rugi": 1.9688,
+     "benar": 1,
+     "salah": 32,
+     "tak_yakin": 0,
+     "nilai": -31
+    },
+    {
+     "zaman": 4,
+     "rugi": 1.6475,
+     "benar": 6,
+     "salah": 27,
+     "tak_yakin": 0,
+     "nilai": -21
+    },
+    {
+     "zaman": 5,
+     "rugi": 1.4815,
+     "benar": 6,
+     "salah": 27,
+     "tak_yakin": 0,
+     "nilai": -21
+    },
+    {
+     "zaman": 6,
+     "rugi": 1.3309,
+     "benar": 6,
+     "salah": 27,
+     "tak_yakin": 0,
+     "nilai": -21
+    },
+    {
+     "zaman": 7,
+     "rugi": 1.1769,
+     "benar": 9,
+     "salah": 24,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 8,
+     "rugi": 1.078,
+     "benar": 9,
+     "salah": 24,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 9,
+     "rugi": 0.9827,
+     "benar": 9,
+     "salah": 24,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 10,
+     "rugi": 0.951,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 11,
+     "rugi": 0.91,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 12,
+     "rugi": 0.907,
+     "benar": 11,
+     "salah": 22,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.8528,
+     "benar": 14,
+     "salah": 19,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.8619,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.7972,
+     "benar": 12,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.7994,
+     "benar": 16,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.7946,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.7514,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.7225,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.7066,
+     "benar": 13,
+     "salah": 20,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.6977,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.6701,
+     "benar": 17,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.6658,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.6733,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.6292,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.6442,
+     "benar": 15,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.6388,
+     "benar": 19,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": 5
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.6717,
+     "benar": 19,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": 5
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.642,
+     "benar": 19,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": 5
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.6349,
+     "benar": 20,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": 7
+    }
+   ]
+  }
+ },
+ "pilih": {
+  "aturan": "validasi owner, nilai = benar - salah; seri: salah paling sedikit, lalu calon tanpa latihan, lalu ambang terkecil; dipakai hanya bila lebih besar dari calon tanpa latihan",
+  "ambang": [
+   0,
+   0.5,
+   0.7,
+   0.9
+  ],
+  "ciri": {
+   "jenis": {
+    "calon": {
+     "J0": {
+      "folder": null,
+      "validasi_owner": {
+       "0.0": {
+        "benar": 25,
+        "salah": 4,
+        "tak_yakin": 4,
+        "nilai": 21
+       },
+       "0.5": {
+        "benar": 16,
+        "salah": 1,
+        "tak_yakin": 16,
+        "nilai": 15
+       },
+       "0.7": {
+        "benar": 6,
+        "salah": 1,
+        "tak_yakin": 26,
+        "nilai": 5
+       },
+       "0.9": {
+        "benar": 0,
+        "salah": 0,
+        "tak_yakin": 33,
+        "nilai": 0
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 421,
+        "salah": 95,
+        "tak_yakin": 264,
+        "nilai": 326
+       },
+       "0.5": {
+        "benar": 364,
+        "salah": 51,
+        "tak_yakin": 365,
+        "nilai": 313
+       },
+       "0.7": {
+        "benar": 269,
+        "salah": 19,
+        "tak_yakin": 492,
+        "nilai": 250
+       },
+       "0.9": {
+        "benar": 41,
+        "salah": 1,
+        "tak_yakin": 738,
+        "nilai": 40
+       }
+      }
+     },
+     "J1": {
+      "folder": "ciri-jenis-j1",
+      "validasi_owner": {
+       "0.0": {
+        "benar": 32,
+        "salah": 1,
+        "tak_yakin": 0,
+        "nilai": 31
+       },
+       "0.5": {
+        "benar": 31,
+        "salah": 1,
+        "tak_yakin": 1,
+        "nilai": 30
+       },
+       "0.7": {
+        "benar": 27,
+        "salah": 1,
+        "tak_yakin": 5,
+        "nilai": 26
+       },
+       "0.9": {
+        "benar": 15,
+        "salah": 1,
+        "tak_yakin": 17,
+        "nilai": 14
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 769,
+        "salah": 11,
+        "tak_yakin": 0,
+        "nilai": 758
+       },
+       "0.5": {
+        "benar": 765,
+        "salah": 9,
+        "tak_yakin": 6,
+        "nilai": 756
+       },
+       "0.7": {
+        "benar": 745,
+        "salah": 5,
+        "tak_yakin": 30,
+        "nilai": 740
+       },
+       "0.9": {
+        "benar": 639,
+        "salah": 1,
+        "tak_yakin": 140,
+        "nilai": 638
+       }
+      }
+     },
+     "J2": {
+      "folder": "ciri-jenis-j2",
+      "validasi_owner": {
+       "0.0": {
+        "benar": 30,
+        "salah": 3,
+        "tak_yakin": 0,
+        "nilai": 27
+       },
+       "0.5": {
+        "benar": 30,
+        "salah": 3,
+        "tak_yakin": 0,
+        "nilai": 27
+       },
+       "0.7": {
+        "benar": 26,
+        "salah": 3,
+        "tak_yakin": 4,
+        "nilai": 23
+       },
+       "0.9": {
+        "benar": 7,
+        "salah": 0,
+        "tak_yakin": 26,
+        "nilai": 7
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 370,
+        "salah": 410,
+        "tak_yakin": 0,
+        "nilai": -40
+       },
+       "0.5": {
+        "benar": 365,
+        "salah": 404,
+        "tak_yakin": 11,
+        "nilai": -39
+       },
+       "0.7": {
+        "benar": 268,
+        "salah": 289,
+        "tak_yakin": 223,
+        "nilai": -21
+       },
+       "0.9": {
+        "benar": 98,
+        "salah": 117,
+        "tak_yakin": 565,
+        "nilai": -19
+       }
+      }
+     }
+    },
+    "n_validasi_owner": 33,
+    "n_validasi_semua": 780,
+    "terpilih": {
+     "calon": "J1",
+     "ambang": 0
+    },
+    "nilai_terpilih": 31,
+    "nilai_tanpa_latihan": 21,
+    "dipakai": true
+   },
+   "warna": {
+    "calon": {
+     "W0": {
+      "folder": null,
+      "validasi_owner": {
+       "0.0": {
+        "benar": 15,
+        "salah": 18,
+        "tak_yakin": 0,
+        "nilai": -3
+       },
+       "0.5": {
+        "benar": 15,
+        "salah": 18,
+        "tak_yakin": 0,
+        "nilai": -3
+       },
+       "0.7": {
+        "benar": 15,
+        "salah": 18,
+        "tak_yakin": 0,
+        "nilai": -3
+       },
+       "0.9": {
+        "benar": 15,
+        "salah": 18,
+        "tak_yakin": 0,
+        "nilai": -3
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 86,
+        "salah": 393,
+        "tak_yakin": 0,
+        "nilai": -307
+       },
+       "0.5": {
+        "benar": 86,
+        "salah": 393,
+        "tak_yakin": 0,
+        "nilai": -307
+       },
+       "0.7": {
+        "benar": 86,
+        "salah": 393,
+        "tak_yakin": 0,
+        "nilai": -307
+       },
+       "0.9": {
+        "benar": 86,
+        "salah": 393,
+        "tak_yakin": 0,
+        "nilai": -307
+       }
+      }
+     },
+     "W1": {
+      "folder": "ciri-warna-w1",
+      "validasi_owner": {
+       "0.0": {
+        "benar": 21,
+        "salah": 12,
+        "tak_yakin": 0,
+        "nilai": 9
+       },
+       "0.5": {
+        "benar": 16,
+        "salah": 9,
+        "tak_yakin": 8,
+        "nilai": 7
+       },
+       "0.7": {
+        "benar": 12,
+        "salah": 3,
+        "tak_yakin": 18,
+        "nilai": 9
+       },
+       "0.9": {
+        "benar": 7,
+        "salah": 2,
+        "tak_yakin": 24,
+        "nilai": 5
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 453,
+        "salah": 26,
+        "tak_yakin": 0,
+        "nilai": 427
+       },
+       "0.5": {
+        "benar": 444,
+        "salah": 19,
+        "tak_yakin": 16,
+        "nilai": 425
+       },
+       "0.7": {
+        "benar": 428,
+        "salah": 6,
+        "tak_yakin": 45,
+        "nilai": 422
+       },
+       "0.9": {
+        "benar": 358,
+        "salah": 3,
+        "tak_yakin": 118,
+        "nilai": 355
+       }
+      }
+     },
+     "W2": {
+      "folder": "ciri-warna-w2",
+      "validasi_owner": {
+       "0.0": {
+        "benar": 20,
+        "salah": 13,
+        "tak_yakin": 0,
+        "nilai": 7
+       },
+       "0.5": {
+        "benar": 13,
+        "salah": 5,
+        "tak_yakin": 15,
+        "nilai": 8
+       },
+       "0.7": {
+        "benar": 9,
+        "salah": 2,
+        "tak_yakin": 22,
+        "nilai": 7
+       },
+       "0.9": {
+        "benar": 7,
+        "salah": 0,
+        "tak_yakin": 26,
+        "nilai": 7
+       }
+      },
+      "validasi_semua": {
+       "0.0": {
+        "benar": 309,
+        "salah": 170,
+        "tak_yakin": 0,
+        "nilai": 139
+       },
+       "0.5": {
+        "benar": 244,
+        "salah": 103,
+        "tak_yakin": 132,
+        "nilai": 141
+       },
+       "0.7": {
+        "benar": 150,
+        "salah": 63,
+        "tak_yakin": 266,
+        "nilai": 87
+       },
+       "0.9": {
+        "benar": 40,
+        "salah": 47,
+        "tak_yakin": 392,
+        "nilai": -7
+       }
+      }
+     }
+    },
+    "n_validasi_owner": 33,
+    "n_validasi_semua": 479,
+    "terpilih": {
+     "calon": "W1",
+     "ambang": 0.7
+    },
+    "nilai_terpilih": 9,
+    "nilai_tanpa_latihan": -3,
+    "dipakai": true
+   }
+  }
+ },
+ "uji": {
+  "jenis": {
+   "n_uji": 37,
+   "terpilih": {
+    "calon": "J1",
+    "ambang": 0
+   },
+   "calon": {
+    "J0": {
+     "ambang": 0,
+     "benar": 25,
+     "salah": 2,
+     "tak_yakin": 10,
+     "nilai": 23,
+     "per_kelas": {
+      "mobil": {
+       "jumlah": 14,
+       "benar": 12,
+       "salah": 0,
+       "tak_yakin": 2
+      },
+      "motor": {
+       "jumlah": 21,
+       "benar": 12,
+       "salah": 1,
+       "tak_yakin": 8
+      },
+      "pikap": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "truk": {
+       "jumlah": 1,
+       "benar": 1,
+       "salah": 0,
+       "tak_yakin": 0
+      }
+     },
+     "rentang_95_benar": [
+      0.515,
+      0.804
+     ],
+     "rentang_95_salah": [
+      0.015,
+      0.177
+     ]
+    },
+    "J1": {
+     "ambang": 0,
+     "benar": 32,
+     "salah": 5,
+     "tak_yakin": 0,
+     "nilai": 27,
+     "per_kelas": {
+      "mobil": {
+       "jumlah": 14,
+       "benar": 12,
+       "salah": 2,
+       "tak_yakin": 0
+      },
+      "motor": {
+       "jumlah": 21,
+       "benar": 20,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "pikap": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "truk": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      }
+     },
+     "rentang_95_benar": [
+      0.72,
+      0.941
+     ],
+     "rentang_95_salah": [
+      0.059,
+      0.28
+     ]
+    },
+    "J2": {
+     "ambang": 0,
+     "benar": 30,
+     "salah": 7,
+     "tak_yakin": 0,
+     "nilai": 23,
+     "per_kelas": {
+      "mobil": {
+       "jumlah": 14,
+       "benar": 14,
+       "salah": 0,
+       "tak_yakin": 0
+      },
+      "motor": {
+       "jumlah": 21,
+       "benar": 16,
+       "salah": 5,
+       "tak_yakin": 0
+      },
+      "pikap": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "truk": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      }
+     },
+     "rentang_95_benar": [
+      0.658,
+      0.905
+     ],
+     "rentang_95_salah": [
+      0.095,
+      0.342
+     ]
+    }
+   }
+  },
+  "warna": {
+   "n_uji": 37,
+   "terpilih": {
+    "calon": "W1",
+    "ambang": 0.7
+   },
+   "calon": {
+    "W0": {
+     "ambang": 0,
+     "benar": 16,
+     "salah": 21,
+     "tak_yakin": 0,
+     "nilai": -5,
+     "per_kelas": {
+      "abu_perak": {
+       "jumlah": 5,
+       "benar": 3,
+       "salah": 2,
+       "tak_yakin": 0
+      },
+      "biru": {
+       "jumlah": 1,
+       "benar": 1,
+       "salah": 0,
+       "tak_yakin": 0
+      },
+      "hijau": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "hitam": {
+       "jumlah": 16,
+       "benar": 6,
+       "salah": 10,
+       "tak_yakin": 0
+      },
+      "kuning": {
+       "jumlah": 1,
+       "benar": 1,
+       "salah": 0,
+       "tak_yakin": 0
+      },
+      "lainnya": {
+       "jumlah": 3,
+       "benar": 0,
+       "salah": 3,
+       "tak_yakin": 0
+      },
+      "merah": {
+       "jumlah": 2,
+       "benar": 1,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "putih": {
+       "jumlah": 8,
+       "benar": 4,
+       "salah": 4,
+       "tak_yakin": 0
+      }
+     },
+     "rentang_95_benar": [
+      0.287,
+      0.591
+     ],
+     "rentang_95_salah": [
+      0.409,
+      0.713
+     ]
+    },
+    "W1": {
+     "ambang": 0.7,
+     "benar": 16,
+     "salah": 6,
+     "tak_yakin": 15,
+     "nilai": 10,
+     "per_kelas": {
+      "abu_perak": {
+       "jumlah": 5,
+       "benar": 0,
+       "salah": 3,
+       "tak_yakin": 2
+      },
+      "biru": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 0,
+       "tak_yakin": 1
+      },
+      "hijau": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 0,
+       "tak_yakin": 1
+      },
+      "hitam": {
+       "jumlah": 16,
+       "benar": 10,
+       "salah": 2,
+       "tak_yakin": 4
+      },
+      "kuning": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 0,
+       "tak_yakin": 1
+      },
+      "lainnya": {
+       "jumlah": 3,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 2
+      },
+      "merah": {
+       "jumlah": 2,
+       "benar": 2,
+       "salah": 0,
+       "tak_yakin": 0
+      },
+      "putih": {
+       "jumlah": 8,
+       "benar": 4,
+       "salah": 0,
+       "tak_yakin": 4
+      }
+     },
+     "rentang_95_benar": [
+      0.287,
+      0.591
+     ],
+     "rentang_95_salah": [
+      0.077,
+      0.311
+     ]
+    },
+    "W2": {
+     "ambang": 0,
+     "benar": 22,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 7,
+     "per_kelas": {
+      "abu_perak": {
+       "jumlah": 5,
+       "benar": 0,
+       "salah": 5,
+       "tak_yakin": 0
+      },
+      "biru": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "hijau": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "hitam": {
+       "jumlah": 16,
+       "benar": 14,
+       "salah": 2,
+       "tak_yakin": 0
+      },
+      "kuning": {
+       "jumlah": 1,
+       "benar": 0,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "lainnya": {
+       "jumlah": 3,
+       "benar": 0,
+       "salah": 3,
+       "tak_yakin": 0
+      },
+      "merah": {
+       "jumlah": 2,
+       "benar": 1,
+       "salah": 1,
+       "tak_yakin": 0
+      },
+      "putih": {
+       "jumlah": 8,
+       "benar": 7,
+       "salah": 1,
+       "tak_yakin": 0
+      }
+     },
+     "rentang_95_benar": [
+      0.435,
+      0.737
+     ],
+     "rentang_95_salah": [
+      0.263,
+      0.565
+     ]
+    }
+   }
+  }
+ }
+}

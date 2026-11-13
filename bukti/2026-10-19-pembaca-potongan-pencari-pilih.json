@@ -1,0 +1,51 @@
+{
+ "validasi_berteks": 29,
+ "aturan": "rantai C1 0,25 terbanyak; seri: potongan label; seri: R0 (R3 bila R3 dan R4 seri di atas R0); INDO-ALPR turun > 10 dari R0 ditolak; C3 0,6 hanya bila lebih tinggi",
+ "calon": {
+  "R0": {
+   "rantai_c1": 20,
+   "rantai_c3": 19,
+   "label": 19,
+   "label_gambar": 29,
+   "rantai_semua": {
+    "gambar": 50,
+    "benar": 39
+   },
+   "indo": {
+    "gambar": 460,
+    "benar": 388
+   }
+  },
+  "R3": {
+   "rantai_c1": 21,
+   "rantai_c3": 19,
+   "label": 24,
+   "label_gambar": 29,
+   "rantai_semua": {
+    "gambar": 50,
+    "benar": 40
+   },
+   "indo": {
+    "gambar": 460,
+    "benar": 384
+   }
+  },
+  "R4": {
+   "rantai_c1": 22,
+   "rantai_c3": 19,
+   "label": 24,
+   "label_gambar": 29,
+   "rantai_semua": {
+    "gambar": 50,
+    "benar": 41
+   },
+   "indo": {
+    "gambar": 460,
+    "benar": 380
+   }
+  }
+ },
+ "ditolak_penjaga_indo": [],
+ "terpilih": "R4",
+ "pencari_rantai": "C1 ambang 0,25"
+}

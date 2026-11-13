@@ -1,0 +1,610 @@
+{
+ "rencana": 32,
+ "dataset": {
+  "K1": {
+   "sumber": {
+    "v": {
+     "train": {
+      "gambar": 5123,
+      "kotak_label": 5506,
+      "kotak_guru": 9274,
+      "poligon_dilewati": 1637,
+      "kotak_kelas_lain": 3747,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     },
+     "valid": {
+      "gambar": 432,
+      "kotak_label": 465,
+      "kotak_guru": 868,
+      "poligon_dilewati": 143,
+      "kotak_kelas_lain": 320,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     }
+    },
+    "m": {
+     "train": {
+      "gambar": 2826,
+      "kotak_label": 2826,
+      "kotak_guru": 934,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 4730,
+      "tak_terbaca": 0
+     },
+     "valid": {
+      "gambar": 466,
+      "kotak_label": 466,
+      "kotak_guru": 128,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 221,
+      "tak_terbaca": 0
+     }
+    }
+   },
+   "guru": {
+    "ambang": 0.4,
+    "iou": 0.5
+   },
+   "bahan": [
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "bobot-yolox"
+   ]
+  },
+  "K2": {
+   "sumber": {
+    "v": {
+     "train": {
+      "gambar": 5123,
+      "kotak_label": 5506,
+      "kotak_guru": 9274,
+      "poligon_dilewati": 1637,
+      "kotak_kelas_lain": 3747,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     },
+     "valid": {
+      "gambar": 432,
+      "kotak_label": 465,
+      "kotak_guru": 868,
+      "poligon_dilewati": 143,
+      "kotak_kelas_lain": 320,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     }
+    },
+    "m": {
+     "train": {
+      "gambar": 2826,
+      "kotak_label": 2826,
+      "kotak_guru": 934,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 4730,
+      "tak_terbaca": 0
+     },
+     "valid": {
+      "gambar": 466,
+      "kotak_label": 466,
+      "kotak_guru": 128,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 221,
+      "tak_terbaca": 0
+     }
+    },
+    "c": {
+     "train": {
+      "gambar": 864,
+      "kotak_label": 0,
+      "kotak_guru": 3410,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     },
+     "valid": {
+      "gambar": 172,
+      "kotak_label": 0,
+      "kotak_guru": 695,
+      "poligon_dilewati": 0,
+      "kotak_kelas_lain": 0,
+      "dibatasi": 0,
+      "tak_terbaca": 0
+     }
+    }
+   },
+   "guru": {
+    "ambang": 0.4,
+    "iou": 0.5
+   },
+   "bahan": [
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "video-riset-youtube",
+    "dataset-plat-lighting",
+    "plat-buatan",
+    "bobot-yolox"
+   ]
+  }
+ },
+ "mesin": {
+  "K1": {
+   "nama": "kendaraan-jualan-k1",
+   "tujuan": "jualan",
+   "bahan": [
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "bobot-yolox"
+   ],
+   "jenis": "tiny",
+   "ukuran": 640,
+   "zaman": 15,
+   "zaman_terbaik": 15,
+   "f1_validasi_terbaik": 0.929,
+   "ambang_validasi": 0.45,
+   "gambar_latih": 7949,
+   "bobot_awal": {
+    "butir": "yolox-tiny-coco",
+    "sha256": "9de513de589ac98bb92d3bca53b5af7b9acfa9b0bacb831f7999d0f7afaee8f0",
+    "dimuat": 456,
+    "dilewati": 6
+   },
+   "sha256_bobot": "7c47d294841331506e9f6107279d96ad1ef482fb77c5502ea40427fa61d5f322",
+   "sha256_onnx": "c09fa892f4b6811c5848d82341f6366a259e7ee27b69b2bf529f784bed34611f",
+   "pemeriksaan_onnx": {
+    "gambar": 20,
+    "sama": 20,
+    "selisih_koordinat": 0.00146484375,
+    "selisih_peluang": 0.000008702278137207031
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 3.4195,
+     "f1_validasi": 0.9082,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 2,
+     "rugi": 2.6761,
+     "f1_validasi": 0.8734,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 3,
+     "rugi": 3.0048,
+     "f1_validasi": 0.8164,
+     "ambang": 0.3
+    },
+    {
+     "zaman": 4,
+     "rugi": 2.9063,
+     "f1_validasi": 0.8649,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 5,
+     "rugi": 2.6336,
+     "f1_validasi": 0.8855,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 6,
+     "rugi": 2.4439,
+     "f1_validasi": 0.8971,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 7,
+     "rugi": 2.3005,
+     "f1_validasi": 0.9036,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 8,
+     "rugi": 2.161,
+     "f1_validasi": 0.9014,
+     "ambang": 0.4
+    },
+    {
+     "zaman": 9,
+     "rugi": 2.0402,
+     "f1_validasi": 0.9157,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 10,
+     "rugi": 1.9239,
+     "f1_validasi": 0.9194,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 11,
+     "rugi": 1.8138,
+     "f1_validasi": 0.9235,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 12,
+     "rugi": 1.7166,
+     "f1_validasi": 0.9273,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 13,
+     "rugi": 1.6314,
+     "f1_validasi": 0.927,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 14,
+     "rugi": 1.5814,
+     "f1_validasi": 0.9279,
+     "ambang": 0.6
+    },
+    {
+     "zaman": 15,
+     "rugi": 1.5422,
+     "f1_validasi": 0.929,
+     "ambang": 0.45
+    }
+   ]
+  },
+  "K2": {
+   "nama": "kendaraan-jualan-k2",
+   "tujuan": "jualan",
+   "bahan": [
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "video-riset-youtube",
+    "dataset-plat-lighting",
+    "plat-buatan",
+    "bobot-yolox"
+   ],
+   "jenis": "tiny",
+   "ukuran": 640,
+   "zaman": 15,
+   "zaman_terbaik": 13,
+   "f1_validasi_terbaik": 0.9047,
+   "ambang_validasi": 0.5,
+   "gambar_latih": 8813,
+   "bobot_awal": {
+    "butir": "yolox-tiny-coco",
+    "sha256": "9de513de589ac98bb92d3bca53b5af7b9acfa9b0bacb831f7999d0f7afaee8f0",
+    "dimuat": 456,
+    "dilewati": 6
+   },
+   "sha256_bobot": "2a4ee9b7d60b3bb98ce0a4c314204e80b448083e47de9079c85d3bfd979f9f38",
+   "sha256_onnx": "694de9bc76301d403dd00588528d0d4b1bef26f12469758be0d89d1b3e565860",
+   "pemeriksaan_onnx": {
+    "gambar": 20,
+    "sama": 20,
+    "selisih_koordinat": 0.00164794921875,
+    "selisih_peluang": 0.000003844499588012695
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 3.424,
+     "f1_validasi": 0.8579,
+     "ambang": 0.25
+    },
+    {
+     "zaman": 2,
+     "rugi": 2.6969,
+     "f1_validasi": 0.8324,
+     "ambang": 0.4
+    },
+    {
+     "zaman": 3,
+     "rugi": 3.1033,
+     "f1_validasi": 0.799,
+     "ambang": 0.35
+    },
+    {
+     "zaman": 4,
+     "rugi": 3.0426,
+     "f1_validasi": 0.766,
+     "ambang": 0.25
+    },
+    {
+     "zaman": 5,
+     "rugi": 2.7291,
+     "f1_validasi": 0.8611,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 6,
+     "rugi": 2.5723,
+     "f1_validasi": 0.8637,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 7,
+     "rugi": 2.4325,
+     "f1_validasi": 0.8825,
+     "ambang": 0.35
+    },
+    {
+     "zaman": 8,
+     "rugi": 2.2607,
+     "f1_validasi": 0.8842,
+     "ambang": 0.3
+    },
+    {
+     "zaman": 9,
+     "rugi": 2.1673,
+     "f1_validasi": 0.8915,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 10,
+     "rugi": 2.0337,
+     "f1_validasi": 0.8986,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 11,
+     "rugi": 1.9345,
+     "f1_validasi": 0.9003,
+     "ambang": 0.4
+    },
+    {
+     "zaman": 12,
+     "rugi": 1.8399,
+     "f1_validasi": 0.8974,
+     "ambang": 0.35
+    },
+    {
+     "zaman": 13,
+     "rugi": 1.747,
+     "f1_validasi": 0.9047,
+     "ambang": 0.5
+    },
+    {
+     "zaman": 14,
+     "rugi": 1.6897,
+     "f1_validasi": 0.9043,
+     "ambang": 0.45
+    },
+    {
+     "zaman": 15,
+     "rugi": 1.6669,
+     "f1_validasi": 0.9038,
+     "ambang": 0.4
+    }
+   ]
+  }
+ },
+ "pilih": {
+  "aturan": "rantai tangkapan sisi latih: dibaca benar terbanyak; seri plat berkendaraan; seri K1; seri 0,25; dipakai bila tidak lebih rendah dari K0 lebih dari 2",
+  "calon": {
+   "K0@0.25": {
+    "folder": "kendaraan-yolox-coco",
+    "ambang": 0.25,
+    "plat_berlabel": 141,
+    "ditemukan": 129,
+    "berteks": 125,
+    "dibaca_benar": 112,
+    "kotak_di_luar_label": 6,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 50,
+      "kotak_di_luar_label": 1,
+      "kotak_di_bukan_plat": 1
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 75,
+      "berteks": 72,
+      "dibaca_benar": 62,
+      "kotak_di_luar_label": 5,
+      "kotak_di_bukan_plat": 2
+     }
+    },
+    "plat_berkendaraan": 135,
+    "plat_latih": 141
+   },
+   "K1@0.25": {
+    "folder": "kendaraan-jualan-k1",
+    "ambang": 0.25,
+    "plat_berlabel": 141,
+    "ditemukan": 130,
+    "berteks": 125,
+    "dibaca_benar": 115,
+    "kotak_di_luar_label": 0,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 55,
+      "berteks": 53,
+      "dibaca_benar": 50,
+      "kotak_di_luar_label": 0,
+      "kotak_di_bukan_plat": 0
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 75,
+      "berteks": 72,
+      "dibaca_benar": 65,
+      "kotak_di_luar_label": 0,
+      "kotak_di_bukan_plat": 0
+     }
+    },
+    "plat_berkendaraan": 138,
+    "plat_latih": 141
+   },
+   "K1@0.4": {
+    "folder": "kendaraan-jualan-k1",
+    "ambang": 0.4,
+    "plat_berlabel": 141,
+    "ditemukan": 130,
+    "berteks": 125,
+    "dibaca_benar": 115,
+    "kotak_di_luar_label": 0,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 55,
+      "berteks": 53,
+      "dibaca_benar": 50,
+      "kotak_di_luar_label": 0,
+      "kotak_di_bukan_plat": 0
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 75,
+      "berteks": 72,
+      "dibaca_benar": 65,
+      "kotak_di_luar_label": 0,
+      "kotak_di_bukan_plat": 0
+     }
+    },
+    "plat_berkendaraan": 137,
+    "plat_latih": 141
+   },
+   "K2@0.25": {
+    "folder": "kendaraan-jualan-k2",
+    "ambang": 0.25,
+    "plat_berlabel": 141,
+    "ditemukan": 127,
+    "berteks": 125,
+    "dibaca_benar": 114,
+    "kotak_di_luar_label": 4,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 50,
+      "kotak_di_luar_label": 1,
+      "kotak_di_bukan_plat": 1
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 73,
+      "berteks": 72,
+      "dibaca_benar": 64,
+      "kotak_di_luar_label": 3,
+      "kotak_di_bukan_plat": 0
+     }
+    },
+    "plat_berkendaraan": 135,
+    "plat_latih": 141
+   },
+   "K2@0.4": {
+    "folder": "kendaraan-jualan-k2",
+    "ambang": 0.4,
+    "plat_berlabel": 141,
+    "ditemukan": 127,
+    "berteks": 125,
+    "dibaca_benar": 113,
+    "kotak_di_luar_label": 5,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 50,
+      "kotak_di_luar_label": 1,
+      "kotak_di_bukan_plat": 1
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 73,
+      "berteks": 72,
+      "dibaca_benar": 63,
+      "kotak_di_luar_label": 4,
+      "kotak_di_bukan_plat": 0
+     }
+    },
+    "plat_berkendaraan": 134,
+    "plat_latih": 141
+   }
+  },
+  "terpilih": "K1@0.25",
+  "dipakai": true
+ },
+ "ditetapkan": {
+  "ambang": 0.25,
+  "jenis": "kendaraan",
+  "sha256_onnx": "c09fa892f4b6811c5848d82341f6366a259e7ee27b69b2bf529f784bed34611f",
+  "alasan": "Rencana 32: terpilih di rantai tangkapan sisi latih (bukti/2026-10-24-pencari-kendaraan-jualan-pilih.json)"
+ },
+ "uji": {
+  "susunan": "kendaraan K1 (kendaraan.json, ambang 0,25) cadangan utuh, pencari plat C1 0,25, pembaca R4 ONNX, varian v0",
+  "nilai": {
+   "sisi": "uji",
+   "iou_min": 0.3,
+   "gambar": 38,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 16,
+     "ditemukan": 15,
+     "berteks": 16,
+     "dibaca_benar": 14,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 23,
+     "ditemukan": 20,
+     "berteks": 18,
+     "dibaca_benar": 10,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 0
+    }
+   }
+  },
+  "jumlah": {
+   "plat_berlabel": 39,
+   "ditemukan": 35,
+   "berteks": 34,
+   "dibaca_benar": 24,
+   "kotak_di_luar_label": 1,
+   "rentang_95_dibaca_benar": [
+    0.538,
+    0.832
+   ]
+  },
+  "pembanding_rencana_30": {
+   "plat_berlabel": 39,
+   "ditemukan": 34,
+   "berteks": 34,
+   "dibaca_benar": 22,
+   "kotak_di_luar_label": 1,
+   "rentang_95_dibaca_benar": [
+    0.479,
+    0.785
+   ]
+  },
+  "pindah_per_plat": {
+   "mobil: benar -> benar": 13,
+   "mobil: salah -> benar": 1,
+   "mobil: salah -> salah": 1,
+   "mobil: tak_ditemukan -> tak_ditemukan": 1,
+   "motor: benar -> benar": 9,
+   "motor: salah -> salah": 6,
+   "motor: tak_ditemukan -> benar": 1,
+   "motor: tak_ditemukan -> tak_ditemukan": 2
+  },
+  "plat_berkendaraan": {
+   "K1_ambang_dari_kendaraan_json": 0.25,
+   "K0@0.25": {
+    "plat_berkendaraan": 38,
+    "plat_uji": 39
+   },
+   "K1": {
+    "plat_berkendaraan": 39,
+    "plat_uji": 39
+   }
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "cpu_terlihat": 12,
+ "gambar": 460,
+ "panaskan": 10,
+ "per_utas": {
+  "1": {
+   "diukur": 450,
+   "dekode_ms": {
+    "median": 9.28,
+    "p95": 117.17
+   },
+   "utuh_ms": {
+    "median": 23.33,
+    "p95": 41.45
+   },
+   "model_ms": {
+    "median": 22.92,
+    "p95": 42.29
+   }
+  },
+  "2": {
+   "diukur": 450,
+   "dekode_ms": {
+    "median": 8.52,
+    "p95": 73.93
+   },
+   "utuh_ms": {
+    "median": 14.34,
+    "p95": 28.32
+   },
+   "model_ms": {
+    "median": 14.02,
+    "p95": 31.76
+   }
+  },
+  "4": {
+   "diukur": 450,
+   "dekode_ms": {
+    "median": 8.71,
+    "p95": 24.19
+   },
+   "utuh_ms": {
+    "median": 10.38,
+    "p95": 14.13
+   },
+   "model_ms": {
+    "median": 10.07,
+    "p95": 13.71
+   }
+  }
+ }
+}

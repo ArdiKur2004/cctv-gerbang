@@ -1,0 +1,123 @@
+{
+ "ambang": 0.6,
+ "iou_min": 0.5,
+ "validasi": {
+  "semua": {
+   "plat": 99,
+   "plat_ditemukan": 85,
+   "kotak_palsu": 14,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.777,
+    0.914
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 86,
+   "plat_ditemukan": 74,
+   "kotak_palsu": 13,
+   "gambar": 71,
+   "rentang_95_ditemukan": [
+    0.772,
+    0.918
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 13,
+   "plat_ditemukan": 11,
+   "kotak_palsu": 1,
+   "gambar": 13,
+   "rentang_95_ditemukan": [
+    0.578,
+    0.957
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 23,
+   "plat_ditemukan": 15,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.449,
+    0.812
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 76,
+   "plat_ditemukan": 70,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.838,
+    0.963
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "uji": {
+  "semua": {
+   "plat": 102,
+   "plat_ditemukan": 91,
+   "kotak_palsu": 14,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.817,
+    0.939
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 99,
+   "plat_ditemukan": 89,
+   "kotak_palsu": 13,
+   "gambar": 81,
+   "rentang_95_ditemukan": [
+    0.824,
+    0.944
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 3,
+   "plat_ditemukan": 2,
+   "kotak_palsu": 1,
+   "gambar": 3,
+   "rentang_95_ditemukan": [
+    0.208,
+    0.939
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 16,
+   "plat_ditemukan": 10,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.386,
+    0.815
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 86,
+   "plat_ditemukan": 81,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.871,
+    0.975
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "detik_per_gambar": {
+  "validasi": 0.0082,
+  "uji": 0.0064
+ },
+ "tak_terbaca": 0
+}

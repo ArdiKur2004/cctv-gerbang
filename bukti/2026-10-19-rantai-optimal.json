@@ -1,0 +1,1789 @@
+{
+ "rencana": 25,
+ "titik_awal": {
+  "rencana": 25,
+  "task": 1,
+  "rantai": "rantai belajar Rencana 24 Task 2: kendaraan-yolox-coco, pencari-yolox-nano-640-cctv1 cara potong ambang 0,25, fpo-indo-1 ONNX",
+  "keluaran_rantai": "data/keluaran/tangkapan-owner-baca",
+  "label": "data/keluaran/label-tangkapan/label.json",
+  "latih": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 51,
+     "berteks": 53,
+     "dibaca_benar": 43,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 59,
+     "berteks": 72,
+     "dibaca_benar": 35,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    }
+   }
+  },
+  "uji": {
+   "sisi": "uji",
+   "iou_min": 0.3,
+   "gambar": 38,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 16,
+     "ditemukan": 14,
+     "berteks": 16,
+     "dibaca_benar": 12,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 23,
+     "ditemukan": 14,
+     "berteks": 18,
+     "dibaca_benar": 9,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    }
+   }
+  }
+ },
+ "kendaraan_sisi_latih": {
+  "sekarang": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 51,
+     "berteks": 53,
+     "dibaca_benar": 43,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 59,
+     "berteks": 72,
+     "dibaca_benar": 35,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    }
+   }
+  },
+  "cadangan": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 51,
+     "berteks": 53,
+     "dibaca_benar": 43,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 62,
+     "berteks": 72,
+     "dibaca_benar": 36,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 3
+    }
+   }
+  },
+  "terdekat1": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 43,
+     "berteks": 53,
+     "dibaca_benar": 38,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 52,
+     "berteks": 72,
+     "dibaca_benar": 34,
+     "kotak_di_luar_label": 2,
+     "kotak_di_bukan_plat": 2
+    }
+   }
+  },
+  "cadangan-terdekat1": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 43,
+     "berteks": 53,
+     "dibaca_benar": 38,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 55,
+     "berteks": 72,
+     "dibaca_benar": 35,
+     "kotak_di_luar_label": 2,
+     "kotak_di_bukan_plat": 2
+    }
+   }
+  }
+ },
+ "pencari": {
+  "pilih": {
+   "validasi": "data/keluaran/dataset/cctv2-c1/valid (sama persis dengan cctv2-c2/valid)",
+   "calon": {
+    "C0": {
+     "folder": "pencari-yolox-nano-640-cctv1",
+     "f1": 0.8971,
+     "ambang": 0.5,
+     "plat": 179,
+     "plat_ditemukan": 157,
+     "kotak_palsu": 14,
+     "gambar": 203,
+     "tak_terbaca": 0,
+     "f1_validasi_saat_latih": 0.9236,
+     "zaman_terbaik": 67
+    },
+    "C1": {
+     "folder": "pencari-cctv2-c1",
+     "f1": 0.9257,
+     "ambang": 0.6,
+     "plat": 179,
+     "plat_ditemukan": 162,
+     "kotak_palsu": 9,
+     "gambar": 203,
+     "tak_terbaca": 0,
+     "f1_validasi_saat_latih": 0.9257,
+     "zaman_terbaik": 28
+    },
+    "C2": {
+     "folder": "pencari-cctv2-c2",
+     "f1": 0.9244,
+     "ambang": 0.65,
+     "plat": 179,
+     "plat_ditemukan": 165,
+     "kotak_palsu": 13,
+     "gambar": 203,
+     "tak_terbaca": 0,
+     "f1_validasi_saat_latih": 0.9244,
+     "zaman_terbaik": 41
+    }
+   },
+   "terpilih": "C1"
+  },
+  "ukur": {
+   "C0": {
+    "folder": "pencari-yolox-nano-640-cctv1",
+    "tangkapan": {
+     "ambang": 0.5,
+     "uji": {
+      "plat": 39,
+      "plat_ditemukan": 16,
+      "kotak_palsu": 1,
+      "gambar": 38,
+      "rentang_95_ditemukan": [
+       0.271,
+       0.566
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 39,
+       "plat_ditemukan": 16,
+       "kotak_palsu": 1,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.271,
+        0.566
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 39,
+       "plat_ditemukan": 16,
+       "kotak_palsu": 1,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.271,
+        0.566
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 39,
+       "plat_ditemukan": 16,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.271,
+        0.566
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 157,
+      "kotak_palsu": 14,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.821,
+       0.917
+      ],
+      "terlalu_sedikit": false
+     }
+    },
+    "plat_lighting": {
+     "ambang": 0.5,
+     "uji": {
+      "plat": 102,
+      "plat_ditemukan": 96,
+      "kotak_palsu": 10,
+      "gambar": 84,
+      "rentang_95_ditemukan": [
+       0.878,
+       0.973
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 102,
+       "plat_ditemukan": 96,
+       "kotak_palsu": 10,
+       "gambar": 84,
+       "rentang_95_ditemukan": [
+        0.878,
+        0.973
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 99,
+       "plat_ditemukan": 93,
+       "kotak_palsu": 10,
+       "gambar": 81,
+       "rentang_95_ditemukan": [
+        0.874,
+        0.972
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 3,
+       "plat_ditemukan": 3,
+       "kotak_palsu": 0,
+       "gambar": 3,
+       "rentang_95_ditemukan": [
+        0.438,
+        1
+       ],
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 16,
+       "plat_ditemukan": 12,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.505,
+        0.898
+       ],
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 86,
+       "plat_ditemukan": 84,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.919,
+        0.994
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 157,
+      "kotak_palsu": 14,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.821,
+       0.917
+      ],
+      "terlalu_sedikit": false
+     }
+    }
+   },
+   "Nano-640": {
+    "folder": "pencari-yolox-nano-640",
+    "tangkapan": {
+     "ambang": 0.25,
+     "uji": {
+      "plat": 39,
+      "plat_ditemukan": 24,
+      "kotak_palsu": 5,
+      "gambar": 38,
+      "rentang_95_ditemukan": [
+       0.459,
+       0.751
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 39,
+       "plat_ditemukan": 24,
+       "kotak_palsu": 5,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.459,
+        0.751
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 39,
+       "plat_ditemukan": 24,
+       "kotak_palsu": 5,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.459,
+        0.751
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 39,
+       "plat_ditemukan": 24,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.459,
+        0.751
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 137,
+      "kotak_palsu": 74,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.698,
+       0.821
+      ],
+      "terlalu_sedikit": false
+     }
+    },
+    "plat_lighting": {
+     "ambang": 0.25,
+     "uji": {
+      "plat": 102,
+      "plat_ditemukan": 96,
+      "kotak_palsu": 14,
+      "gambar": 84,
+      "rentang_95_ditemukan": [
+       0.878,
+       0.973
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 102,
+       "plat_ditemukan": 96,
+       "kotak_palsu": 14,
+       "gambar": 84,
+       "rentang_95_ditemukan": [
+        0.878,
+        0.973
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 99,
+       "plat_ditemukan": 93,
+       "kotak_palsu": 14,
+       "gambar": 81,
+       "rentang_95_ditemukan": [
+        0.874,
+        0.972
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 3,
+       "plat_ditemukan": 3,
+       "kotak_palsu": 0,
+       "gambar": 3,
+       "rentang_95_ditemukan": [
+        0.438,
+        1
+       ],
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 16,
+       "plat_ditemukan": 12,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.505,
+        0.898
+       ],
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 86,
+       "plat_ditemukan": 84,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.919,
+        0.994
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 137,
+      "kotak_palsu": 74,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.698,
+       0.821
+      ],
+      "terlalu_sedikit": false
+     }
+    }
+   },
+   "D1": {
+    "folder": "pencari-jualan-d1",
+    "tangkapan": {
+     "ambang": 0.5,
+     "uji": {
+      "plat": 39,
+      "plat_ditemukan": 31,
+      "kotak_palsu": 5,
+      "gambar": 38,
+      "rentang_95_ditemukan": [
+       0.645,
+       0.892
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 39,
+       "plat_ditemukan": 31,
+       "kotak_palsu": 5,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.645,
+        0.892
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 39,
+       "plat_ditemukan": 31,
+       "kotak_palsu": 5,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.645,
+        0.892
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 39,
+       "plat_ditemukan": 31,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.645,
+        0.892
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 126,
+      "kotak_palsu": 34,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.633,
+       0.766
+      ],
+      "terlalu_sedikit": false
+     }
+    },
+    "plat_lighting": {
+     "ambang": 0.5,
+     "uji": {
+      "plat": 102,
+      "plat_ditemukan": 93,
+      "kotak_palsu": 16,
+      "gambar": 84,
+      "rentang_95_ditemukan": [
+       0.841,
+       0.953
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 102,
+       "plat_ditemukan": 93,
+       "kotak_palsu": 16,
+       "gambar": 84,
+       "rentang_95_ditemukan": [
+        0.841,
+        0.953
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 99,
+       "plat_ditemukan": 91,
+       "kotak_palsu": 16,
+       "gambar": 81,
+       "rentang_95_ditemukan": [
+        0.849,
+        0.958
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 3,
+       "plat_ditemukan": 2,
+       "kotak_palsu": 0,
+       "gambar": 3,
+       "rentang_95_ditemukan": [
+        0.208,
+        0.939
+       ],
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 16,
+       "plat_ditemukan": 10,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.386,
+        0.815
+       ],
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 86,
+       "plat_ditemukan": 83,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.902,
+        0.988
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 126,
+      "kotak_palsu": 34,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.633,
+       0.766
+      ],
+      "terlalu_sedikit": false
+     }
+    }
+   },
+   "terpilih (C1)": {
+    "folder": "pencari-cctv2-c1",
+    "tangkapan": {
+     "ambang": 0.6,
+     "uji": {
+      "plat": 39,
+      "plat_ditemukan": 35,
+      "kotak_palsu": 1,
+      "gambar": 38,
+      "rentang_95_ditemukan": [
+       0.764,
+       0.959
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 39,
+       "plat_ditemukan": 35,
+       "kotak_palsu": 1,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.764,
+        0.959
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 39,
+       "plat_ditemukan": 35,
+       "kotak_palsu": 1,
+       "gambar": 38,
+       "rentang_95_ditemukan": [
+        0.764,
+        0.959
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 0,
+       "plat_ditemukan": 0,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": null,
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 39,
+       "plat_ditemukan": 35,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.764,
+        0.959
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 162,
+      "kotak_palsu": 9,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.853,
+       0.94
+      ],
+      "terlalu_sedikit": false
+     }
+    },
+    "plat_lighting": {
+     "ambang": 0.6,
+     "uji": {
+      "plat": 102,
+      "plat_ditemukan": 94,
+      "kotak_palsu": 8,
+      "gambar": 84,
+      "rentang_95_ditemukan": [
+       0.853,
+       0.96
+      ],
+      "terlalu_sedikit": false
+     },
+     "uji_per_kelompok": {
+      "semua": {
+       "plat": 102,
+       "plat_ditemukan": 94,
+       "kotak_palsu": 8,
+       "gambar": 84,
+       "rentang_95_ditemukan": [
+        0.853,
+        0.96
+       ],
+       "terlalu_sedikit": false
+      },
+      "terang": {
+       "plat": 99,
+       "plat_ditemukan": 91,
+       "kotak_palsu": 8,
+       "gambar": 81,
+       "rentang_95_ditemukan": [
+        0.849,
+        0.958
+       ],
+       "terlalu_sedikit": false
+      },
+      "gelap": {
+       "plat": 3,
+       "plat_ditemukan": 3,
+       "kotak_palsu": 0,
+       "gambar": 3,
+       "rentang_95_ditemukan": [
+        0.438,
+        1
+       ],
+       "terlalu_sedikit": true
+      },
+      "kecil": {
+       "plat": 16,
+       "plat_ditemukan": 12,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.505,
+        0.898
+       ],
+       "terlalu_sedikit": true
+      },
+      "besar": {
+       "plat": 86,
+       "plat_ditemukan": 82,
+       "kotak_palsu": 0,
+       "gambar": 0,
+       "rentang_95_ditemukan": [
+        0.886,
+        0.982
+       ],
+       "terlalu_sedikit": false
+      }
+     },
+     "validasi": {
+      "plat": 179,
+      "plat_ditemukan": 162,
+      "kotak_palsu": 9,
+      "gambar": 203,
+      "rentang_95_ditemukan": [
+       0.853,
+       0.94
+      ],
+      "terlalu_sedikit": false
+     }
+    }
+   }
+  },
+  "mesin": {
+   "C1": {
+    "nama": "pencari-cctv2-c1",
+    "tujuan": "jualan",
+    "bahan": [
+     "dataset-plat-lighting",
+     "bobot-yolox",
+     "video-riset-youtube",
+     "plat-buatan",
+     "tangkapan-owner"
+    ],
+    "zaman_terbaik": 28,
+    "zaman_berjalan": 60,
+    "validasi": {
+     "f1": 0.9257,
+     "ambang": 0.6
+    },
+    "bobot_awal": {
+     "mesin": "pencari-yolox-nano-640",
+     "folder": "pencari-yolox-nano-640-cctv1",
+     "sha256": "e3ded30623df57347f6915bbb3eb90a7b363f5d53ab8676b7450244dc6dae5a9"
+    },
+    "sha256": "2a63d4ad8ab4e38d45dae976320f5e5e1f49bd0931cc06f924a859eff7655833"
+   },
+   "C2": {
+    "nama": "pencari-cctv2-c2",
+    "tujuan": "jualan",
+    "bahan": [
+     "dataset-plat-lighting",
+     "bobot-yolox",
+     "video-riset-youtube",
+     "plat-buatan",
+     "tangkapan-owner"
+    ],
+    "zaman_terbaik": 41,
+    "zaman_berjalan": 60,
+    "validasi": {
+     "f1": 0.9244,
+     "ambang": 0.65
+    },
+    "bobot_awal": {
+     "mesin": "pencari-yolox-nano-640",
+     "folder": "pencari-yolox-nano-640-cctv1",
+     "sha256": "e3ded30623df57347f6915bbb3eb90a7b363f5d53ab8676b7450244dc6dae5a9"
+    },
+    "sha256": "cfbb12aacacb39fdbb2fea9a4c0643c15f90aeb38327a391f4412c9b21ec0768"
+   }
+  }
+ },
+ "pembaca": {
+  "mesin": {
+   "R1": {
+    "nama": "pembaca-lanjut-r1",
+    "tujuan": "jualan",
+    "bahan": [
+     "dataset-indo-alpr",
+     "tangkapan-owner",
+     "bobot-fast-plate-ocr"
+    ],
+    "zaman_terbaik": 1,
+    "zaman_berjalan": 40,
+    "validasi": {
+     "awal": {
+      "indo_alpr": {
+       "gambar": 460,
+       "benar": 388
+      },
+      "tangkapan": {
+       "gambar": 29,
+       "benar": 19
+      },
+      "semua": {
+       "gambar": 489,
+       "benar": 407
+      }
+     },
+     "akhir": {
+      "indo_alpr": {
+       "gambar": 460,
+       "benar": 387
+      },
+      "tangkapan": {
+       "gambar": 29,
+       "benar": 19
+      },
+      "semua": {
+       "gambar": 489,
+       "benar": 406
+      }
+     }
+    },
+    "bobot_awal": "fpo-indo-1",
+    "sha256": "9667bd49b0f5f7c6948aa3472f675b3f86b68c2a19fb2e86e99e3de48b446485"
+   },
+   "R2": {
+    "nama": "pembaca-lanjut-r2",
+    "tujuan": "jualan",
+    "bahan": [
+     "dataset-indo-alpr",
+     "tangkapan-owner",
+     "plat-buatan",
+     "bobot-fast-plate-ocr"
+    ],
+    "zaman_terbaik": 3,
+    "zaman_berjalan": 20,
+    "validasi": {
+     "awal": {
+      "indo_alpr": {
+       "gambar": 460,
+       "benar": 388
+      },
+      "tangkapan": {
+       "gambar": 29,
+       "benar": 19
+      },
+      "semua": {
+       "gambar": 489,
+       "benar": 407
+      }
+     },
+     "akhir": {
+      "indo_alpr": {
+       "gambar": 460,
+       "benar": 376
+      },
+      "tangkapan": {
+       "gambar": 29,
+       "benar": 22
+      },
+      "semua": {
+       "gambar": 489,
+       "benar": 398
+      }
+     }
+    },
+    "bobot_awal": "fpo-indo-1",
+    "sha256": "5c4261550ce036e523ea973e47b79c6579f8241055b01987cab6b6f3c617f740"
+   }
+  },
+  "siapkan": {
+   "R1": {
+    "sumber": {
+     "indo_alpr": {
+      "latih": 3954,
+      "validasi": 460
+     },
+     "tangkapan": {
+      "latih": 96,
+      "validasi": 29
+     },
+     "plat_buatan": {
+      "latih": 0
+     },
+     "tak_terbaca": 0
+    },
+    "gambar": {
+     "latih": 4434,
+     "validasi": 489
+    },
+    "bahan": [
+     "dataset-indo-alpr",
+     "tangkapan-owner"
+    ],
+    "latih_hanya_buatan": false,
+    "wilayah": true,
+    "ulang_tangkapan": 5
+   },
+   "R2": {
+    "sumber": {
+     "indo_alpr": {
+      "latih": 3954,
+      "validasi": 460
+     },
+     "tangkapan": {
+      "latih": 96,
+      "validasi": 29
+     },
+     "plat_buatan": {
+      "latih": 10000
+     },
+     "tak_terbaca": 0
+    },
+    "gambar": {
+     "latih": 14434,
+     "validasi": 489
+    },
+    "bahan": [
+     "dataset-indo-alpr",
+     "tangkapan-owner",
+     "plat-buatan"
+    ],
+    "latih_hanya_buatan": false,
+    "wilayah": true,
+    "ulang_tangkapan": 5
+   }
+  },
+  "ukur_uji": {
+   "R0": {
+    "indo_alpr_uji_semua": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 506
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 51
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 173
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17
+     }
+    },
+    "tangkapan_uji": {
+     "per_kelompok": {
+      "motor": {
+       "gambar": 18,
+       "benar": 11
+      },
+      "mobil": {
+       "gambar": 16,
+       "benar": 13
+      }
+     },
+     "semua": {
+      "gambar": 34,
+      "benar": 24
+     },
+     "huruf_salah": 13,
+     "huruf_salah_pasangan_owner": 4,
+     "pasangan": {
+      "Q->O": 2,
+      "M->W": 2,
+      "B->D": 2,
+      "H->R": 1,
+      "A->I": 1,
+      "5->6": 1,
+      "3->5": 1,
+      "D->C": 1,
+      "A->F": 1,
+      "E->F": 1
+     }
+    }
+   },
+   "R1": {
+    "indo_alpr_uji_semua": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 509
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 51
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 172
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17
+     }
+    },
+    "tangkapan_uji": {
+     "per_kelompok": {
+      "motor": {
+       "gambar": 18,
+       "benar": 11
+      },
+      "mobil": {
+       "gambar": 16,
+       "benar": 13
+      }
+     },
+     "semua": {
+      "gambar": 34,
+      "benar": 24
+     },
+     "huruf_salah": 13,
+     "huruf_salah_pasangan_owner": 4,
+     "pasangan": {
+      "Q->O": 2,
+      "M->W": 2,
+      "B->D": 2,
+      "H->R": 1,
+      "A->I": 1,
+      "5->6": 1,
+      "3->5": 1,
+      "D->C": 1,
+      "A->F": 1,
+      "E->F": 1
+     }
+    }
+   },
+   "R2": {
+    "indo_alpr_uji_semua": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 496
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 52
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 167
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 16
+     }
+    },
+    "tangkapan_uji": {
+     "per_kelompok": {
+      "motor": {
+       "gambar": 18,
+       "benar": 11
+      },
+      "mobil": {
+       "gambar": 16,
+       "benar": 14
+      }
+     },
+     "semua": {
+      "gambar": 34,
+      "benar": 25
+     },
+     "huruf_salah": 13,
+     "huruf_salah_pasangan_owner": 3,
+     "pasangan": {
+      "5->6": 2,
+      "Q->O": 1,
+      "W->R": 1,
+      "H->W": 1,
+      "B->D": 1,
+      "A->I": 1,
+      "S->E": 1,
+      "W->M": 1,
+      "D->C": 1,
+      "B->F": 1,
+      "S->F": 1,
+      "M->W": 1
+     }
+    }
+   },
+   "P3": {
+    "indo_alpr_uji_semua": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 424
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 41
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 128
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 14
+     }
+    },
+    "tangkapan_uji": {
+     "per_kelompok": {
+      "motor": {
+       "gambar": 18,
+       "benar": 7
+      },
+      "mobil": {
+       "gambar": 16,
+       "benar": 12
+      }
+     },
+     "semua": {
+      "gambar": 34,
+      "benar": 19
+     },
+     "huruf_salah": 30,
+     "huruf_salah_pasangan_owner": 2,
+     "pasangan": {
+      "8->6": 4,
+      "Q->O": 2,
+      "E->C": 2,
+      "B->D": 2,
+      "A->W": 1,
+      "D->U": 1,
+      "S->V": 1,
+      "H->I": 1,
+      "P->E": 1,
+      "5->2": 1,
+      "D->5": 1,
+      "E->M": 1,
+      "W->(hilang)": 1,
+      "F->A": 1,
+      "I->F": 1,
+      "B->F": 1,
+      "K->0": 1,
+      "9->3": 1,
+      "5->(hilang)": 1,
+      "D->6": 1,
+      "O->J": 1,
+      "S->0": 1,
+      "Q->U": 1,
+      "4->2": 1
+     }
+    }
+   }
+  },
+  "banding_indo_alpr_uji": {
+   "semua": {
+    "R0": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 506,
+      "kedatangan_ragu": 18,
+      "gambar": 1094,
+      "gambar_benar": 892,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.76,
+       0.823
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 51,
+      "kedatangan_ragu": 1,
+      "gambar": 66,
+      "gambar_benar": 57,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.755,
+       0.93
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 173,
+      "kedatangan_ragu": 4,
+      "gambar": 239,
+      "gambar_benar": 190,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.731,
+       0.839
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 19,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.6,
+       0.923
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "R1": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 509,
+      "kedatangan_ragu": 18,
+      "gambar": 1094,
+      "gambar_benar": 894,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.765,
+       0.827
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 51,
+      "kedatangan_ragu": 1,
+      "gambar": 66,
+      "gambar_benar": 57,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.755,
+       0.93
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 172,
+      "kedatangan_ragu": 4,
+      "gambar": 239,
+      "gambar_benar": 188,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.726,
+       0.835
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 19,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.6,
+       0.923
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "R2": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 496,
+      "kedatangan_ragu": 26,
+      "gambar": 1094,
+      "gambar_benar": 875,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.744,
+       0.808
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 52,
+      "kedatangan_ragu": 2,
+      "gambar": 66,
+      "gambar_benar": 58,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.775,
+       0.941
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 167,
+      "kedatangan_ragu": 3,
+      "gambar": 239,
+      "gambar_benar": 185,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.702,
+       0.814
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 16,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 18,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.549,
+       0.894
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "P3": {
+     "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 424,
+      "kedatangan_ragu": 29,
+      "gambar": 1094,
+      "gambar_benar": 753,
+      "gambar_luar_pola": 6,
+      "rentang_95_kedatangan": [
+       0.627,
+       0.7
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 41,
+      "kedatangan_ragu": 2,
+      "gambar": 66,
+      "gambar_benar": 45,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.569,
+       0.797
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 128,
+      "kedatangan_ragu": 8,
+      "gambar": 239,
+      "gambar_benar": 141,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.518,
+       0.648
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 14,
+      "kedatangan_ragu": 1,
+      "gambar": 23,
+      "gambar_benar": 16,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.454,
+       0.828
+      ],
+      "terlalu_sedikit": true
+     }
+    }
+   },
+   "tanpa-label-pilihan-pembaca": {
+    "R0": {
+     "mobil-terang": {
+      "kedatangan": 625,
+      "kedatangan_benar": 496,
+      "kedatangan_ragu": 17,
+      "gambar": 1066,
+      "gambar_benar": 876,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.76,
+       0.823
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 57,
+      "kedatangan_benar": 49,
+      "kedatangan_ragu": 1,
+      "gambar": 64,
+      "gambar_benar": 55,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.747,
+       0.927
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 208,
+      "kedatangan_benar": 166,
+      "kedatangan_ragu": 4,
+      "gambar": 228,
+      "gambar_benar": 183,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.738,
+       0.847
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 19,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.6,
+       0.923
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "R1": {
+     "mobil-terang": {
+      "kedatangan": 625,
+      "kedatangan_benar": 499,
+      "kedatangan_ragu": 17,
+      "gambar": 1066,
+      "gambar_benar": 878,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.765,
+       0.828
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 57,
+      "kedatangan_benar": 49,
+      "kedatangan_ragu": 1,
+      "gambar": 64,
+      "gambar_benar": 55,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.747,
+       0.927
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 208,
+      "kedatangan_benar": 165,
+      "kedatangan_ragu": 4,
+      "gambar": 228,
+      "gambar_benar": 181,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.733,
+       0.843
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 19,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.6,
+       0.923
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "R2": {
+     "mobil-terang": {
+      "kedatangan": 625,
+      "kedatangan_benar": 485,
+      "kedatangan_ragu": 25,
+      "gambar": 1066,
+      "gambar_benar": 858,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.742,
+       0.807
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 57,
+      "kedatangan_benar": 50,
+      "kedatangan_ragu": 2,
+      "gambar": 64,
+      "gambar_benar": 56,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.768,
+       0.939
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 208,
+      "kedatangan_benar": 159,
+      "kedatangan_ragu": 3,
+      "gambar": 228,
+      "gambar_benar": 177,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.702,
+       0.817
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 16,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 18,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.549,
+       0.894
+      ],
+      "terlalu_sedikit": true
+     }
+    },
+    "P3": {
+     "mobil-terang": {
+      "kedatangan": 625,
+      "kedatangan_benar": 414,
+      "kedatangan_ragu": 29,
+      "gambar": 1066,
+      "gambar_benar": 733,
+      "gambar_luar_pola": 6,
+      "rentang_95_kedatangan": [
+       0.624,
+       0.698
+      ],
+      "terlalu_sedikit": false
+     },
+     "mobil-gelap": {
+      "kedatangan": 57,
+      "kedatangan_benar": 39,
+      "kedatangan_ragu": 2,
+      "gambar": 64,
+      "gambar_benar": 43,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+       0.555,
+       0.79
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-terang": {
+      "kedatangan": 208,
+      "kedatangan_benar": 123,
+      "kedatangan_ragu": 8,
+      "gambar": 228,
+      "gambar_benar": 136,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+       0.523,
+       0.656
+      ],
+      "terlalu_sedikit": false
+     },
+     "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 14,
+      "kedatangan_ragu": 1,
+      "gambar": 23,
+      "gambar_benar": 16,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+       0.454,
+       0.828
+      ],
+      "terlalu_sedikit": true
+     }
+    }
+   }
+  }
+ },
+ "rantai": {
+  "ambang_sisi_latih": {
+   "0.25": {
+    "sisi": "latih",
+    "iou_min": 0.3,
+    "gambar": 140,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 45,
+      "kotak_di_luar_label": 1,
+      "kotak_di_bukan_plat": 1
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 75,
+      "berteks": 72,
+      "dibaca_benar": 40,
+      "kotak_di_luar_label": 5,
+      "kotak_di_bukan_plat": 2
+     }
+    }
+   },
+   "0.4": {
+    "sisi": "latih",
+    "iou_min": 0.3,
+    "gambar": 140,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 45,
+      "kotak_di_luar_label": 1,
+      "kotak_di_bukan_plat": 1
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 73,
+      "berteks": 72,
+      "dibaca_benar": 39,
+      "kotak_di_luar_label": 3,
+      "kotak_di_bukan_plat": 2
+     }
+    }
+   },
+   "0.6": {
+    "sisi": "latih",
+    "iou_min": 0.3,
+    "gambar": 140,
+    "per_kelompok": {
+     "mobil": {
+      "plat_berlabel": 58,
+      "ditemukan": 54,
+      "berteks": 53,
+      "dibaca_benar": 45,
+      "kotak_di_luar_label": 0,
+      "kotak_di_bukan_plat": 0
+     },
+     "motor": {
+      "plat_berlabel": 83,
+      "ditemukan": 68,
+      "berteks": 72,
+      "dibaca_benar": 36,
+      "kotak_di_luar_label": 2,
+      "kotak_di_bukan_plat": 1
+     }
+    }
+   }
+  },
+  "terpilih": "0.25",
+  "uji": {
+   "sisi": "uji",
+   "iou_min": 0.3,
+   "gambar": 38,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 16,
+     "ditemukan": 15,
+     "berteks": 16,
+     "dibaca_benar": 13,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 23,
+     "ditemukan": 19,
+     "berteks": 18,
+     "dibaca_benar": 8,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 0
+    }
+   }
+  }
+ }
+}

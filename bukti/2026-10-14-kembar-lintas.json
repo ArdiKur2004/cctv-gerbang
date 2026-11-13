@@ -1,0 +1,14 @@
+{
+  "aturan": {
+    "batas_gambar_dhash": 8,
+    "batas_label_sunting": 2
+  },
+  "gambar_tak_terbaca": 0,
+  "pasangan_mirip": 177,
+  "pasangan_kembar": 27,
+  "latih_dikeluarkan": 22,
+  "kedatangan": {
+    "latih": 2828,
+    "uji": 937
+  }
+}

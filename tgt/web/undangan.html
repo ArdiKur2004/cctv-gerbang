@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan masuk — Transportation Gate Track</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="gaya.css">
+<style>
+  /* Halaman ini dibuka tamu di ponsel, tanpa akun dan sering sambil berdiri di depan gerbang:
+     satu kartu, huruf besar, dan QR yang cukup besar untuk dipindai dari layar. */
+  .undangan { min-height: 100%; display: grid; place-items: start center;
+              padding: 20px max(16px, env(safe-area-inset-left, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)); }
+  .undangan .kotak { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 14px; }
+  .undangan .merek { justify-content: center; }
+  #qr { display: block; margin: 0 auto; image-rendering: pixelated; max-width: 100%; height: auto; }
+  .undangan .baris-data { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0;
+                          border-bottom: 1px solid var(--garis); font-size: 14.5px; }
+  .undangan .baris-data:last-child { border-bottom: 0; }
+  .undangan .baris-data b { font-weight: 600; }
+  .undangan .baris-data span { color: var(--tinta-redup); text-align: right; }
+</style>
+</head>
+<body>
+
+<div class="undangan">
+  <div class="kotak">
+    <div class="merek">
+      <span class="palang" aria-hidden="true"></span>
+      <div><b>Undangan Masuk</b><span>Transportation Gate Track</span></div>
+    </div>
+
+    <div id="wadah"></div>
+  </div>
+</div>
+
+<script type="module" src="undangan.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "model": "qwen3-vl-2b-instruct",
+  "pertanyaan": "This image shows one Indonesian vehicle license plate. Read the registration number on it and ignore the small expiry date row. Reply with only the letters and digits of the registration number, without spaces.",
+  "sisi": "latih",
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 1982,
+      "kedatangan_benar": 1283,
+      "kedatangan_ragu": 118,
+      "gambar": 3339,
+      "gambar_benar": 2262,
+      "gambar_luar_pola": 619,
+      "rentang_95_kedatangan": [
+        0.626,
+        0.668
+      ],
+      "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+      "kedatangan": 163,
+      "kedatangan_benar": 114,
+      "kedatangan_ragu": 1,
+      "gambar": 199,
+      "gambar_benar": 141,
+      "gambar_luar_pola": 37,
+      "rentang_95_kedatangan": [
+        0.625,
+        0.765
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-terang": {
+      "kedatangan": 646,
+      "kedatangan_benar": 389,
+      "kedatangan_ragu": 20,
+      "gambar": 843,
+      "gambar_benar": 550,
+      "gambar_luar_pola": 121,
+      "rentang_95_kedatangan": [
+        0.564,
+        0.639
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+      "kedatangan": 37,
+      "kedatangan_benar": 31,
+      "kedatangan_ragu": 0,
+      "gambar": 40,
+      "gambar_benar": 34,
+      "gambar_luar_pola": 4,
+      "rentang_95_kedatangan": [
+        0.689,
+        0.923
+      ],
+      "terlalu_sedikit": false
+    }
+  },
+  "detik_per_gambar": 0.305
+}

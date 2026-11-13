@@ -1,0 +1,44 @@
+# ── Data pribadi: foto/rekaman plat kendaraan, daftar penghuni, catatan keluar-masuk ──
+# UU PDP 27/2022. Tak pernah masuk git, tak pernah di-push, tak diunggah ke layanan pihak ketiga tanpa izin owner.
+data/
+rekaman/
+*.mp4
+*.avi
+*.mkv
+*.h264
+*.h265
+
+# ── Bobot model (besar + bisa membawa kode berbahaya bila format pickle) ────
+models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+*.bin
+
+# ── Repo pihak ketiga hasil clone (dikunci lewat berkas kunci, bukan di-commit) ──
+vendor/
+
+# ── Rahasia & kunci ──────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+.secrets/
+
+# ── Python / alat ────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+runs/
+mlruns/
+.superpowers/
+.playwright-mcp/
+.claude/settings.local.json
+
+# ── Rincian server: IP, pengguna SSH, nama kunci (K77, owner 6 Nov 2026) ─────
+# Tidak masuk repo yang dibagikan ke partner. Catatan di repo memakai tanda {…}; artinya di sini.
+catatan-lokal/

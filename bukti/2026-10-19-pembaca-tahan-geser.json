@@ -1,0 +1,148 @@
+{
+ "rencana": 26,
+ "rantai": "kendaraan-yolox-coco cadangan utuh, pencari-cctv2-c1 ambang 0,25, fpo-indo-1 ONNX (Rencana 25)",
+ "sisi_latih": {
+  "v0": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 45,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 40,
+     "kotak_di_luar_label": 5,
+     "kotak_di_bukan_plat": 2
+    }
+   }
+  },
+  "v1": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 46,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 42,
+     "kotak_di_luar_label": 5,
+     "kotak_di_bukan_plat": 2
+    }
+   }
+  },
+  "v2": {
+   "sisi": "latih",
+   "iou_min": 0.3,
+   "gambar": 140,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 46,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 43,
+     "kotak_di_luar_label": 5,
+     "kotak_di_bukan_plat": 2
+    }
+   }
+  }
+ },
+ "terpilih": "v2",
+ "uji_terpilih": {
+  "sisi": "uji",
+  "iou_min": 0.3,
+  "gambar": 38,
+  "per_kelompok": {
+   "mobil": {
+    "plat_berlabel": 16,
+    "ditemukan": 15,
+    "berteks": 16,
+    "dibaca_benar": 13,
+    "kotak_di_luar_label": 0,
+    "kotak_di_bukan_plat": 0
+   },
+   "motor": {
+    "plat_berlabel": 23,
+    "ditemukan": 19,
+    "berteks": 18,
+    "dibaca_benar": 8,
+    "kotak_di_luar_label": 1,
+    "kotak_di_bukan_plat": 0
+   }
+  }
+ },
+ "uji_rencana_25": {
+  "sisi": "uji",
+  "iou_min": 0.3,
+  "gambar": 38,
+  "per_kelompok": {
+   "mobil": {
+    "plat_berlabel": 16,
+    "ditemukan": 15,
+    "berteks": 16,
+    "dibaca_benar": 13,
+    "kotak_di_luar_label": 0,
+    "kotak_di_bukan_plat": 0
+   },
+   "motor": {
+    "plat_berlabel": 23,
+    "ditemukan": 19,
+    "berteks": 18,
+    "dibaca_benar": 8,
+    "kotak_di_luar_label": 1,
+    "kotak_di_bukan_plat": 0
+   }
+  }
+ },
+ "kecepatan": {
+  "plat": 60,
+  "utas": 2,
+  "median_ms_per_plat_tiap_putaran": {
+   "v0": [
+    13.271876494400203,
+    16.942979011218995,
+    17.427403014153242
+   ],
+   "v1": [
+    40.56934852269478,
+    63.70042797061615,
+    50.285705481655896
+   ],
+   "v2": [
+    94.25354152335785,
+    110.81982901669107,
+    131.25708847655915
+   ]
+  },
+  "median_ms_per_plat": {
+   "v0": 16.94,
+   "v1": 50.29,
+   "v2": 110.82
+  }
+ }
+}

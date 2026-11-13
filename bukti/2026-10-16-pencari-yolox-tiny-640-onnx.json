@@ -1,0 +1,18 @@
+{
+ "nama": "pencari-yolox-tiny-640",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-plat-lighting",
+  "bobot-yolox"
+ ],
+ "jenis": "tiny",
+ "ukuran": 640,
+ "sha256_onnx": "e2b05f44841bdad796adc14f8ba17b6023fc6ad6bbcbbc98085477df4e9bf793",
+ "sha256_bobot": "798db69149c7a53a33e9d3b7c22d5332725e195390827cbbd7c6a99d6f2d3313",
+ "pemeriksaan": {
+  "gambar": 20,
+  "sama": 20,
+  "selisih_koordinat": 0.009185791015625,
+  "selisih_peluang": 3.2335519790649414e-06
+ }
+}

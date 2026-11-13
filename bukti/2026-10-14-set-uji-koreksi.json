@@ -1,0 +1,122 @@
+{
+  "dibetulkan": 29,
+  "dikeluarkan": 5,
+  "dikeluarkan_bocor": 3,
+  "plat_di_kedua_sisi": 0,
+  "kedatangan_per_kelompok": {
+    "mobil-terang": 638,
+    "mobil-gelap": 59,
+    "motor-terang": 219,
+    "motor-gelap": 21
+  },
+  "pembaca": {
+    "qwen3-vl": {
+      "mobil-terang": {
+        "kedatangan": 638,
+        "kedatangan_benar": 424,
+        "kedatangan_ragu": 26,
+        "gambar": 1094,
+        "gambar_benar": 769,
+        "gambar_luar_pola": 199,
+        "rentang_95_kedatangan": [
+          0.627,
+          0.7
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 59,
+        "kedatangan_benar": 41,
+        "kedatangan_ragu": 1,
+        "gambar": 66,
+        "gambar_benar": 47,
+        "gambar_luar_pola": 8,
+        "rentang_95_kedatangan": [
+          0.569,
+          0.797
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 219,
+        "kedatangan_benar": 146,
+        "kedatangan_ragu": 5,
+        "gambar": 239,
+        "gambar_benar": 159,
+        "gambar_luar_pola": 35,
+        "rentang_95_kedatangan": [
+          0.602,
+          0.726
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 15,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 17,
+        "gambar_luar_pola": 5,
+        "rentang_95_kedatangan": [
+          0.5,
+          0.862
+        ],
+        "terlalu_sedikit": true
+      }
+    },
+    "fast-plate-ocr": {
+      "mobil-terang": {
+        "kedatangan": 638,
+        "kedatangan_benar": 399,
+        "kedatangan_ragu": 47,
+        "gambar": 1094,
+        "gambar_benar": 703,
+        "gambar_luar_pola": 70,
+        "rentang_95_kedatangan": [
+          0.587,
+          0.662
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 59,
+        "kedatangan_benar": 47,
+        "kedatangan_ragu": 1,
+        "gambar": 66,
+        "gambar_benar": 52,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.677,
+          0.88
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 219,
+        "kedatangan_benar": 137,
+        "kedatangan_ragu": 11,
+        "gambar": 239,
+        "gambar_benar": 150,
+        "gambar_luar_pola": 9,
+        "rentang_95_kedatangan": [
+          0.56,
+          0.687
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 14,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 16,
+        "gambar_luar_pola": 2,
+        "rentang_95_kedatangan": [
+          0.454,
+          0.828
+        ],
+        "terlalu_sedikit": true
+      }
+    }
+  }
+}

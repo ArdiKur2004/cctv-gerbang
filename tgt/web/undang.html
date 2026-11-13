@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Masuk ke TGT — Transportation Gate Track</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="gaya.css">
+<style>
+  /* Dibuka penghuni di ponsel, dari tautan WhatsApp, biasanya sekali dalam hidupnya: satu kartu, satu tombol,
+     tanpa pilihan apa pun. Bentuknya sengaja sama dengan undangan.html supaya terasa satu produk. */
+  .undangan { min-height: 100%; display: grid; place-items: start center;
+              padding: 20px max(16px, env(safe-area-inset-left, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)); }
+  .undangan .kotak { width: 100%; max-width: 440px; display: flex; flex-direction: column; gap: 14px; }
+  .undangan .merek { justify-content: center; }
+  .undangan .tombol.utama { width: 100%; }
+</style>
+</head>
+<body>
+
+<div class="undangan">
+  <div class="kotak">
+    <div class="merek">
+      <span class="palang" aria-hidden="true"></span>
+      <div><b>Masuk ke TGT</b><span>Transportation Gate Track</span></div>
+    </div>
+
+    <div id="wadah"></div>
+  </div>
+</div>
+
+<script type="module" src="undang.js"></script>
+</body>
+</html>

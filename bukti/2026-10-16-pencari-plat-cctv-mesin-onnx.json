@@ -1,0 +1,20 @@
+{
+ "nama": "pencari-yolox-nano-640",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-plat-lighting",
+  "bobot-yolox",
+  "video-riset-youtube",
+  "plat-buatan"
+ ],
+ "jenis": "nano",
+ "ukuran": 640,
+ "sha256_onnx": "793208b7006a2f3ad6a7097880129281d72baf30eda2e46459ee4e34706e22b2",
+ "sha256_bobot": "e3ded30623df57347f6915bbb3eb90a7b363f5d53ab8676b7450244dc6dae5a9",
+ "pemeriksaan": {
+  "gambar": 20,
+  "sama": 20,
+  "selisih_koordinat": 0.01934814453125,
+  "selisih_peluang": 3.013014793395996e-05
+ }
+}

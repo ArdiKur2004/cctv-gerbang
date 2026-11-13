@@ -1,0 +1,324 @@
+{
+ "C1": {
+  "folder": "pencari-cctv2-c1",
+  "tangkapan": {
+   "ambang": 0.6,
+   "uji": {
+    "plat": 39,
+    "plat_ditemukan": 35,
+    "kotak_palsu": 1,
+    "gambar": 38,
+    "rentang_95_ditemukan": [
+     0.764,
+     0.959
+    ],
+    "terlalu_sedikit": false
+   },
+   "uji_per_kelompok": {
+    "semua": {
+     "plat": 39,
+     "plat_ditemukan": 35,
+     "kotak_palsu": 1,
+     "gambar": 38,
+     "rentang_95_ditemukan": [
+      0.764,
+      0.959
+     ],
+     "terlalu_sedikit": false
+    },
+    "terang": {
+     "plat": 39,
+     "plat_ditemukan": 35,
+     "kotak_palsu": 1,
+     "gambar": 38,
+     "rentang_95_ditemukan": [
+      0.764,
+      0.959
+     ],
+     "terlalu_sedikit": false
+    },
+    "gelap": {
+     "plat": 0,
+     "plat_ditemukan": 0,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": null,
+     "terlalu_sedikit": true
+    },
+    "kecil": {
+     "plat": 0,
+     "plat_ditemukan": 0,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": null,
+     "terlalu_sedikit": true
+    },
+    "besar": {
+     "plat": 39,
+     "plat_ditemukan": 35,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.764,
+      0.959
+     ],
+     "terlalu_sedikit": false
+    }
+   },
+   "validasi": {
+    "plat": 179,
+    "plat_ditemukan": 162,
+    "kotak_palsu": 9,
+    "gambar": 203,
+    "rentang_95_ditemukan": [
+     0.853,
+     0.94
+    ],
+    "terlalu_sedikit": false
+   }
+  },
+  "plat_lighting": {
+   "ambang": 0.6,
+   "uji": {
+    "plat": 102,
+    "plat_ditemukan": 94,
+    "kotak_palsu": 8,
+    "gambar": 84,
+    "rentang_95_ditemukan": [
+     0.853,
+     0.96
+    ],
+    "terlalu_sedikit": false
+   },
+   "uji_per_kelompok": {
+    "semua": {
+     "plat": 102,
+     "plat_ditemukan": 94,
+     "kotak_palsu": 8,
+     "gambar": 84,
+     "rentang_95_ditemukan": [
+      0.853,
+      0.96
+     ],
+     "terlalu_sedikit": false
+    },
+    "terang": {
+     "plat": 99,
+     "plat_ditemukan": 91,
+     "kotak_palsu": 8,
+     "gambar": 81,
+     "rentang_95_ditemukan": [
+      0.849,
+      0.958
+     ],
+     "terlalu_sedikit": false
+    },
+    "gelap": {
+     "plat": 3,
+     "plat_ditemukan": 3,
+     "kotak_palsu": 0,
+     "gambar": 3,
+     "rentang_95_ditemukan": [
+      0.438,
+      1.0
+     ],
+     "terlalu_sedikit": true
+    },
+    "kecil": {
+     "plat": 16,
+     "plat_ditemukan": 12,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.505,
+      0.898
+     ],
+     "terlalu_sedikit": true
+    },
+    "besar": {
+     "plat": 86,
+     "plat_ditemukan": 82,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.886,
+      0.982
+     ],
+     "terlalu_sedikit": false
+    }
+   },
+   "validasi": {
+    "plat": 179,
+    "plat_ditemukan": 162,
+    "kotak_palsu": 9,
+    "gambar": 203,
+    "rentang_95_ditemukan": [
+     0.853,
+     0.94
+    ],
+    "terlalu_sedikit": false
+   }
+  }
+ },
+ "terpilih (C3)": {
+  "folder": "pencari-cctv3-c3",
+  "tangkapan": {
+   "ambang": 0.55,
+   "uji": {
+    "plat": 39,
+    "plat_ditemukan": 37,
+    "kotak_palsu": 1,
+    "gambar": 38,
+    "rentang_95_ditemukan": [
+     0.831,
+     0.986
+    ],
+    "terlalu_sedikit": false
+   },
+   "uji_per_kelompok": {
+    "semua": {
+     "plat": 39,
+     "plat_ditemukan": 37,
+     "kotak_palsu": 1,
+     "gambar": 38,
+     "rentang_95_ditemukan": [
+      0.831,
+      0.986
+     ],
+     "terlalu_sedikit": false
+    },
+    "terang": {
+     "plat": 39,
+     "plat_ditemukan": 37,
+     "kotak_palsu": 1,
+     "gambar": 38,
+     "rentang_95_ditemukan": [
+      0.831,
+      0.986
+     ],
+     "terlalu_sedikit": false
+    },
+    "gelap": {
+     "plat": 0,
+     "plat_ditemukan": 0,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": null,
+     "terlalu_sedikit": true
+    },
+    "kecil": {
+     "plat": 0,
+     "plat_ditemukan": 0,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": null,
+     "terlalu_sedikit": true
+    },
+    "besar": {
+     "plat": 39,
+     "plat_ditemukan": 37,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.831,
+      0.986
+     ],
+     "terlalu_sedikit": false
+    }
+   },
+   "validasi": {
+    "plat": 179,
+    "plat_ditemukan": 174,
+    "kotak_palsu": 16,
+    "gambar": 203,
+    "rentang_95_ditemukan": [
+     0.936,
+     0.988
+    ],
+    "terlalu_sedikit": false
+   }
+  },
+  "plat_lighting": {
+   "ambang": 0.55,
+   "uji": {
+    "plat": 102,
+    "plat_ditemukan": 95,
+    "kotak_palsu": 11,
+    "gambar": 84,
+    "rentang_95_ditemukan": [
+     0.865,
+     0.966
+    ],
+    "terlalu_sedikit": false
+   },
+   "uji_per_kelompok": {
+    "semua": {
+     "plat": 102,
+     "plat_ditemukan": 95,
+     "kotak_palsu": 11,
+     "gambar": 84,
+     "rentang_95_ditemukan": [
+      0.865,
+      0.966
+     ],
+     "terlalu_sedikit": false
+    },
+    "terang": {
+     "plat": 99,
+     "plat_ditemukan": 92,
+     "kotak_palsu": 11,
+     "gambar": 81,
+     "rentang_95_ditemukan": [
+      0.861,
+      0.965
+     ],
+     "terlalu_sedikit": false
+    },
+    "gelap": {
+     "plat": 3,
+     "plat_ditemukan": 3,
+     "kotak_palsu": 0,
+     "gambar": 3,
+     "rentang_95_ditemukan": [
+      0.438,
+      1.0
+     ],
+     "terlalu_sedikit": true
+    },
+    "kecil": {
+     "plat": 16,
+     "plat_ditemukan": 13,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.57,
+      0.934
+     ],
+     "terlalu_sedikit": true
+    },
+    "besar": {
+     "plat": 86,
+     "plat_ditemukan": 82,
+     "kotak_palsu": 0,
+     "gambar": 0,
+     "rentang_95_ditemukan": [
+      0.886,
+      0.982
+     ],
+     "terlalu_sedikit": false
+    }
+   },
+   "validasi": {
+    "plat": 179,
+    "plat_ditemukan": 174,
+    "kotak_palsu": 16,
+    "gambar": 203,
+    "rentang_95_ditemukan": [
+     0.936,
+     0.988
+    ],
+    "terlalu_sedikit": false
+   }
+  }
+ }
+}

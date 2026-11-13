@@ -1,0 +1,122 @@
+{
+ "cpu": "Intel(R) Celeron(R) N5095 @ 2.00GHz",
+ "cpu_terlihat": 4,
+ "onnxruntime": "1.30.0",
+ "beban_sebelum": [
+  1.73,
+  1.6,
+  1.57
+ ],
+ "model": [
+  {
+   "berkas": "acak-rfdetr-nano-384.onnx",
+   "ukuran_byte": 106798757,
+   "per_utas": {
+    "1": {
+     "median_ms": 2709.3,
+     "p95_ms": 2884.7,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 1402.9,
+     "p95_ms": 1499.7,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 1162.5,
+     "p95_ms": 1813.9,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "acak-yolox-nano-416.onnx",
+   "ukuran_byte": 3728457,
+   "per_utas": {
+    "1": {
+     "median_ms": 117.1,
+     "p95_ms": 120.4,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 73.3,
+     "p95_ms": 133.9,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 137.8,
+     "p95_ms": 202.4,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "acak-yolox-tiny-416.onnx",
+   "ukuran_byte": 20239573,
+   "per_utas": {
+    "1": {
+     "median_ms": 471.4,
+     "p95_ms": 481.9,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 251.2,
+     "p95_ms": 279.9,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 138.8,
+     "p95_ms": 399.1,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "cct_s_v2_global.onnx",
+   "ukuran_byte": 5262230,
+   "per_utas": {
+    "1": {
+     "median_ms": 182.9,
+     "p95_ms": 187.8,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 100.3,
+     "p95_ms": 106.1,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 70.4,
+     "p95_ms": 169.4,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "yolo-v9-t-384-license-plates-end2end.onnx",
+   "ukuran_byte": 7771218,
+   "per_utas": {
+    "1": {
+     "median_ms": 195.4,
+     "p95_ms": 197.7,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 104.9,
+     "p95_ms": 111.9,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 77.6,
+     "p95_ms": 166.6,
+     "ulang": 20
+    }
+   }
+  }
+ ],
+ "beban_sesudah": [
+  5.17,
+  3.04,
+  2.12
+ ]
+}

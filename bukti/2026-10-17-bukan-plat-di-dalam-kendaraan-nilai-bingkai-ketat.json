@@ -1,0 +1,33 @@
+{
+ "bingkai": 41,
+ "tak_jelas": 39,
+ "kelompok": {
+  "semua": {
+   "dinilai": 2,
+   "ada_terlewat": 1,
+   "rentang_95_ada_terlewat": [
+    0.095,
+    0.905
+   ],
+   "terlalu_sedikit": true
+  },
+  "gerbang-siang": {
+   "dinilai": 1,
+   "ada_terlewat": 1,
+   "rentang_95_ada_terlewat": [
+    0.207,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  },
+  "kamera-diam-lain-siang": {
+   "dinilai": 1,
+   "ada_terlewat": 0,
+   "rentang_95_ada_terlewat": [
+    0.0,
+    0.793
+   ],
+   "terlalu_sedikit": true
+  }
+ }
+}

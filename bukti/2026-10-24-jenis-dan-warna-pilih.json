@@ -1,0 +1,367 @@
+{
+ "aturan": "validasi owner, nilai = benar - salah; seri: salah paling sedikit, lalu calon tanpa latihan, lalu ambang terkecil; dipakai hanya bila lebih besar dari calon tanpa latihan",
+ "ambang": [
+  0.0,
+  0.5,
+  0.7,
+  0.9
+ ],
+ "ciri": {
+  "jenis": {
+   "calon": {
+    "J0": {
+     "folder": null,
+     "validasi_owner": {
+      "0.0": {
+       "benar": 25,
+       "salah": 4,
+       "tak_yakin": 4,
+       "nilai": 21
+      },
+      "0.5": {
+       "benar": 16,
+       "salah": 1,
+       "tak_yakin": 16,
+       "nilai": 15
+      },
+      "0.7": {
+       "benar": 6,
+       "salah": 1,
+       "tak_yakin": 26,
+       "nilai": 5
+      },
+      "0.9": {
+       "benar": 0,
+       "salah": 0,
+       "tak_yakin": 33,
+       "nilai": 0
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 421,
+       "salah": 95,
+       "tak_yakin": 264,
+       "nilai": 326
+      },
+      "0.5": {
+       "benar": 364,
+       "salah": 51,
+       "tak_yakin": 365,
+       "nilai": 313
+      },
+      "0.7": {
+       "benar": 269,
+       "salah": 19,
+       "tak_yakin": 492,
+       "nilai": 250
+      },
+      "0.9": {
+       "benar": 41,
+       "salah": 1,
+       "tak_yakin": 738,
+       "nilai": 40
+      }
+     }
+    },
+    "J1": {
+     "folder": "ciri-jenis-j1",
+     "validasi_owner": {
+      "0.0": {
+       "benar": 32,
+       "salah": 1,
+       "tak_yakin": 0,
+       "nilai": 31
+      },
+      "0.5": {
+       "benar": 31,
+       "salah": 1,
+       "tak_yakin": 1,
+       "nilai": 30
+      },
+      "0.7": {
+       "benar": 27,
+       "salah": 1,
+       "tak_yakin": 5,
+       "nilai": 26
+      },
+      "0.9": {
+       "benar": 15,
+       "salah": 1,
+       "tak_yakin": 17,
+       "nilai": 14
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 769,
+       "salah": 11,
+       "tak_yakin": 0,
+       "nilai": 758
+      },
+      "0.5": {
+       "benar": 765,
+       "salah": 9,
+       "tak_yakin": 6,
+       "nilai": 756
+      },
+      "0.7": {
+       "benar": 745,
+       "salah": 5,
+       "tak_yakin": 30,
+       "nilai": 740
+      },
+      "0.9": {
+       "benar": 639,
+       "salah": 1,
+       "tak_yakin": 140,
+       "nilai": 638
+      }
+     }
+    },
+    "J2": {
+     "folder": "ciri-jenis-j2",
+     "validasi_owner": {
+      "0.0": {
+       "benar": 30,
+       "salah": 3,
+       "tak_yakin": 0,
+       "nilai": 27
+      },
+      "0.5": {
+       "benar": 30,
+       "salah": 3,
+       "tak_yakin": 0,
+       "nilai": 27
+      },
+      "0.7": {
+       "benar": 26,
+       "salah": 3,
+       "tak_yakin": 4,
+       "nilai": 23
+      },
+      "0.9": {
+       "benar": 7,
+       "salah": 0,
+       "tak_yakin": 26,
+       "nilai": 7
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 370,
+       "salah": 410,
+       "tak_yakin": 0,
+       "nilai": -40
+      },
+      "0.5": {
+       "benar": 365,
+       "salah": 404,
+       "tak_yakin": 11,
+       "nilai": -39
+      },
+      "0.7": {
+       "benar": 268,
+       "salah": 289,
+       "tak_yakin": 223,
+       "nilai": -21
+      },
+      "0.9": {
+       "benar": 98,
+       "salah": 117,
+       "tak_yakin": 565,
+       "nilai": -19
+      }
+     }
+    }
+   },
+   "n_validasi_owner": 33,
+   "n_validasi_semua": 780,
+   "terpilih": {
+    "calon": "J1",
+    "ambang": 0.0
+   },
+   "nilai_terpilih": 31,
+   "nilai_tanpa_latihan": 21,
+   "dipakai": true
+  },
+  "warna": {
+   "calon": {
+    "W0": {
+     "folder": null,
+     "validasi_owner": {
+      "0.0": {
+       "benar": 15,
+       "salah": 18,
+       "tak_yakin": 0,
+       "nilai": -3
+      },
+      "0.5": {
+       "benar": 15,
+       "salah": 18,
+       "tak_yakin": 0,
+       "nilai": -3
+      },
+      "0.7": {
+       "benar": 15,
+       "salah": 18,
+       "tak_yakin": 0,
+       "nilai": -3
+      },
+      "0.9": {
+       "benar": 15,
+       "salah": 18,
+       "tak_yakin": 0,
+       "nilai": -3
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 86,
+       "salah": 393,
+       "tak_yakin": 0,
+       "nilai": -307
+      },
+      "0.5": {
+       "benar": 86,
+       "salah": 393,
+       "tak_yakin": 0,
+       "nilai": -307
+      },
+      "0.7": {
+       "benar": 86,
+       "salah": 393,
+       "tak_yakin": 0,
+       "nilai": -307
+      },
+      "0.9": {
+       "benar": 86,
+       "salah": 393,
+       "tak_yakin": 0,
+       "nilai": -307
+      }
+     }
+    },
+    "W1": {
+     "folder": "ciri-warna-w1",
+     "validasi_owner": {
+      "0.0": {
+       "benar": 21,
+       "salah": 12,
+       "tak_yakin": 0,
+       "nilai": 9
+      },
+      "0.5": {
+       "benar": 16,
+       "salah": 9,
+       "tak_yakin": 8,
+       "nilai": 7
+      },
+      "0.7": {
+       "benar": 12,
+       "salah": 3,
+       "tak_yakin": 18,
+       "nilai": 9
+      },
+      "0.9": {
+       "benar": 7,
+       "salah": 2,
+       "tak_yakin": 24,
+       "nilai": 5
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 453,
+       "salah": 26,
+       "tak_yakin": 0,
+       "nilai": 427
+      },
+      "0.5": {
+       "benar": 444,
+       "salah": 19,
+       "tak_yakin": 16,
+       "nilai": 425
+      },
+      "0.7": {
+       "benar": 428,
+       "salah": 6,
+       "tak_yakin": 45,
+       "nilai": 422
+      },
+      "0.9": {
+       "benar": 358,
+       "salah": 3,
+       "tak_yakin": 118,
+       "nilai": 355
+      }
+     }
+    },
+    "W2": {
+     "folder": "ciri-warna-w2",
+     "validasi_owner": {
+      "0.0": {
+       "benar": 20,
+       "salah": 13,
+       "tak_yakin": 0,
+       "nilai": 7
+      },
+      "0.5": {
+       "benar": 13,
+       "salah": 5,
+       "tak_yakin": 15,
+       "nilai": 8
+      },
+      "0.7": {
+       "benar": 9,
+       "salah": 2,
+       "tak_yakin": 22,
+       "nilai": 7
+      },
+      "0.9": {
+       "benar": 7,
+       "salah": 0,
+       "tak_yakin": 26,
+       "nilai": 7
+      }
+     },
+     "validasi_semua": {
+      "0.0": {
+       "benar": 309,
+       "salah": 170,
+       "tak_yakin": 0,
+       "nilai": 139
+      },
+      "0.5": {
+       "benar": 244,
+       "salah": 103,
+       "tak_yakin": 132,
+       "nilai": 141
+      },
+      "0.7": {
+       "benar": 150,
+       "salah": 63,
+       "tak_yakin": 266,
+       "nilai": 87
+      },
+      "0.9": {
+       "benar": 40,
+       "salah": 47,
+       "tak_yakin": 392,
+       "nilai": -7
+      }
+     }
+    }
+   },
+   "n_validasi_owner": 33,
+   "n_validasi_semua": 479,
+   "terpilih": {
+    "calon": "W1",
+    "ambang": 0.7
+   },
+   "nilai_terpilih": 9,
+   "nilai_tanpa_latihan": -3,
+   "dipakai": true
+  }
+ }
+}

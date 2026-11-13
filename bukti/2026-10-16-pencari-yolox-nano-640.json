@@ -1,0 +1,626 @@
+{
+ "nama": "pencari-yolox-nano-640",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-plat-lighting",
+  "bobot-yolox"
+ ],
+ "jenis": "nano",
+ "ukuran": 640,
+ "sha256_bobot": "25706932e05d642486d6ab9c299c3efee08d5e86e965c622342da806815172cd",
+ "zaman": 100,
+ "zaman_terbaik": 52,
+ "f1_validasi_terbaik": 0.9171,
+ "ambang_validasi": 0.25,
+ "benih": 0,
+ "perangkat": "cuda",
+ "bobot_awal": {
+  "butir": "yolox-nano-coco",
+  "sha256": "cd28f55fbbc1829f99d9ac9b38a16d259a22889739c8728ea877610201feff7b",
+  "dimuat": 636,
+  "dilewati": 6
+ },
+ "gambar_latih": 393,
+ "catatan": [
+  {
+   "zaman": 1,
+   "rugi": 18.4952,
+   "f1_validasi": 0.2164,
+   "ambang": 0.1
+  },
+  {
+   "zaman": 2,
+   "rugi": 5.4623,
+   "f1_validasi": 0.3404,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 3,
+   "rugi": 5.2239,
+   "f1_validasi": 0.0,
+   "ambang": 0.05
+  },
+  {
+   "zaman": 4,
+   "rugi": 6.6459,
+   "f1_validasi": 0.1176,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 5,
+   "rugi": 5.006,
+   "f1_validasi": 0.627,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 6,
+   "rugi": 4.5864,
+   "f1_validasi": 0.5829,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 7,
+   "rugi": 4.3639,
+   "f1_validasi": 0.733,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 8,
+   "rugi": 4.0315,
+   "f1_validasi": 0.6735,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 9,
+   "rugi": 3.8492,
+   "f1_validasi": 0.8377,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 10,
+   "rugi": 3.8623,
+   "f1_validasi": 0.7429,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 11,
+   "rugi": 3.6406,
+   "f1_validasi": 0.8447,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 12,
+   "rugi": 3.6734,
+   "f1_validasi": 0.8488,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 13,
+   "rugi": 3.5804,
+   "f1_validasi": 0.8657,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 14,
+   "rugi": 3.657,
+   "f1_validasi": 0.8586,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 15,
+   "rugi": 3.5076,
+   "f1_validasi": 0.8556,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 16,
+   "rugi": 3.5235,
+   "f1_validasi": 0.8105,
+   "ambang": 0.2
+  },
+  {
+   "zaman": 17,
+   "rugi": 3.3961,
+   "f1_validasi": 0.8421,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 18,
+   "rugi": 3.3774,
+   "f1_validasi": 0.8515,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 19,
+   "rugi": 3.3843,
+   "f1_validasi": 0.77,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 20,
+   "rugi": 3.3417,
+   "f1_validasi": 0.8342,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 21,
+   "rugi": 3.3184,
+   "f1_validasi": 0.8744,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 22,
+   "rugi": 3.2525,
+   "f1_validasi": 0.8812,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 23,
+   "rugi": 3.2676,
+   "f1_validasi": 0.7957,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 24,
+   "rugi": 3.331,
+   "f1_validasi": 0.8019,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 25,
+   "rugi": 3.3375,
+   "f1_validasi": 0.8708,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 26,
+   "rugi": 3.2335,
+   "f1_validasi": 0.8788,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 27,
+   "rugi": 3.1863,
+   "f1_validasi": 0.7451,
+   "ambang": 0.1
+  },
+  {
+   "zaman": 28,
+   "rugi": 3.1734,
+   "f1_validasi": 0.7619,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 29,
+   "rugi": 3.1289,
+   "f1_validasi": 0.806,
+   "ambang": 0.2
+  },
+  {
+   "zaman": 30,
+   "rugi": 3.0466,
+   "f1_validasi": 0.7897,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 31,
+   "rugi": 3.0125,
+   "f1_validasi": 0.7435,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 32,
+   "rugi": 3.0423,
+   "f1_validasi": 0.8756,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 33,
+   "rugi": 3.0412,
+   "f1_validasi": 0.8265,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 34,
+   "rugi": 3.0619,
+   "f1_validasi": 0.8442,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 35,
+   "rugi": 3.0698,
+   "f1_validasi": 0.8955,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 36,
+   "rugi": 3.0033,
+   "f1_validasi": 0.8502,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 37,
+   "rugi": 2.9219,
+   "f1_validasi": 0.9055,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 38,
+   "rugi": 2.8527,
+   "f1_validasi": 0.8654,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 39,
+   "rugi": 2.8852,
+   "f1_validasi": 0.8846,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 40,
+   "rugi": 2.8667,
+   "f1_validasi": 0.8835,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 41,
+   "rugi": 2.852,
+   "f1_validasi": 0.8788,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 42,
+   "rugi": 2.7939,
+   "f1_validasi": 0.8846,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 43,
+   "rugi": 2.7882,
+   "f1_validasi": 0.8454,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 44,
+   "rugi": 2.8457,
+   "f1_validasi": 0.9126,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 45,
+   "rugi": 2.772,
+   "f1_validasi": 0.8969,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 46,
+   "rugi": 2.7224,
+   "f1_validasi": 0.9091,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 47,
+   "rugi": 2.7783,
+   "f1_validasi": 0.8756,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 48,
+   "rugi": 2.692,
+   "f1_validasi": 0.8744,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 49,
+   "rugi": 2.7738,
+   "f1_validasi": 0.902,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 50,
+   "rugi": 2.7133,
+   "f1_validasi": 0.878,
+   "ambang": 0.2
+  },
+  {
+   "zaman": 51,
+   "rugi": 2.6221,
+   "f1_validasi": 0.8792,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 52,
+   "rugi": 2.6034,
+   "f1_validasi": 0.9171,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 53,
+   "rugi": 2.6765,
+   "f1_validasi": 0.9171,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 54,
+   "rugi": 2.6212,
+   "f1_validasi": 0.8889,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 55,
+   "rugi": 2.6304,
+   "f1_validasi": 0.8922,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 56,
+   "rugi": 2.5447,
+   "f1_validasi": 0.8942,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 57,
+   "rugi": 2.5359,
+   "f1_validasi": 0.9163,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 58,
+   "rugi": 2.6084,
+   "f1_validasi": 0.8725,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 59,
+   "rugi": 2.5628,
+   "f1_validasi": 0.8683,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 60,
+   "rugi": 2.5908,
+   "f1_validasi": 0.9048,
+   "ambang": 0.15
+  },
+  {
+   "zaman": 61,
+   "rugi": 2.474,
+   "f1_validasi": 0.8878,
+   "ambang": 0.15
+  },
+  {
+   "zaman": 62,
+   "rugi": 2.5023,
+   "f1_validasi": 0.8792,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 63,
+   "rugi": 2.5186,
+   "f1_validasi": 0.8889,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 64,
+   "rugi": 2.482,
+   "f1_validasi": 0.902,
+   "ambang": 0.1
+  },
+  {
+   "zaman": 65,
+   "rugi": 2.4533,
+   "f1_validasi": 0.9036,
+   "ambang": 0.7
+  },
+  {
+   "zaman": 66,
+   "rugi": 2.4558,
+   "f1_validasi": 0.9163,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 67,
+   "rugi": 2.4144,
+   "f1_validasi": 0.899,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 68,
+   "rugi": 2.4265,
+   "f1_validasi": 0.89,
+   "ambang": 0.65
+  },
+  {
+   "zaman": 69,
+   "rugi": 2.4133,
+   "f1_validasi": 0.89,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 70,
+   "rugi": 2.3538,
+   "f1_validasi": 0.9036,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 71,
+   "rugi": 2.3917,
+   "f1_validasi": 0.9064,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 72,
+   "rugi": 2.3994,
+   "f1_validasi": 0.8844,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 73,
+   "rugi": 2.3753,
+   "f1_validasi": 0.8725,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 74,
+   "rugi": 2.3168,
+   "f1_validasi": 0.8995,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 75,
+   "rugi": 2.2655,
+   "f1_validasi": 0.8934,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 76,
+   "rugi": 2.3613,
+   "f1_validasi": 0.899,
+   "ambang": 0.7
+  },
+  {
+   "zaman": 77,
+   "rugi": 2.3369,
+   "f1_validasi": 0.8934,
+   "ambang": 0.7
+  },
+  {
+   "zaman": 78,
+   "rugi": 2.2576,
+   "f1_validasi": 0.89,
+   "ambang": 0.3
+  },
+  {
+   "zaman": 79,
+   "rugi": 2.3206,
+   "f1_validasi": 0.8844,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 80,
+   "rugi": 2.2269,
+   "f1_validasi": 0.8995,
+   "ambang": 0.25
+  },
+  {
+   "zaman": 81,
+   "rugi": 2.2523,
+   "f1_validasi": 0.9073,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 82,
+   "rugi": 2.2481,
+   "f1_validasi": 0.9073,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 83,
+   "rugi": 2.2412,
+   "f1_validasi": 0.9055,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 84,
+   "rugi": 2.2426,
+   "f1_validasi": 0.9055,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 85,
+   "rugi": 2.1971,
+   "f1_validasi": 0.9064,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 86,
+   "rugi": 2.2196,
+   "f1_validasi": 0.9064,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 87,
+   "rugi": 2.2542,
+   "f1_validasi": 0.9,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 88,
+   "rugi": 2.1778,
+   "f1_validasi": 0.9055,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 89,
+   "rugi": 2.1858,
+   "f1_validasi": 0.901,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 90,
+   "rugi": 2.1646,
+   "f1_validasi": 0.9045,
+   "ambang": 0.5
+  },
+  {
+   "zaman": 91,
+   "rugi": 2.1886,
+   "f1_validasi": 0.8976,
+   "ambang": 0.35
+  },
+  {
+   "zaman": 92,
+   "rugi": 2.1893,
+   "f1_validasi": 0.8955,
+   "ambang": 0.45
+  },
+  {
+   "zaman": 93,
+   "rugi": 2.1533,
+   "f1_validasi": 0.902,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 94,
+   "rugi": 2.1418,
+   "f1_validasi": 0.9,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 95,
+   "rugi": 2.1638,
+   "f1_validasi": 0.902,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 96,
+   "rugi": 2.1517,
+   "f1_validasi": 0.9029,
+   "ambang": 0.4
+  },
+  {
+   "zaman": 97,
+   "rugi": 2.1339,
+   "f1_validasi": 0.9055,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 98,
+   "rugi": 2.1338,
+   "f1_validasi": 0.899,
+   "ambang": 0.55
+  },
+  {
+   "zaman": 99,
+   "rugi": 2.1964,
+   "f1_validasi": 0.899,
+   "ambang": 0.6
+  },
+  {
+   "zaman": 100,
+   "rugi": 2.1775,
+   "f1_validasi": 0.8945,
+   "ambang": 0.55
+  }
+ ]
+}

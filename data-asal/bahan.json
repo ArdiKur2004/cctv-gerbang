@@ -1,0 +1,205 @@
+{
+  "_tentang": "Daftar bahan latih dan bahan uji (K15). Tiap bahan punya satu baris: asal, izin, dan vonisnya. Bahan yang tak tercatat di sini tidak boleh dipakai melatih. Diperiksa tools/bahan.mjs; dibaca tools/periksa-jualan.mjs untuk menolak mesin jualan yang memuat bahan bukan BOLEH-PRODUK.",
+  "bahan": [
+    {
+      "id": "video-riset-youtube",
+      "jenis": "video",
+      "nama": "Video riset dari YouTube (259 video menurut data-asal/video-riset.json, dihitung 19 Okt)",
+      "sumber": "data-asal/video-riset.json",
+      "lisensi": "izin verbal dari pemilik video, menurut pernyataan owner (K49); tidak tertulis",
+      "bukti_lisensi": "SEED.md §3 K49 (pernyataan owner: izin verbal)",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-13",
+      "catatan": "Diambil lewat tools/ambil-video.ps1 (K17, K20). Plat di dalamnya data pribadi. Isinya dipilah dari gambar kecil yang platnya tidak terbaca (K19): kolom sudut, kategori, dan isi di manifes. Belum ada plat yang dibaca atau dilabeli. K49 (owner, 19 Okt): owner menyatakan sudah mendapat izin secara verbal, sehingga P14 terjawab untuk video riset dan mesin yang dilatih dengan potongannya (cctv1) boleh dijual. Nama lama (\"dua gelombang (100 video)\") usang dan dibetulkan. BATAS: izin tidak tertulis, dan siapa yang memberi izin per video tidak dicatat. Agen menyarankan owner menyimpan bukti (pesan atau rekaman percakapan) di luar repo. Dibalik bila pemilik video keberatan atau owner memintanya."
+    },
+    {
+      "id": "bobot-rf-detr",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan rf-detr @ 45cb80c",
+      "sumber": "https://github.com/roboflow/rf-detr",
+      "lisensi": "N/S/M/L ditandai Apache 2.0; XL/2XL PML 1.0; izin bahan latih tidak dinyatakan",
+      "bukti_lisensi": "docs/lisensi/roboflow__rf-detr/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Belum diunduh. Vonis dari docs/VONIS-LISENSI.md. Ukuran N, S, M, L saja (ditandai Apache 2.0 oleh pembuatnya); izin bahan latih tidak dinyatakan. XL dan 2XL tidak dipakai."
+    },
+    {
+      "id": "bobot-yolox",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan yolox @ 4197784",
+      "sumber": "https://github.com/Megvii-BaseDetection/YOLOX",
+      "lisensi": "tidak dinyatakan untuk bobot; kode YOLOX Apache-2.0, dan bobot diterbitkan pembuatnya (Megvii) di proyek itu",
+      "bukti_lisensi": "SEED.md §3 K48 (keputusan owner) · https://github.com/Megvii-BaseDetection/YOLOX (LICENSE Apache-2.0) · docs/lisensi/Megvii-BaseDetection__YOLOX/BOBOT.md",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-13",
+      "catatan": "Dikoreksi 16 Okt (sebelumnya: belum diunduh): yolox_nano.pth dan yolox_tiny.pth diunduh dan dikunci di tools/vendor.lock.json (yolox-nano-coco, yolox-tiny-coco; SHA-256 dari unduhan pertama karena GitHub tidak menerbitkan digest), dan hanya dimuat dengan torch.load(weights_only=True). Dipakai sebagai bobot awal empat pencari plat Rencana 13; mesin hasilnya RISET-SAJA. Vonis dari docs/VONIS-LISENSI.md.  K48 (owner, 19 Okt): bobot COCO YOLOX boleh menjadi dasar mesin jualan bila dimodifikasi (dilatih ulang). Alasan owner: di Indonesia model yang dimodifikasi dianggap model baru. BATAS DAN RISIKO yang dicatat agen: anggapan hukum itu belum diperiksa ahli hukum (UU 28/2014 Pasal 9 menjadikan pengadaptasian dan pentransformasian ciptaan sebagai hak pencipta, dan status bobot sebagai ciptaan belum jelas); izin bobot tidak dinyatakan; foto COCO berizin campuran. Disarankan diperiksa bersama B9 sebelum penjualan besar. Keamanan: .pth hanya dimuat dengan torch.load(weights_only=True), produk memakai ekspor ONNX. Dibalik bila owner memintanya atau ahli hukum menyatakan tidak boleh."
+    },
+    {
+      "id": "bobot-fast-plate-ocr",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan fast-plate-ocr @ 9ce7a5b",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr",
+      "lisensi": "MIT, menurut pernyataan pemelihara (ankandrew, pemilik repo) di GitHub 8 Jun 2026: \"everything is MIT and you can use commercially, that includes ... any of the models/weights of https://github.com/ankandrew/fast-plate-ocr. No restrictions.\" Repo tidak punya berkas izin untuk bobot",
+      "bukti_lisensi": "https://github.com/ankandrew/open-image-models/issues/20#issuecomment-4653891541 · SEED.md §3 K47 (keputusan owner) · docs/lisensi/ankandrew__fast-plate-ocr/BOBOT.md",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-13",
+      "catatan": "Model cct-s-v2-global (hanya model ini) diunduh 14 Okt lewat tools/ambil-berkas.ps1, cocok dengan SHA-256 terbitan GitHub, dikunci di tools/vendor.lock.json (berkas fpo-cct-s-v2-onnx dan fpo-cct-s-v2-config). Dipakai sebagai alat lab (pembaca kedua, K22), bukan bagian produk. Vonis dari docs/VONIS-LISENSI.md; dibaca ulang saat bahan mesin jualan dipilih (P13, P14). 15 Okt (Rencana 9, K26): bobot cct_s_v2_global.keras, konfigurasi modelnya, dan hasil validasi pembuatnya diunduh lewat pintu yang sama dan dikunci (fpo-cct-s-v2-keras, fpo-cct-s-v2-model-config, fpo-cct-s-v2-val). Sejak K26 bobot .keras ini menjadi titik awal mesin baca yang dilatih ulang; vonis tetap BELUM-JELAS sampai pembuatnya memberi izin tertulis (draf: docs/izin/2026-10-15-draf-izin-fast-plate-ocr.md, belum dikirim). K47 (owner, 19 Okt): pernyataan pemelihara diterima sebagai izin bobot, dengan syarat repo aman. Audit statis pada commit yang dikunci (docs/audit/fast-plate-ocr@9ce7a5b.md): 0 temuan tinggi; unduhan otomatis hub.py tidak dipakai (lab tanpa jaringan, bobot lewat pintu unduh ber-SHA-256); produk memakai bobot ONNX (data, tanpa kode). BATAS: bahan latih bobot terbitan tidak dinyatakan pemelihara; pernyataan itu komentar issue, bukan berkas izin. Dibalik bila pemelihara mencabutnya atau owner memintanya."
+    },
+    {
+      "id": "bobot-open-image-models",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan open-image-models @ eaeb588",
+      "sumber": "https://github.com/ankandrew/open-image-models",
+      "lisensi": "tidak dinyatakan; pemelihara ragu soal GPL",
+      "bukti_lisensi": "docs/lisensi/ankandrew__open-image-models/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Belum diunduh. Vonis dari docs/VONIS-LISENSI.md. "
+    },
+    {
+      "id": "bobot-d-fine",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan d-fine @ 956d170",
+      "sumber": "https://github.com/Peterande/D-FINE",
+      "lisensi": "belum dibaca (belum diklon)",
+      "bukti_lisensi": "docs/lisensi/Peterande__D-FINE/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Belum diunduh. Vonis dari docs/VONIS-LISENSI.md. "
+    },
+    {
+      "id": "bobot-nanodet",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan nanodet @ d3fb34f",
+      "sumber": "https://github.com/RangiLyu/nanodet",
+      "lisensi": "belum dibaca (belum diklon)",
+      "bukti_lisensi": "docs/lisensi/RangiLyu__nanodet/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Belum diunduh. Vonis dari docs/VONIS-LISENSI.md. "
+    },
+    {
+      "id": "bobot-paddleocr",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan paddleocr @ b03f464",
+      "sumber": "https://github.com/PaddlePaddle/PaddleOCR",
+      "lisensi": "belum dibaca (belum diklon)",
+      "bukti_lisensi": "docs/lisensi/PaddlePaddle__PaddleOCR/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Belum diunduh. Vonis dari docs/VONIS-LISENSI.md. "
+    },
+    {
+      "id": "bobot-qwen3-vl",
+      "jenis": "bobot",
+      "nama": "Bobot bawaan qwen3-vl @ 9658872",
+      "sumber": "https://github.com/QwenLM/Qwen3-VL",
+      "lisensi": "belum dibaca di repo ini (belum diklon)",
+      "bukti_lisensi": "docs/lisensi/QwenLM__Qwen3-VL/BOBOT.md",
+      "vonis": "BELUM-JELAS",
+      "dicatat": "2026-10-13",
+      "catatan": "Disalin dari vision-seed 14 Okt ke models/qwen3-vl-2b-instruct: folder Hugging Face Qwen/Qwen3-VL-2B-Instruct revisi 8964489 (bobot terbitan Qwen di Hugging Face, bukan dari repo kode GitHub di atas), dikunci per berkas di tools/vendor.lock.json (model_hf). Lisensi apache-2.0 menurut kartu model yang dibaca vision-seed 10 Okt; belum dibaca ulang di repo ini. Dipakai sebagai alat lab (pelabel dan pembanding), bukan bagian produk. Vonis untuk produk dibaca ulang saat bahan mesin jualan dipilih (P13, P14)."
+    },
+    {
+      "id": "dataset-indo-alpr",
+      "jenis": "dataset",
+      "nama": "INDO-ALPR (ITS), bagian original: 6174 gambar",
+      "sumber": "https://data.mendeley.com/datasets/j3256db3fz/1",
+      "lisensi": "CC BY 4.0 (catatan API Mendeley Data, dibaca 2026-10-14)",
+      "bukti_lisensi": "docs/lisensi/dataset__indo-alpr/IZIN.md",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-14",
+      "catatan": "Tersimpan di data/keluaran/dataset/indo-alpr (original/train 4712, original/test 1462). Arsip dikunci di tools/vendor.lock.json; tiap berkas cocok dengan SHA-256 penerbit. Label = nomor plat di nama berkas, jadi nama berkas tidak pernah disalin ke repo. Folder augmentation tidak dipakai. SYARAT: menyebut sumber dan menautkan izin di produk. BATAS: vonis ini soal hak cipta. Soal data pribadi (plat orang lain): owner menyatakan sudah berkonsultasi dengan pihak hukum (K21, B9). Dibagi ulang per plat (Rencana 5, 14 Okt): latih 2850 plat (4467 gambar), uji 945 plat (1431 gambar), 276 gambar dikecualikan karena nama berkasnya tak sesuai pola plat, 0 plat di kedua sisi; ringkasan di bukti/2026-10-14-set-uji-baca-pertama.json. Pembagian penerbit bocor dan tidak dipakai. Label penerbit diperiksa owner pada 60 contoh set uji (14 Okt): 4 salah yang pasti, 6 bila dua baris yang meragukan ikut dihitung; rincian di bukti/2026-10-14-baca-huruf-pertama.md. Label set uji dibetulkan (Rencana 6, K22, K23): 29 dibetulkan, 8 plat dikeluarkan, set uji 937 plat, 0 plat di kedua sisi; ringkasan di bukti/2026-10-14-set-uji-koreksi.json. Label bahan latih belum diperiksa. Bahan latih dibersihkan (Rencana 7, K24): 22 plat latih dikeluarkan karena kendaraannya juga ada di set uji (gambar nyaris kembar, label beda 1-2 huruf), 44 label latih dibetulkan, 4 plat dikeluarkan; bahan latih 2824 plat, uji 937; ringkasan di bukti/2026-10-14-latih-koreksi.json. Dipakai melatih mesin-baca-1 (Rencana 8, dari nol, satu-satunya bahan; tanda mesin BOLEH-PRODUK menurut tools/periksa-jualan.mjs)."
+    },
+    {
+      "id": "dataset-plat-lighting",
+      "jenis": "dataset",
+      "nama": "Indonesian License Plate Lighting Dataset: 561 gambar berkotak plat",
+      "sumber": "https://github.com/salsabilaputri95/Indonesian-License-Plate-Lighting-Dataset",
+      "lisensi": "CC BY 4.0 (README.md, README.dataset.txt, data.yaml pada commit e5bfbd8; tanpa berkas LICENSE)",
+      "bukti_lisensi": "docs/lisensi/dataset__plat-lighting/IZIN.md",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-14",
+      "catatan": "Tersimpan di data/keluaran/dataset/plat-lighting (latih 393, validasi 84, uji 84). Arsip dikunci di tools/vendor.lock.json. Label = kotak letak plat, tanpa teks plat. Buku catatan a.ipynb tidak dibuka. SYARAT: menyebut sumber. BATAS: tanpa berkas LICENSE. Soal data pribadi (plat orang lain): owner menyatakan sudah berkonsultasi dengan pihak hukum (K21, B9). 16 Okt (Rencana 12): sisi valid (84) memilih ambang keyakinan, sisi test (84 foto, 102 plat) dibaca sekali untuk menilai pembanding YOLOv9-t-384; sisi latih belum dipakai (untuk melatih pencari plat sendiri di Rencana 13). 16 Okt (Rencana 13): sisi latih (393) dipakai untuk melatih empat pencari plat YOLOX; sisi valid memilih zaman dan ambang; sisi test dibaca sekali per calon."
+    },
+    {
+      "id": "plat-buatan",
+      "jenis": "dataset",
+      "nama": "Plat nomor Indonesia buatan komputer (Rencana 18, K35)",
+      "sumber": "tools/lab/plat_buatan.py (dibuat sendiri di repo ini)",
+      "lisensi": "dibuat sendiri; huruf digambar sendiri sebagai garis di kisi 6x10 (K35, spec 2.7); tidak memakai huruf, gambar, atau bahan pihak lain",
+      "bukti_lisensi": "tools/lab/plat_buatan.py",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-16",
+      "catatan": "Teks acak menurut pola Perpol 7/2021 (bukan plat orang, bukan data pribadi); lima warna; rasio lebar/tinggi dari kuantil kotak plat-lighting; variasi miring, kecil, buram, malam, silau, inframerah, kotor, derau, JPEG. BATAS: huruf hanya mirip huruf plat resmi (bentuk huruf tidak diatur di peraturan yang terbaca); kemiripannya diukur dengan pembaca, tidak diklaim."
+    },
+    {
+      "id": "dataset-roboflow-all-cars-logo",
+      "jenis": "dataset",
+      "nama": "all-cars-logo v7 (Roboflow, zendyyonghero): logo merek mobil, 16.920 gambar berkotak",
+      "sumber": "https://universe.roboflow.com/zendyyonghero/all-cars-logo-r9pfo",
+      "lisensi": "CC BY 4.0 (label di halaman Roboflow, dibaca tanpa akun 19 Okt 2026); pengunggah anonim, asal gambar tidak disebut",
+      "vonis": "BOLEH-PRODUK",
+      "bukti_lisensi": "https://universe.roboflow.com/zendyyonghero/all-cars-logo-r9pfo (License: CC BY 4.0 di halaman, README.dataset.txt, dan data.yaml) + K56",
+      "dicatat": "2026-10-19",
+      "catatan": "K53: diunduh owner (Roboflow mewajibkan akun) dan diperiksa di Rencana 28. Pemeriksaan bukan izin pakai: boleh tidaknya dipakai di mesin jualan diputuskan owner sesudah pemeriksaan. Zip dikunci di tools/vendor.lock.json. Gambar memuat kendaraan dan plat orang: tinggal di data/."
+    },
+    {
+      "id": "dataset-roboflow-brand",
+      "jenis": "dataset",
+      "nama": "brand v11 (Roboflow, akun JMTO): merek dan model mobil, 7.339 gambar berkotak",
+      "sumber": "https://universe.roboflow.com/jmto-9jtua/brand-o0woc",
+      "lisensi": "CC BY 4.0 (label di halaman Roboflow, dibaca tanpa akun 19 Okt 2026); identitas pengunggah tidak terverifikasi, asal gambar tidak disebut",
+      "vonis": "BOLEH-PRODUK",
+      "bukti_lisensi": "https://universe.roboflow.com/jmto-9jtua/brand-o0woc (License: CC BY 4.0 di halaman, README.dataset.txt, dan data.yaml) + K56",
+      "dicatat": "2026-10-19",
+      "catatan": "K53: diunduh owner (Roboflow mewajibkan akun) dan diperiksa di Rencana 28. Pemeriksaan bukan izin pakai: boleh tidaknya dipakai di mesin jualan diputuskan owner sesudah pemeriksaan. Zip dikunci di tools/vendor.lock.json. Gambar memuat kendaraan dan plat orang: tinggal di data/."
+    },
+    {
+      "id": "dataset-roboflow-car-type",
+      "jenis": "dataset",
+      "nama": "car-type-final-1 v2 (Roboflow, akun Skripsi): klasifikasi tipe atau model mobil, 1.823 gambar",
+      "sumber": "https://universe.roboflow.com/skripsi-9y6tk/car-type-final-1",
+      "lisensi": "CC BY 4.0 (label di halaman Roboflow, dibaca tanpa akun 19 Okt 2026); pengunggah anonim, asal gambar tidak disebut",
+      "vonis": "BOLEH-PRODUK",
+      "bukti_lisensi": "https://universe.roboflow.com/skripsi-9y6tk/car-type-final-1 (License: CC BY 4.0 di halaman dan README.dataset.txt) + K56",
+      "dicatat": "2026-10-19",
+      "catatan": "K53: diunduh owner (Roboflow mewajibkan akun; format Folder Structure karena dataset klasifikasi) dan diperiksa di Rencana 28. Pemeriksaan bukan izin pakai. Zip dikunci di tools/vendor.lock.json. Gambar memuat kendaraan dan plat orang: tinggal di data/."
+    },
+    {
+      "id": "dataset-roboflow-vehicle-license-plate",
+      "jenis": "dataset",
+      "nama": "vehicle and license plate v3 (Roboflow, akun 'Plat Kendaraan'): kendaraan dan plat, 2.167 gambar berkotak, 5 kelas",
+      "sumber": "https://universe.roboflow.com/plat-kendaraan/vehicle-and-license-plate",
+      "lisensi": "MIT (label di halaman Roboflow dan di data.yaml); pengunggah anonim; README menyebut gabungan dari dataset pengguna Roboflow lain (antara lain habib-robbani/indonesian-motorcycle-plate), yang izinnya belum dibaca",
+      "vonis": "BOLEH-PRODUK",
+      "bukti_lisensi": "https://universe.roboflow.com/plat-kendaraan/vehicle-and-license-plate (License: MIT di halaman, README.dataset.txt, dan data.yaml) + K56",
+      "dicatat": "2026-10-19",
+      "catatan": "Diunduh owner dan diperiksa dengan cara K53 (Rencana 28). Pemeriksaan bukan izin pakai. Zip dikunci di tools/vendor.lock.json. Gambar memuat kendaraan dan plat orang: tinggal di data/."
+    },
+    {
+      "id": "dataset-roboflow-merk-warna-motor",
+      "jenis": "dataset",
+      "nama": "Merk dan Warna Motor v19 (Roboflow, akun 'Arfah'): model dan warna motor, 3.435 gambar berkotak, 13 kelas",
+      "sumber": "https://universe.roboflow.com/arfah/merk-dan-warna-motor",
+      "lisensi": "CC BY 4.0 (label di halaman Roboflow, dari tangkapan layar owner); pengunggah anonim, asal gambar tidak disebut",
+      "vonis": "BOLEH-PRODUK",
+      "bukti_lisensi": "https://universe.roboflow.com/arfah/merk-dan-warna-motor (License: CC BY 4.0 di halaman, README.dataset.txt, dan data.yaml) + K56",
+      "dicatat": "2026-10-19",
+      "catatan": "Diunduh owner dan diperiksa dengan cara K53 (Rencana 28). Pemeriksaan bukan izin pakai. Zip dikunci di tools/vendor.lock.json. Gambar memuat kendaraan dan plat orang: tinggal di data/."
+    },
+    {
+      "id": "tangkapan-owner",
+
+
+      "jenis": "dataset",
+      "nama": "Tangkapan layar CCTV dari internet, dikumpulkan owner: 181 gambar (76 mobil, 105 motor)",
+      "sumber": "owner (Muhammad Aldy), 18 Okt 2026; folder data/capture",
+      "lisensi": "izin dijamin owner untuk semua gambar, termasuk melatih model yang dijual (K44)",
+      "bukti_lisensi": "SEED.md §3 K44 (pernyataan owner)",
+      "vonis": "BOLEH-PRODUK",
+      "dicatat": "2026-10-18",
+      "catatan": "Asal per gambar tidak dicatat; owner menyatakan sudah mendapatkan izinnya dan meminta sumber ditulis \"dari owner\". Gambar memuat plat (data pribadi, UU PDP): tinggal di data/, tidak di-commit, dan agen tidak membukanya. BATAS: vonis bersandar pada pernyataan owner, bukan pada halaman izin yang dibaca agen."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+ "validasi": "data/keluaran/dataset/cctv2-c1/valid (sama persis dengan cctv2-c2/valid)",
+ "calon": {
+  "C0": {
+   "folder": "pencari-yolox-nano-640-cctv1",
+   "f1": 0.8971,
+   "ambang": 0.5,
+   "plat": 179,
+   "plat_ditemukan": 157,
+   "kotak_palsu": 14,
+   "gambar": 203,
+   "tak_terbaca": 0,
+   "f1_validasi_saat_latih": 0.9236,
+   "zaman_terbaik": 67
+  },
+  "C1": {
+   "folder": "pencari-cctv2-c1",
+   "f1": 0.9257,
+   "ambang": 0.6,
+   "plat": 179,
+   "plat_ditemukan": 162,
+   "kotak_palsu": 9,
+   "gambar": 203,
+   "tak_terbaca": 0,
+   "f1_validasi_saat_latih": 0.9257,
+   "zaman_terbaik": 28
+  },
+  "C2": {
+   "folder": "pencari-cctv2-c2",
+   "f1": 0.9244,
+   "ambang": 0.65,
+   "plat": 179,
+   "plat_ditemukan": 165,
+   "kotak_palsu": 13,
+   "gambar": 203,
+   "tak_terbaca": 0,
+   "f1_validasi_saat_latih": 0.9244,
+   "zaman_terbaik": 41
+  }
+ },
+ "terpilih": "C1"
+}

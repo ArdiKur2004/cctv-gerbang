@@ -1,0 +1,232 @@
+{
+  "_tentang": "Kunci alat pihak ketiga yang dijalankan repo ini. Yang tak tercatat di sini tidak dijalankan. Disalin dari vision-seed @3591530 (tools/vendor.lock.json) pada 2026-10-13 (K14): hanya butir yang dipakai di sini.",
+  "repo": [
+    { "nama": "yt-dlp", "repo": "yt-dlp/yt-dlp", "ref": "2026.08.19", "sha": "3a08beaf031ab68f966401ead017ac81fe8486cf", "lisensi_kode": "Unlicense", "lisensi_bobot": "-", "vonis": "AMAN-KOMERSIAL", "peran": "alat lab: mengambil video riset dari YouTube/TikTok (K6, K15, K17). BUKAN bagian produk. Dijalankan dari sumber di container terisolasi (tools/ambil-video.ps1)", "audit": "vision-seed/docs/audit/yt-dlp@3a08bea.md (dibaca manual 2026-10-10 di vision-seed; bagian kesimpulannya dibaca ulang 2026-10-13, auditnya sendiri tidak diulang)", "asal_salinan": "klon lokal dari vision-seed/vendor/yt-dlp pada 2026-10-13; HEAD dan kebersihannya diperiksa tools/ambil-video.ps1 periksa" },
+    { "nama": "rf-detr", "repo": "roboflow/rf-detr", "ref": "1.11.1", "sha": "45cb80cb1f5622d9d8838bfa85ff04ba93fe6d55", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "N/S/M/L ditandai Apache 2.0; XL/2XL PML 1.0; izin bahan latih tidak dinyatakan", "vonis": "BELUM-JELAS", "peran": "pendeteksi acuan", "diklon": true, "dicatat": "2026-10-13", "asal_commit": "sama dengan kunci vision-seed", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "trackers", "repo": "roboflow/trackers", "ref": "2.6.1", "sha": "3666546420b0fd564c8e63157a6621efffdfa01a", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "- (inti pelacak tanpa bobot)", "vonis": "BOLEH-PRODUK", "peran": "pelacak", "diklon": true, "dicatat": "2026-10-13", "asal_commit": "sama dengan kunci vision-seed", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "yolox", "repo": "Megvii-BaseDetection/YOLOX", "ref": "0.3.0", "sha": "419778480ab6ec0590e5d3831b3afb3b46ab2aa3", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "tidak dinyatakan", "vonis": "BELUM-JELAS", "peran": "pendeteksi ringan", "diklon": true, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "fast-plate-ocr", "repo": "ankandrew/fast-plate-ocr", "ref": "v1.1.0", "sha": "9ce7a5b64a939aa421c243b331d42e6bc25ffd44", "lisensi_kode": "MIT", "lisensi_bobot": "tidak dinyatakan", "vonis": "BELUM-JELAS", "peran": "pembaca huruf; bagian pembanding", "diklon": true, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "open-image-models", "repo": "ankandrew/open-image-models", "ref": "v0.6.0", "sha": "eaeb5880681695dcafb470c1d2b9ba7dc6de9a49", "lisensi_kode": "MIT", "lisensi_bobot": "tidak dinyatakan; pemelihara ragu soal GPL", "vonis": "BELUM-JELAS", "peran": "bagian pembanding (pendeteksi plat)", "diklon": true, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "fast-alpr", "repo": "ankandrew/fast-alpr", "ref": "v0.4.0", "sha": "aca4ecdd279350ffdda8dffb0badd70952470c28", "lisensi_kode": "MIT", "lisensi_bobot": "- (tanpa bobot sendiri; bawaannya memakai bobot BELUM-JELAS)", "vonis": "BOLEH-PRODUK", "peran": "pembanding paket jadi", "diklon": true, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "d-fine", "repo": "Peterande/D-FINE", "ref": "HEAD@2026-10-13", "sha": "956d1709314c2c6a4df6f34de232054578a7449f", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "belum dibaca (belum diklon)", "vonis": "BELUM-JELAS", "peran": "pendeteksi ringan cadangan", "diklon": false, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "nanodet", "repo": "RangiLyu/nanodet", "ref": "v1.0.0", "sha": "d3fb34fa91d6020f273d6d063bf324dcd97bac12", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "belum dibaca (belum diklon)", "vonis": "BELUM-JELAS", "peran": "pendeteksi ringan cadangan", "diklon": false, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "paddleocr", "repo": "PaddlePaddle/PaddleOCR", "ref": "v3.7.0", "sha": "b03f46425e8ff4442b268ce449e3eef758146cd4", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "belum dibaca (belum diklon)", "vonis": "BELUM-JELAS", "peran": "pembaca huruf cadangan", "diklon": false, "dicatat": "2026-10-13", "bukti": "docs/VONIS-LISENSI.md" },
+    { "nama": "qwen3-vl", "repo": "QwenLM/Qwen3-VL", "ref": "main", "sha": "96588727e44c78b25ba03ea03b8e12f7e64fd0da", "lisensi_kode": "Apache-2.0", "lisensi_bobot": "belum dibaca di repo ini (belum diklon)", "vonis": "BELUM-JELAS", "peran": "pelabel otomatis (alat lab)", "diklon": false, "dicatat": "2026-10-13", "asal_commit": "sama dengan kunci vision-seed", "bukti": "docs/VONIS-LISENSI.md" }
+  ],
+  "_image_lab": "Image tempat alat dijalankan. Repo ini tidak membangunnya: image milik vision-seed dipakai apa adanya dan dijaga lewat ID-nya. ID dibaca dari `docker image inspect vision-seed-lab:v1 --format {{.Id}}` pada 2026-10-13. Bila vision-seed membangun ulang image-nya, ID ini berubah dan tools/ambil-video.ps1 menolak jalan (kode 6) sampai butir ini diperbarui dengan sadar.",
+  "image_lab": { "nama": "vision-seed-lab:v1", "id": "sha256:f92dc071a6ab21240639fa22c822a509eb72dfc197f21d469fd1361764a2e07f", "dibaca": "2026-10-13" },
+  "_image_lab_fpo": "Image lab tambahan untuk melatih ulang fast-plate-ocr (K26), dibangun tools/image-lab-fpo.ps1 di atas image_lab. Dijalankan hanya lewat tools/lab.ps1 -Fpo.",
+  "image_lab_fpo": { "nama": "cctvgerbang-lab-fpo:v1", "id": "sha256:5b57c7b2fd9d48483a36a13b2313b0d616af3e369827af15430d6fca60684cf9", "dasar": "sha256:f92dc071a6ab21240639fa22c822a509eb72dfc197f21d469fd1361764a2e07f", "sidik": "10c3d65946c3d3ed3fdf9b4dde2e97464f96abb58a80b007eb8af09075a378ea", "requirements_sha256": "63834651f04d27a9144d17bcb5a86ad1f9bfae18466a96f4746d67733f1b2b33", "dibangun": "2026-10-15" },
+  "_berkas": "Berkas yang diambil tools/ambil-berkas.ps1 (arsip dan catatan dataset, dan berkas model untuk alat lab). Yang tak tercatat di sini tidak diambil. sha256 kosong = belum dikunci: boleh diunduh sekali untuk diukur, tetapi tools/lab/buka_arsip.py menolak membuka arsip tanpa sha256. Alamat dan angka dibaca dari sumbernya pada tanggal 'dibaca'.",
+  "berkas": [
+    {
+      "nama": "plat-lighting",
+      "url": "https://codeload.github.com/salsabilaputri95/Indonesian-License-Plate-Lighting-Dataset/zip/e5bfbd8af64541d032c9022eef588e75d9786c6a",
+      "berkas": "plat-lighting-e5bfbd8.zip",
+      "maks_gb": 1,
+      "sha256": "86d767c796c391ae65d4802bd996feb3a9e0110cc0f4b02dcf813d65a70d8ad9",
+      "sumber": "https://github.com/salsabilaputri95/Indonesian-License-Plate-Lighting-Dataset",
+      "commit": "e5bfbd8af64541d032c9022eef588e75d9786c6a",
+      "isi_dibaca": "API pohon GitHub pada commit itu: 561 jpg, 561 label txt, 2 README txt, 1 md, 1 yaml, 1 ipynb; 143 MB",
+      "dibaca": "2026-10-13"
+    },
+    {
+      "nama": "indo-alpr-catatan",
+      "url": "https://data.mendeley.com/public-api/datasets/j3256db3fz",
+      "berkas": "catatan-dataset.json",
+      "maks_gb": 0.2,
+      "sha256": "",
+      "kunci": "sengaja tidak dikunci: catatan ini memuat hitungan kunjungan yang berubah tiap hari. Dipakai sebagai daftar SHA-256 penerbit untuk tiap berkas dan sebagai bukti izin",
+      "dibaca": "2026-10-13"
+    },
+    {
+      "nama": "indo-alpr",
+      "url": "https://data.mendeley.com/public-api/zip/j3256db3fz/download/1",
+      "berkas": "indo-alpr-v1.zip",
+      "maks_gb": 12,
+      "sha256": "e425ec0d449d1d21e178633c42a16d32bd5a03126e0acdf332721db78a467fe3",
+      "sumber": "https://data.mendeley.com/datasets/j3256db3fz/1",
+      "doi": "10.17632/j3256db3fz.1",
+      "isi_dibaca": "catatan API: 67.922 berkas, 7.390 MB. original/train 4.712 (folder 44fd8100-281c-4dea-9ba8-e6469d256ec3); original/test 1.462 (folder b6eab52b-d6d1-43b9-a073-4c13afe0fe19)",
+      "dibaca": "2026-10-13"
+    },
+    {
+      "nama": "fpo-cct-s-v2-onnx",
+      "url": "https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/cct_s_v2_global.onnx",
+      "berkas": "cct_s_v2_global.onnx",
+      "maks_gb": 0.1,
+      "sha256": "384bbbd2cea3ef54761d3df70822ef3a349ee1a112aeafddbe0e3ba06bc6e47b",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr/releases/tag/arg-plates",
+      "ukuran_byte": 5262230,
+      "isi_dibaca": "API rilis GitHub arg-plates: 5262230 byte, digest sha256 diterbitkan GitHub, diunggah 2026-03-14T02:44:45Z. Kode fast-plate-ocr @ 9ce7a5b menunjuk github.com/ankandrew/cnn-ocr-lp, repo yang sama sebelum berganti nama",
+      "peran": "alat lab: pembaca kedua untuk membetulkan label set uji (K22). sejak K47 (19 Okt) BOLEH-PRODUK: pernyataan pemelihara di GitHub diterima owner; dasar pembaca jualan",
+      "dibaca": "2026-10-14"
+    },
+    {
+      "nama": "fpo-cct-s-v2-config",
+      "url": "https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/cct_s_v2_global_plate_config.yaml",
+      "berkas": "cct_s_v2_global_plate_config.yaml",
+      "maks_gb": 0.01,
+      "sha256": "0335c74a305173bb6f393efed0fde03cadeaa0b649ed8e19f431016d8232d0a6",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr/releases/tag/arg-plates",
+      "ukuran_byte": 1725,
+      "isi_dibaca": "API rilis GitHub arg-plates: 1725 byte, digest sha256 diterbitkan GitHub, diunggah 2026-03-14T02:44:43Z. Kode fast-plate-ocr @ 9ce7a5b menunjuk github.com/ankandrew/cnn-ocr-lp, repo yang sama sebelum berganti nama",
+      "peran": "alat lab: pembaca kedua untuk membetulkan label set uji (K22). sejak K47 (19 Okt) BOLEH-PRODUK: pernyataan pemelihara di GitHub diterima owner; dasar pembaca jualan",
+      "dibaca": "2026-10-14"
+    },
+    {
+      "nama": "fpo-cct-s-v2-keras",
+      "url": "https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/cct_s_v2_global.keras",
+      "berkas": "cct_s_v2_global.keras",
+      "maks_gb": 0.1,
+      "sha256": "dc6db494714d88e1fb0a21b4e4e96089842dd5440418262abfc382454453c2c8",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr/releases/tag/arg-plates",
+      "ukuran_byte": 17657419,
+      "isi_dibaca": "API rilis GitHub arg-plates: 17657419 byte, digest sha256 diterbitkan GitHub, diunggah 2026-03-14T02:44:44Z. Kode fast-plate-ocr @ 9ce7a5b menunjuk github.com/ankandrew/cnn-ocr-lp, repo yang sama sebelum berganti nama",
+      "peran": "alat lab: pembaca kedua untuk membetulkan label set uji (K22). sejak K47 (19 Okt) BOLEH-PRODUK: pernyataan pemelihara di GitHub diterima owner; dasar pembaca jualan",
+      "dibaca": "2026-10-15"
+    },
+    {
+      "nama": "fpo-cct-s-v2-model-config",
+      "url": "https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/cct_s_v2_global_model_config.yaml",
+      "berkas": "cct_s_v2_global_model_config.yaml",
+      "maks_gb": 0.01,
+      "sha256": "244c3c712205750e9747bca4707cd553a84005f41959745bff676b0fca8faba3",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr/releases/tag/arg-plates",
+      "ukuran_byte": 1171,
+      "isi_dibaca": "API rilis GitHub arg-plates: 1171 byte, digest sha256 diterbitkan GitHub, diunggah 2026-03-14T04:11:25Z. Kode fast-plate-ocr @ 9ce7a5b menunjuk github.com/ankandrew/cnn-ocr-lp, repo yang sama sebelum berganti nama",
+      "peran": "alat lab: pembaca kedua untuk membetulkan label set uji (K22). sejak K47 (19 Okt) BOLEH-PRODUK: pernyataan pemelihara di GitHub diterima owner; dasar pembaca jualan",
+      "dibaca": "2026-10-15"
+    },
+    {
+      "nama": "fpo-cct-s-v2-val",
+      "url": "https://github.com/ankandrew/fast-plate-ocr/releases/download/arg-plates/cct_s_v2_global_val_results.json",
+      "berkas": "cct_s_v2_global_val_results.json",
+      "maks_gb": 0.01,
+      "sha256": "cc9ea0f5bfd7ad56fada2e7b6f5de95e03b997f1f04f2eba90eca680fd1b5c27",
+      "sumber": "https://github.com/ankandrew/fast-plate-ocr/releases/tag/arg-plates",
+      "ukuran_byte": 24242,
+      "isi_dibaca": "API rilis GitHub arg-plates: 24242 byte, digest sha256 diterbitkan GitHub, diunggah 2026-03-14T04:11:26Z. Kode fast-plate-ocr @ 9ce7a5b menunjuk github.com/ankandrew/cnn-ocr-lp, repo yang sama sebelum berganti nama",
+      "peran": "alat lab: pembaca kedua untuk membetulkan label set uji (K22). sejak K47 (19 Okt) BOLEH-PRODUK: pernyataan pemelihara di GitHub diterima owner; dasar pembaca jualan",
+      "dibaca": "2026-10-15"
+    },
+    {
+      "nama": "oim-yolo-v9-t-384-plat",
+      "url": "https://github.com/ankandrew/open-image-models/releases/download/assets/yolo-v9-t-384-license-plates-end2end.onnx",
+      "berkas": "yolo-v9-t-384-license-plates-end2end.onnx",
+      "maks_gb": 0.05,
+      "sha256": "888397b96d761c89db40bc9c305838e8652660f5e282c2cadebbe8d2951a77a8",
+      "sumber": "https://github.com/ankandrew/open-image-models/releases/tag/assets",
+      "ukuran_byte": 7771218,
+      "isi_dibaca": "API rilis GitHub assets: 7771218 byte, diunggah 2024-09-29T14:29:41Z, TANPA digest dari GitHub; sha256 diisi dari unduhan pertama (dipercaya pada pemakaian pertama)",
+      "peran": "alat lab: pembanding pencari plat (Rencana 12). BUKAN bagian produk; bobot BELUM-JELAS, kode latih induk GPL-3.0",
+      "dibaca": "2026-10-16"
+    },
+    {
+      "nama": "yolox-nano-coco",
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.pth",
+      "berkas": "yolox_nano.pth",
+      "maks_gb": 0.02,
+      "sha256": "cd28f55fbbc1829f99d9ac9b38a16d259a22889739c8728ea877610201feff7b",
+      "sumber": "https://github.com/Megvii-BaseDetection/YOLOX/releases/tag/0.1.1rc0",
+      "ukuran_byte": 7694953,
+      "isi_dibaca": "API rilis GitHub 0.1.1rc0: 7694953 byte, diunggah 2021-08-18T12:37:45Z, TANPA digest dari GitHub; sha256 diisi dari unduhan pertama (dipercaya pada pemakaian pertama). Format pickle: hanya dimuat dengan torch.load(weights_only=True)",
+      "peran": "bobot awal COCO untuk melatih pencari plat sendiri (K30, Rencana 13). Izin bobot tidak dinyatakan; sejak K48 (19 Okt) BOLEH-PRODUK atas keputusan owner (repo Apache-2.0, bobot dimodifikasi)",
+      "dibaca": "2026-10-16"
+    },
+    {
+      "nama": "yolox-tiny-coco",
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_tiny.pth",
+      "berkas": "yolox_tiny.pth",
+      "maks_gb": 0.06,
+      "sha256": "9de513de589ac98bb92d3bca53b5af7b9acfa9b0bacb831f7999d0f7afaee8f0",
+      "sumber": "https://github.com/Megvii-BaseDetection/YOLOX/releases/tag/0.1.1rc0",
+      "ukuran_byte": 40755013,
+      "isi_dibaca": "API rilis GitHub 0.1.1rc0: 40755013 byte, diunggah 2021-08-18T12:38:01Z, TANPA digest dari GitHub; sha256 diisi dari unduhan pertama (dipercaya pada pemakaian pertama). Format pickle: hanya dimuat dengan torch.load(weights_only=True)",
+      "peran": "bobot awal COCO untuk melatih pencari plat sendiri (K30, Rencana 13). Izin bobot tidak dinyatakan; sejak K48 (19 Okt) BOLEH-PRODUK atas keputusan owner (repo Apache-2.0, bobot dimodifikasi)",
+      "dibaca": "2026-10-16"
+    },
+    {
+      "nama": "roboflow-all-cars-logo-v7",
+      "url": "https://universe.roboflow.com/zendyyonghero/all-cars-logo-r9pfo/dataset/7",
+      "berkas": "all-cars-logo.v7-full-80-20-split-for-all-labels.yolov8.zip",
+      "maks_gb": 3,
+      "sha256": "170455e87604e409edca6e18a6a285efd6795111220aeed988014f2cbc9132d0",
+      "sumber": "https://universe.roboflow.com/zendyyonghero/all-cars-logo-r9pfo",
+      "isi_dibaca": "halaman Roboflow (tanpa akun, hanya teks): v7 'Full 80 - 20 split for all labels', 16.920 gambar (latih 13.540, validasi 3.380, uji 0), Auto-Orient, tanpa augmentasi, Object Detection, CC BY 4.0, pengunggah zendyyonghero. Zip format YOLOv8 diunduh OWNER lewat peramban, karena Roboflow mewajibkan akun; pintu ini tidak bisa mengambilnya (host tidak diizinkan). Windows Defender: bersih (kontrol positif EICAR terdeteksi)",
+      "peran": "bahan Fase 3 (K53): logo merek mobil. Diperiksa Rencana 28; sejak K56 (19 Okt) BOLEH-PRODUK: label izin halaman diterima owner",
+      "dibaca": "2026-10-19"
+    },
+    {
+      "nama": "roboflow-brand-v11",
+      "url": "https://universe.roboflow.com/jmto-9jtua/brand-o0woc/dataset/11",
+      "berkas": "brand.v11i.yolov8.zip",
+      "maks_gb": 3,
+      "sha256": "d9403aa3ae83cf1d9ac7ca394e5f7ebf2e5b86596afd2c4c5a3f402d8105691e",
+      "sumber": "https://universe.roboflow.com/jmto-9jtua/brand-o0woc",
+      "isi_dibaca": "halaman Roboflow (tanpa akun, hanya teks): v11 (2025-10-10), 7.339 gambar (latih 5.871, validasi 735, uji 733), tanpa pra-proses, tanpa augmentasi, CC BY 4.0, pengunggah JMTO. Zip format YOLOv8 diunduh OWNER lewat peramban, karena Roboflow mewajibkan akun; pintu ini tidak bisa mengambilnya (host tidak diizinkan). Windows Defender: bersih (kontrol positif EICAR terdeteksi)",
+      "peran": "bahan Fase 3 (K53): merek dan model mobil. Diperiksa Rencana 28; sejak K56 (19 Okt) BOLEH-PRODUK: label izin halaman diterima owner",
+      "dibaca": "2026-10-19"
+    },
+    {
+      "nama": "roboflow-car-type-final-1-v2",
+      "url": "https://universe.roboflow.com/skripsi-9y6tk/car-type-final-1/dataset/2",
+      "berkas": "car-type-final-1.v2i.folder.zip",
+      "maks_gb": 1,
+      "sha256": "16b3adf5d30ad093aaa3a76712a98c67c78a8e48cfe1a845e6780ea16d6a7883",
+      "sumber": "https://universe.roboflow.com/skripsi-9y6tk/car-type-final-1",
+      "isi_dibaca": "halaman Roboflow (tanpa akun, hanya teks): v2 (2024-03-15), 1.823 gambar (latih 1.272, validasi 551, uji 0), tanpa augmentasi, CC BY 4.0, pengunggah Skripsi. Jenis tugas KLASIFIKASI (dilihat owner di dialog unduh), jadi diunduh format Folder Structure, bukan YOLOv8. Diunduh OWNER lewat peramban, karena Roboflow mewajibkan akun; pintu ini tidak bisa mengambilnya. Windows Defender: bersih (kontrol positif EICAR terdeteksi)",
+      "peran": "bahan Fase 3 (K53): tipe atau model mobil (klasifikasi gambar utuh). Diperiksa Rencana 28; sejak K56 (19 Okt) BOLEH-PRODUK: label izin halaman diterima owner",
+      "dibaca": "2026-10-19"
+    },
+    {
+      "nama": "roboflow-vehicle-license-plate-v3",
+      "url": "https://universe.roboflow.com/plat-kendaraan/vehicle-and-license-plate/dataset/3",
+      "berkas": "vehicle and license plate.v3i.yolov8.zip",
+      "maks_gb": 1,
+      "sha256": "665699c1612878e98bac36b9ccb7c57f1716460f80ab54a4ae7168277e60e365",
+      "sumber": "https://universe.roboflow.com/plat-kendaraan/vehicle-and-license-plate (dari README.dataset.txt dan data.yaml di dalam zip). README menyebut dataset ini gabungan dari dataset pengguna Roboflow lain, antara lain habib-robbani/indonesian-motorcycle-plate; izin sumber aslinya belum dibaca",
+      "isi_dibaca": "tangkapan layar owner: Object Detection, License MIT, 2.167 gambar, 5 kelas (truck, bus, cars, license-plate, motorcycle), model Roboflow mAP@50 99,5%. Zip format YOLOv8 versi v3 diunduh OWNER lewat peramban (Roboflow mewajibkan akun)",
+      "peran": "calon bahan Fase 1 (pencari kendaraan dan plat): diperiksa dengan cara K53 (Rencana 28); sejak K56 (19 Okt) BOLEH-PRODUK: label izin halaman diterima owner",
+      "dibaca": "2026-10-19"
+    },
+    {
+      "nama": "roboflow-merk-warna-motor-v19",
+      "url": "https://universe.roboflow.com/arfah/merk-dan-warna-motor/dataset/19",
+      "berkas": "Merk dan Warna Motor.v19i.yolov8.zip",
+      "maks_gb": 1,
+      "sha256": "334af01076ff6e59c06675751244f9212ddc675511492c81853a234ac7a798dd",
+      "sumber": "https://universe.roboflow.com/arfah/merk-dan-warna-motor (dari README.dataset.txt dan data.yaml di dalam zip)",
+      "isi_dibaca": "tangkapan layar owner: Object Detection, License CC BY 4.0, 3.435 gambar, 13 kelas gabungan model dan warna motor (mis. Honda_Beat_Hitam, Honda_Vario_Merah, Yamaha_Aerox_Kuning), model Roboflow mAP@50 99,5%. Zip format YOLOv8 versi v19 diunduh OWNER lewat peramban (Roboflow mewajibkan akun)",
+      "peran": "calon bahan Fase 3 (merek dan warna motor): diperiksa dengan cara K53 (Rencana 28); sejak K56 (19 Okt) BOLEH-PRODUK: label izin halaman diterima owner",
+      "dibaca": "2026-10-19"
+    }
+  ],
+  "_model_hf": "Model Hugging Face (satu folder di models/, di-gitignore). Hanya kelas bawaan transformers (tanpa trust_remote_code), hanya safetensors. Folder yang isinya tidak persis daftar berkas di bawah ditolak tools/lab/model_terkunci.py.",
+  "model_hf": [
+    {
+      "nama": "qwen3-vl-2b-instruct",
+      "repo": "Qwen/Qwen3-VL-2B-Instruct",
+      "revisi": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct/tree/89644892e4d85e24eaac8bacfd4f463576704203",
+      "lisensi": "apache-2.0 (kartu model + API Hugging Face, dibaca 2026-10-10)",
+      "kelas": "Qwen3VLForConditionalGeneration (transformers 5.18.0, bawaan)",
+      "dibaca": "2026-10-10",
+      "berkas": {
+        "README.md": "5fc5be1ca9a3910399bd6239ee5086ab5d82a2a59c5d2b00e887a8835cc110e4",
+        "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+        "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+        "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model.safetensors": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+        "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+        "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+        "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "peran": "alat lab: pelabel otomatis dan pembanding \"AI serba-bisa\" untuk langkah baca huruf (Rencana 5). BUKAN bagian produk",
+      "asal_salinan": "butir ini disalin dari vision-seed @3591530 (tools/vendor.lock.json, model_hf) dan foldernya dari vision-seed/models/qwen3-vl-2b-instruct pada 2026-10-14 (K14). SHA-256 tiap berkas diperiksa ulang di lab oleh tools/lab/model_terkunci.py"
+    }
+  ]
+}

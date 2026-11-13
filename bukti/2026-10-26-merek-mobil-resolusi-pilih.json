@@ -1,0 +1,149 @@
+{
+ "ciri": "merek",
+ "jenis": "mobil",
+ "ambang": [
+  0.0,
+  0.5,
+  0.7,
+  0.9
+ ],
+ "b0_tebakan_tetap": "Toyota",
+ "n_validasi_owner": 17,
+ "aturan": "validasi owner mobil, nilai = benar - salah; seri: salah paling sedikit, lalu B0, lalu masukan terkecil, lalu ambang terkecil; dipakai hanya bila lebih besar dari B0",
+ "aturan_vonis": "dugaan resolusi DIDUKUNG hanya bila nilai terbaik C192 atau C256 lebih besar dari nilai terbaik C96",
+ "calon": {
+  "B0": {
+   "folder": null,
+   "ukuran": null,
+   "validasi_owner": {
+    "0.0": {
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    "0.5": {
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    "0.7": {
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    "0.9": {
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    }
+   }
+  },
+  "C96": {
+   "folder": "ciri-merek-mobil-c96",
+   "ukuran": 96,
+   "validasi_owner": {
+    "0.0": {
+     "benar": 9,
+     "salah": 8,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    "0.5": {
+     "benar": 3,
+     "salah": 4,
+     "tak_yakin": 10,
+     "nilai": -1
+    },
+    "0.7": {
+     "benar": 1,
+     "salah": 0,
+     "tak_yakin": 16,
+     "nilai": 1
+    },
+    "0.9": {
+     "benar": 0,
+     "salah": 0,
+     "tak_yakin": 17,
+     "nilai": 0
+    }
+   }
+  },
+  "C192": {
+   "folder": "ciri-merek-mobil-c192",
+   "ukuran": 192,
+   "validasi_owner": {
+    "0.0": {
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    "0.5": {
+     "benar": 0,
+     "salah": 2,
+     "tak_yakin": 15,
+     "nilai": -2
+    },
+    "0.7": {
+     "benar": 0,
+     "salah": 0,
+     "tak_yakin": 17,
+     "nilai": 0
+    },
+    "0.9": {
+     "benar": 0,
+     "salah": 0,
+     "tak_yakin": 17,
+     "nilai": 0
+    }
+   }
+  },
+  "C256": {
+   "folder": "ciri-merek-mobil-c256",
+   "ukuran": 256,
+   "validasi_owner": {
+    "0.0": {
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    "0.5": {
+     "benar": 1,
+     "salah": 2,
+     "tak_yakin": 14,
+     "nilai": -1
+    },
+    "0.7": {
+     "benar": 0,
+     "salah": 0,
+     "tak_yakin": 17,
+     "nilai": 0
+    },
+    "0.9": {
+     "benar": 0,
+     "salah": 0,
+     "tak_yakin": 17,
+     "nilai": 0
+    }
+   }
+  }
+ },
+ "terpilih": {
+  "calon": "C96",
+  "ambang": 0.7
+ },
+ "nilai_terpilih": 1,
+ "nilai_tanpa_latihan": -5,
+ "dipakai": true,
+ "nilai_terbaik": {
+  "C96": 1,
+  "C192": 0,
+  "C256": 0
+ },
+ "vonis_dugaan_resolusi": "tidak didukung"
+}

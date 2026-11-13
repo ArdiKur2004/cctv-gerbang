@@ -1,0 +1,59 @@
+{
+ "cpu": "Intel(R) Celeron(R) N5095 @ 2.00GHz",
+ "cpu_terlihat": 4,
+ "onnxruntime": "1.30.0",
+ "beban_sebelum": [
+  1.88,
+  1.63,
+  1.62
+ ],
+ "model": [
+  {
+   "berkas": "acak-yolox-nano-640.onnx",
+   "ukuran_byte": 3845864,
+   "per_utas": {
+    "1": {
+     "median_ms": 264.7,
+     "p95_ms": 277.1,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 149.9,
+     "p95_ms": 153.4,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 90.2,
+     "p95_ms": 178.4,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "acak-yolox-tiny-640.onnx",
+   "ukuran_byte": 20356980,
+   "per_utas": {
+    "1": {
+     "median_ms": 1053.2,
+     "p95_ms": 1061.7,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 544.0,
+     "p95_ms": 562.6,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 310.0,
+     "p95_ms": 472.1,
+     "ulang": 20
+    }
+   }
+  }
+ ],
+ "beban_sesudah": [
+  3.28,
+  2.07,
+  1.77
+ ]
+}

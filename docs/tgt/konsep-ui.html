@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Transportation Gate Track</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Tata letak: cangkang aplikasi — bilah atas tetap, rel kiri di layar lebar, bilah bawah di ponsel, satu area tampilan yang berganti. */
+  :root {
+    color-scheme: light;
+    --kertas: #f2f5f8;
+    --permukaan: #ffffff;
+    --permukaan-2: #e9eef3;
+    --tinta: #15212e;
+    --tinta-redup: #5c6b7a;
+    --garis: #d5dee6;
+    --aksen: #8f6200;          /* emas: garis palang gerbang */
+    --aksen-tinta: #ffffff;
+    --baik: #15803d;
+    --tunggu: #b45309;
+    --lewat: #b91c1c;
+    --seri-masuk: #2a78d6;
+    --seri-keluar: #1baf7a;
+    --radius: 14px;
+    --bayang: 0 1px 2px rgba(21, 33, 46, .06), 0 8px 24px rgba(21, 33, 46, .06);
+    --display: "Archivo", system-ui, sans-serif;
+    --teks: "IBM Plex Sans", system-ui, sans-serif;
+    --data: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --kertas: #0f1720;
+      --permukaan: #17212c;
+      --permukaan-2: #1f2c39;
+      --tinta: #e7edf3;
+      --tinta-redup: #9aa8b6;
+      --garis: #2b3a49;
+      --aksen: #e0b341;
+      --aksen-tinta: #15212e;
+      --baik: #4ade80;
+      --tunggu: #fbbf24;
+      --lewat: #f87171;
+      --seri-masuk: #3987e5;
+      --seri-keluar: #199e70;
+      --bayang: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --kertas: #0f1720;
+    --permukaan: #17212c;
+    --permukaan-2: #1f2c39;
+    --tinta: #e7edf3;
+    --tinta-redup: #9aa8b6;
+    --garis: #2b3a49;
+    --aksen: #e0b341;
+    --aksen-tinta: #15212e;
+    --baik: #4ade80;
+    --tunggu: #fbbf24;
+    --lewat: #f87171;
+    --seri-masuk: #3987e5;
+    --seri-keluar: #199e70;
+    --bayang: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--kertas); color: var(--tinta);
+    font: 400 16px/1.5 var(--teks);
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+    z-index: 30; background: var(--permukaan);
+  }
+  h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+  button, input, select { font: inherit; color: inherit; }
+
+  /* Cangkang */
+  .cangkang { display: grid; grid-template-columns: 236px minmax(0, 1fr); min-height: 100%; }
+  .rel {
+    background: var(--permukaan); border-right: 1px solid var(--garis);
+    padding: 20px 14px calc(20px + env(safe-area-inset-bottom, 0px));
+    padding-left: max(14px, env(safe-area-inset-left, 0px));
+    display: flex; flex-direction: column; gap: 22px;
+    position: sticky; top: env(safe-area-inset-top, 0px); align-self: start; height: 100vh;
+  }
+  .merek { display: flex; align-items: center; gap: 10px; }
+  .palang { width: 34px; height: 34px; border-radius: 9px; flex: none; position: relative; overflow: hidden;
+            background: repeating-linear-gradient(135deg, var(--aksen) 0 7px, var(--permukaan-2) 7px 14px); }
+  .merek b { font-family: var(--display); font-size: 17px; line-height: 1.1; display: block; }
+  .merek span { font-size: 11.5px; color: var(--tinta-redup); letter-spacing: .08em; text-transform: uppercase; }
+  nav { display: flex; flex-direction: column; gap: 3px; }
+  .tab {
+    display: flex; align-items: center; gap: 11px; padding: 10px 12px; border-radius: 10px;
+    border: 0; background: transparent; cursor: pointer; text-align: left; width: 100%;
+    color: var(--tinta-redup); font-weight: 500;
+  }
+  .tab:hover { background: var(--permukaan-2); color: var(--tinta); }
+  .tab[aria-current="page"] { background: var(--aksen); color: var(--aksen-tinta); font-weight: 600; }
+  .tab svg { width: 19px; height: 19px; flex: none; }
+  .rel-kaki { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
+
+  main { min-width: 0; padding: 0 0 96px; }
+  .bilah {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+    background: var(--permukaan); border-bottom: 1px solid var(--garis);
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 12px max(16px, env(safe-area-inset-right, 0px)) 12px max(16px, env(safe-area-inset-left, 0px));
+  }
+  .bilah h1 { font-size: 20px; }
+  .bilah .sub { color: var(--tinta-redup); font-size: 13.5px; }
+  .kanan { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .isi { padding: 20px max(16px, env(safe-area-inset-right, 0px)) 20px max(16px, env(safe-area-inset-left, 0px));
+         display: flex; flex-direction: column; gap: 18px; max-width: 1120px; }
+
+  /* Komponen */
+  .kartu { background: var(--permukaan); border: 1px solid var(--garis); border-radius: var(--radius); box-shadow: var(--bayang); }
+  .kartu-isi { padding: 16px; }
+  .kartu-kepala { padding: 14px 16px; border-bottom: 1px solid var(--garis); display: flex; align-items: center; gap: 10px; }
+  .kartu-kepala h2 { font-size: 15px; }
+  .kartu-kepala .sub { font-size: 12.5px; color: var(--tinta-redup); }
+  .ubin { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .ubin > div { background: var(--permukaan); border: 1px solid var(--garis); border-radius: var(--radius); padding: 14px 16px; }
+  .ubin .label { font-size: 12px; color: var(--tinta-redup); text-transform: uppercase; letter-spacing: .07em; }
+  .ubin .angka { font-family: var(--display); font-size: 30px; line-height: 1.15; margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .ubin .kaki { font-size: 12.5px; color: var(--tinta-redup); margin-top: 2px; }
+  .garis-atas { height: 3px; border-radius: 3px; width: 34px; margin-bottom: 10px; background: var(--garis); }
+
+  .plat {
+    font-family: var(--data); font-weight: 600; letter-spacing: .06em; font-size: 14px;
+    background: #ffffff; color: #111111; border: 2px solid #111111; border-radius: 5px;
+    padding: 3px 8px; display: inline-block; white-space: nowrap;
+  }
+  .plat.kuning { background: #f5c518; border-color: #111111; color: #111111; }
+  .plat.merah { background: #c0282d; border-color: #7a1619; color: #ffffff; }
+
+  .cip { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 500;
+         padding: 3px 9px; border-radius: 999px; border: 1px solid var(--garis); background: var(--permukaan-2); }
+  .cip .titik { width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex: none; }
+  .cip.baik { color: var(--baik); }
+  .cip.tunggu { color: var(--tunggu); }
+  .cip.lewat { color: var(--lewat); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th { text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .06em;
+       color: var(--tinta-redup); padding: 10px 16px; border-bottom: 1px solid var(--garis); }
+  td { padding: 11px 16px; border-bottom: 1px solid var(--garis); vertical-align: middle; }
+  tr:last-child td { border-bottom: 0; }
+  td .nama { font-weight: 500; }
+  td .ket { color: var(--tinta-redup); font-size: 13px; }
+  .jam { font-family: var(--data); font-variant-numeric: tabular-nums; }
+  .gulir { overflow-x: auto; }
+
+  .tombol { border: 1px solid var(--garis); background: var(--permukaan); border-radius: 10px;
+            padding: 9px 14px; font-weight: 600; font-size: 14.5px; cursor: pointer; }
+  .tombol:hover { background: var(--permukaan-2); }
+  .tombol.utama { background: var(--aksen); border-color: var(--aksen); color: var(--aksen-tinta); }
+  .tombol.utama:hover { filter: brightness(1.07); }
+  .tombol.kecil { padding: 6px 11px; font-size: 13px; }
+  :focus-visible { outline: 2px solid var(--seri-masuk); outline-offset: 2px; }
+
+  form .baris { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  label.bidang { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: var(--tinta-redup); }
+  label.bidang input, label.bidang select {
+    border: 1px solid var(--garis); background: var(--kertas); border-radius: 9px; padding: 10px 11px;
+    font-weight: 400; font-size: 15px; color: var(--tinta); width: 100%;
+  }
+  label.bidang input::placeholder { color: var(--tinta-redup); opacity: .8; }
+  .bantu { font-size: 12.5px; color: var(--tinta-redup); font-weight: 400; }
+  .pilih-besar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .pilih-besar button {
+    text-align: left; padding: 15px; border-radius: 12px; border: 1.5px solid var(--garis);
+    background: var(--permukaan); cursor: pointer; display: flex; flex-direction: column; gap: 4px;
+  }
+  .pilih-besar button[aria-pressed="true"] { border-color: var(--aksen); background: var(--permukaan-2); }
+  .pilih-besar b { font-family: var(--display); font-size: 15.5px; }
+  .pilih-besar span { font-size: 13px; color: var(--tinta-redup); }
+
+  .langkah { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--tinta-redup); }
+  .langkah b { font-family: var(--data); background: var(--permukaan-2); border-radius: 6px; padding: 2px 7px; color: var(--tinta); }
+
+  /* Grafik */
+  .grafik-kaki { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding: 0 16px 14px; font-size: 13px; }
+  .legenda { display: inline-flex; align-items: center; gap: 7px; color: var(--tinta-redup); }
+  .legenda i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  #petunjuk {
+    position: fixed; pointer-events: none; z-index: 40; background: var(--permukaan); color: var(--tinta);
+    border: 1px solid var(--garis); border-radius: 10px; box-shadow: var(--bayang); padding: 9px 11px;
+    font-size: 13px; opacity: 0; transition: opacity .12s;
+  }
+  #petunjuk .jam-besar { font-family: var(--display); font-size: 15px; margin-bottom: 5px; }
+  #petunjuk div.b { display: flex; align-items: center; gap: 7px; font-variant-numeric: tabular-nums; }
+
+  .catatan { font-size: 13.5px; color: var(--tinta-redup); }
+  .pita { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 12px;
+          background: var(--permukaan-2); border: 1px solid var(--garis); font-size: 13.5px; }
+  .pita b { color: var(--tinta); }
+
+  .daftar-rencana { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .daftar-rencana .kartu-isi { display: flex; flex-direction: column; gap: 7px; min-height: 100%; }
+  .daftar-rencana h3 { font-size: 15px; }
+
+  .gerbang-panggung { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; }
+  .kamera { aspect-ratio: 16 / 10; border-radius: 12px; position: relative; overflow: hidden;
+            background: linear-gradient(170deg, #223041, #0e1821); border: 1px solid var(--garis); }
+  .kamera .kotak { position: absolute; border: 2px solid var(--seri-masuk); border-radius: 4px; }
+  .kamera .kotak.plat-kotak { border-color: var(--aksen); }
+  .kamera .tanda { position: absolute; font-family: var(--data); font-size: 11px; background: var(--aksen);
+                   color: var(--aksen-tinta); padding: 1px 5px; border-radius: 4px; transform: translateY(-110%); }
+  .kamera .luring { position: absolute; left: 10px; top: 10px; }
+  .putusan { display: flex; flex-direction: column; gap: 12px; }
+  .putusan .besar { font-family: var(--display); font-size: 25px; line-height: 1.15; }
+
+  @media (max-width: 900px) {
+    .cangkang { grid-template-columns: minmax(0, 1fr); }
+    .rel {
+      position: fixed; inset: auto 0 0 0; height: auto; z-index: 25; flex-direction: row; align-items: center;
+      border-right: 0; border-top: 1px solid var(--garis); gap: 0; overflow-x: auto;
+      padding: 8px max(8px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px));
+    }
+    .merek, .rel-kaki { display: none; }
+    nav { flex-direction: row; gap: 4px; width: 100%; }
+    .tab { flex-direction: column; gap: 4px; font-size: 11px; padding: 7px 4px; flex: 1; align-items: center; text-align: center; }
+    .ubin { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gerbang-panggung, .daftar-rencana, form .baris, .pilih-besar { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="cangkang">
+  <aside class="rel">
+    <div class="merek">
+      <div class="palang" aria-hidden="true"></div>
+      <div><b>TGT</b><span>Gate Track</span></div>
+    </div>
+    <nav id="nav" aria-label="Menu utama"></nav>
+    <div class="rel-kaki">
+      <div class="pita" style="font-size:12.5px">
+        <div><b>Versi 1</b> hanya kendaraan roda&nbsp;4 ke atas. Motor menyusul di versi&nbsp;2.</div>
+      </div>
+      <button class="tombol kecil" id="tema" type="button">Ganti tema</button>
+    </div>
+  </aside>
+
+  <main>
+    <header class="bilah">
+      <div>
+        <h1 id="judul">Beranda</h1>
+        <div class="sub" id="subjudul">Cluster Griya Asri · Gerbang Utama</div>
+      </div>
+      <div class="kanan">
+        <span class="cip baik"><i class="titik"></i>Gerbang aktif</span>
+      </div>
+    </header>
+    <div class="isi" id="isi"></div>
+  </main>
+</div>
+<div id="petunjuk" role="status" aria-live="polite"></div>
+
+<script>
+const IKON = {
+  beranda: '<path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/>',
+  daftar: '<circle cx="12" cy="8" r="3.4"/><path d="M4.5 20c.9-3.6 3.8-5.5 7.5-5.5s6.6 1.9 7.5 5.5"/>',
+  kendaraan: '<path d="M3 13.5h18"/><path d="M5.5 13.5 7 7.5h10l1.5 6"/><rect x="3" y="13.5" width="18" height="5" rx="1.6"/><circle cx="7.5" cy="18.5" r="1.4"/><circle cx="16.5" cy="18.5" r="1.4"/>',
+  tamu: '<circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.8-3.3 3.4-5 6.5-5s5.7 1.7 6.5 5"/><path d="M17.5 9.5h4M19.5 7.5v4"/>',
+  gerbang: '<path d="M4 20V5h3v15"/><path d="M7 7.5h13v3.5H7z"/><path d="M20 11v9"/>',
+  lokasi: '<path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>',
+  lainnya: '<circle cx="12" cy="12" r="8.2"/><path d="M12 8v4l2.6 1.6"/>'
+};
+const HALAMAN = [
+  { id: 'beranda', nama: 'Beranda', judul: 'Beranda', sub: 'Kantor Rungkut · Gerbang Selatan' },
+  { id: 'daftar', nama: 'Pendaftaran', judul: 'Pendaftaran', sub: 'Langkah 1–2 · akun dan grup' },
+  { id: 'lokasi', nama: 'Gerbang', judul: 'Gerbang dan Alamat', sub: 'Satu gerbang, satu alamat' },
+  { id: 'kendaraan', nama: 'Kendaraan', judul: 'Kendaraan', sub: 'Langkah 3–4 · kendaraan tetap' },
+  { id: 'tamu', nama: 'Tamu', judul: 'Tamu', sub: 'Langkah 5–8 · kunjungan sementara' },
+  { id: 'gerbang', nama: 'Gerbang', judul: 'Layar Gerbang', sub: 'Tampilan satpam · bekerja saat internet putus' },
+  { id: 'lainnya', nama: 'Lainnya', judul: 'Fitur Lanjutan', sub: 'Belum dikerjakan · menunggu keputusan' }
+];
+
+const JAM = ['06','07','08','09','10','11','12','13','14','15','16','17','18','19','20'];
+const MASUK  = [4, 11, 26, 19, 9, 7, 12, 8, 6, 9, 14, 31, 24, 12, 5];
+const KELUAR = [9, 22, 34, 14, 8, 6, 15, 9, 7, 11, 19, 16, 21, 10, 4];
+
+const lokasi = [
+  { nama: 'Kantor Rungkut Gate Selatan', jenis: 'Kantor', alamat: 'Jl. Rungkut Industri III No. 42', kota: 'Surabaya',
+    grup: 'PT Sinar Niaga', status: 'aktif', didalam: 38 },
+  { nama: 'Kantor Rungkut Gate Utara', jenis: 'Kantor', alamat: 'Jl. Rungkut Industri III No. 42', kota: 'Surabaya',
+    grup: 'PT Sinar Niaga', status: 'aktif', didalam: 12 },
+  { nama: 'Griya Asri Gerbang Utama', jenis: 'Perumahan', alamat: 'Jl. Griya Asri Raya No. 1', kota: 'Sidoarjo',
+    grup: 'Cluster Griya Asri', status: 'belum aktif', didalam: 0 }
+];
+const kendaraan = [
+  { plat: 'B 1842 KHA', warnaPlat: '', jenis: 'Mobil', merek: 'Toyota', warna: 'Putih', atasNama: 'Rudi Hartono', grup: 'Blok C-12' },
+  { plat: 'B 7731 SQE', warnaPlat: '', jenis: 'Mobil', merek: 'Daihatsu', warna: 'Hitam', atasNama: 'Siti Rahayu', grup: 'Blok A-04' },
+  { plat: 'B 9014 PFT', warnaPlat: 'kuning', jenis: 'Pikap', merek: 'Suzuki', warna: 'Abu-abu', atasNama: 'Koperasi Griya', grup: 'Pengurus' },
+  { plat: 'B 2256 TOG', warnaPlat: '', jenis: 'Mobil', merek: 'Mitsubishi', warna: 'Merah', atasNama: 'Dewi Lestari', grup: 'Blok B-09' }
+];
+const tamu = [
+  { nama: 'Agus Salim', keperluan: 'Kirim barang', plat: 'B 6623 VKA', warnaPlat: 'kuning', jenis: 'Truk', merek: 'Isuzu', warna: 'Putih', hari: 1, masuk: '08:14', keluar: '09:02', status: 'selesai' },
+  { nama: 'Rina Kartika', keperluan: 'Tamu keluarga', plat: 'B 4419 NUD', warnaPlat: '', jenis: 'Mobil', merek: 'Honda', warna: 'Silver', hari: 2, masuk: '10:31', keluar: null, status: 'di dalam' },
+  { nama: 'PT Sinar Niaga', keperluan: 'Servis AC', plat: 'B 3380 LQR', warnaPlat: '', jenis: 'Mobil', merek: 'Wuling', warna: 'Biru', hari: 1, masuk: '07:55', keluar: null, status: 'lewat batas' }
+];
+
+const el = (t, k, isi) => { const n = document.createElement(t); if (k) n.className = k; if (isi !== undefined) n.innerHTML = isi; return n; };
+const platHTML = (p, w) => `<span class="plat ${w || ''}">${p}</span>`;
+const cipStatus = (s) => s === 'di dalam' ? '<span class="cip baik"><i class="titik"></i>Di dalam</span>'
+  : s === 'lewat batas' ? '<span class="cip lewat"><i class="titik"></i>Lewat batas</span>'
+  : '<span class="cip tunggu"><i class="titik"></i>Selesai</span>';
+
+/* ---------- Grafik jam masuk dan keluar ---------- */
+function grafik() {
+  const bungkus = el('div', 'kartu');
+  bungkus.appendChild(el('div', 'kartu-kepala',
+    '<div><h2>Keluar masuk per jam</h2><div class="sub">Hari ini · 197 kendaraan · dua puncak: antar pagi dan pulang kerja</div></div>'));
+  const panggung = el('div', '', '');
+  panggung.style.padding = '16px 16px 4px';
+  const L = 760, T = 220, kiri = 34, kanan = 8, atas = 22, bawah = 26;
+  const maks = 40, lebarJam = (L - kiri - kanan) / JAM.length, lebarBatang = Math.min(11, (lebarJam - 6) / 2);
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('viewBox', `0 0 ${L} ${T}`); svg.setAttribute('width', '100%');
+  svg.setAttribute('role', 'img');
+  svg.setAttribute('aria-label', 'Grafik batang jumlah kendaraan masuk dan keluar tiap jam, pukul 06 sampai 20.');
+  svg.style.display = 'block';
+  const ns = 'http://www.w3.org/2000/svg';
+  const buat = (t, a) => { const n = document.createElementNS(ns, t); for (const k in a) n.setAttribute(k, a[k]); return n; };
+  for (let v = 0; v <= maks; v += 10) {
+    const y = T - bawah - (v / maks) * (T - atas - bawah);
+    svg.appendChild(buat('line', { x1: kiri, x2: L - kanan, y1: y, y2: y, stroke: 'var(--garis)', 'stroke-width': 1 }));
+    const t = buat('text', { x: kiri - 8, y: y + 4, 'text-anchor': 'end', fill: 'var(--tinta-redup)', 'font-size': 11 });
+    t.setAttribute('font-family', 'IBM Plex Mono, monospace'); t.textContent = v; svg.appendChild(t);
+  }
+  JAM.forEach((j, i) => {
+    const x0 = kiri + i * lebarJam;
+    const t = buat('text', { x: x0 + lebarJam / 2, y: T - 8, 'text-anchor': 'middle', fill: 'var(--tinta-redup)', 'font-size': 11 });
+    t.setAttribute('font-family', 'IBM Plex Mono, monospace'); t.textContent = j; svg.appendChild(t);
+    [[MASUK[i], 'var(--seri-masuk)', 0], [KELUAR[i], 'var(--seri-keluar)', lebarBatang + 2]].forEach(([v, warna, geser]) => {
+      const tinggi = Math.max(2, (v / maks) * (T - atas - bawah));
+      svg.appendChild(buat('rect', {
+        x: x0 + (lebarJam - (lebarBatang * 2 + 2)) / 2 + geser, y: T - bawah - tinggi,
+        width: lebarBatang, height: tinggi, rx: 4, fill: warna
+      }));
+    });
+    const puncak = Math.max(MASUK[i], KELUAR[i]);
+    if (puncak === Math.max(...MASUK, ...KELUAR)) {
+      const lbl = buat('text', { x: x0 + lebarJam / 2, y: T - bawah - (puncak / maks) * (T - atas - bawah) - 6,
+        'text-anchor': 'middle', fill: 'var(--tinta)', 'font-size': 11.5, 'font-weight': 600 });
+      lbl.setAttribute('font-family', 'IBM Plex Mono, monospace'); lbl.textContent = puncak; svg.appendChild(lbl);
+    }
+    const kena = buat('rect', { x: x0, y: atas, width: lebarJam, height: T - atas - bawah, fill: 'transparent' });
+    kena.style.cursor = 'crosshair';
+    kena.addEventListener('pointerenter', (e) => tampilPetunjuk(e, i));
+    kena.addEventListener('pointermove', (e) => tampilPetunjuk(e, i));
+    kena.addEventListener('pointerleave', sembunyiPetunjuk);
+    svg.appendChild(kena);
+  });
+  svg.appendChild(buat('line', { x1: kiri, x2: L - kanan, y1: T - bawah, y2: T - bawah, stroke: 'var(--tinta-redup)', 'stroke-width': 1 }));
+  panggung.appendChild(svg);
+  bungkus.appendChild(panggung);
+  const kaki = el('div', 'grafik-kaki');
+  kaki.innerHTML = `<span class="legenda"><i style="background:var(--seri-masuk)"></i>Masuk</span>
+    <span class="legenda"><i style="background:var(--seri-keluar)"></i>Keluar</span>
+    <span class="catatan">Puncak masuk pukul 17 (31) · puncak keluar pukul 08 (34)</span>`;
+  const tombolTabel = el('button', 'tombol kecil', 'Lihat angka');
+  tombolTabel.type = 'button';
+  const tabel = el('div', 'gulir');
+  tabel.hidden = true;
+  tabel.innerHTML = `<table><thead><tr><th>Jam</th>${JAM.map(j => `<th class="jam">${j}</th>`).join('')}</tr></thead>
+    <tbody><tr><td>Masuk</td>${MASUK.map(v => `<td class="jam">${v}</td>`).join('')}</tr>
+    <tr><td>Keluar</td>${KELUAR.map(v => `<td class="jam">${v}</td>`).join('')}</tr></tbody></table>`;
+  tombolTabel.addEventListener('click', () => {
+    tabel.hidden = !tabel.hidden;
+    tombolTabel.textContent = tabel.hidden ? 'Lihat angka' : 'Sembunyikan angka';
+  });
+  kaki.appendChild(tombolTabel);
+  bungkus.appendChild(kaki);
+  bungkus.appendChild(tabel);
+  return bungkus;
+}
+const petunjuk = document.getElementById('petunjuk');
+function tampilPetunjuk(e, i) {
+  petunjuk.innerHTML = `<div class="jam-besar">Pukul ${JAM[i]}.00</div>
+    <div class="b"><i style="width:9px;height:9px;border-radius:2px;background:var(--seri-masuk);display:inline-block"></i>Masuk ${MASUK[i]}</div>
+    <div class="b"><i style="width:9px;height:9px;border-radius:2px;background:var(--seri-keluar);display:inline-block"></i>Keluar ${KELUAR[i]}</div>`;
+  petunjuk.style.opacity = '1';
+  const r = petunjuk.getBoundingClientRect();
+  petunjuk.style.left = Math.min(e.clientX + 14, window.innerWidth - r.width - 10) + 'px';
+  petunjuk.style.top = Math.max(10, e.clientY - r.height - 12) + 'px';
+}
+function sembunyiPetunjuk() { petunjuk.style.opacity = '0'; }
+
+/* ---------- Halaman ---------- */
+function halamanBeranda() {
+  const f = document.createDocumentFragment();
+  const kepala = el('div', 'pita');
+  kepala.innerHTML = `<div><b>Kantor Rungkut Gate Selatan</b> · Jl. Rungkut Industri III No. 42, Surabaya ·
+    grup PT Sinar Niaga. Angka di bawah hanya untuk gerbang ini.</div>`;
+  f.appendChild(kepala);
+  const ubin = el('div', 'ubin');
+  [['Di dalam sekarang', '38', 'kendaraan terdaftar + tamu', 'var(--seri-masuk)'],
+   ['Masuk hari ini', '197', 'sejak pukul 06.00', 'var(--seri-masuk)'],
+   ['Keluar hari ini', '205', 'termasuk 9 tamu', 'var(--seri-keluar)'],
+   ['Lewat batas', '1', 'tamu melebihi lama kunjungan', 'var(--lewat)']
+  ].forEach(([l, a, k, w]) => {
+    const d = el('div');
+    d.innerHTML = `<div class="garis-atas" style="background:${w}"></div><div class="label">${l}</div>
+      <div class="angka">${a}</div><div class="kaki">${k}</div>`;
+    ubin.appendChild(d);
+  });
+  f.appendChild(ubin);
+  f.appendChild(grafik());
+
+  const kartu = el('div', 'kartu');
+  kartu.appendChild(el('div', 'kartu-kepala', '<div><h2>Masih di dalam</h2><div class="sub">Urut dari yang paling lama</div></div>'));
+  const g = el('div', 'gulir');
+  g.innerHTML = `<table><thead><tr><th>Kendaraan</th><th>Atas nama</th><th>Masuk</th><th>Lama</th><th>Status</th></tr></thead><tbody>
+    <tr><td>${platHTML('B 3380 LQR')}<div class="ket">Mobil · Wuling · Biru</div></td>
+      <td><div class="nama">PT Sinar Niaga</div><div class="ket">Tamu · servis AC</div></td>
+      <td class="jam">07:55</td><td class="jam">2 hari 4 jam</td><td>${cipStatus('lewat batas')}</td></tr>
+    <tr><td>${platHTML('B 4419 NUD')}<div class="ket">Mobil · Honda · Silver</div></td>
+      <td><div class="nama">Rina Kartika</div><div class="ket">Tamu · Blok C-12</div></td>
+      <td class="jam">10:31</td><td class="jam">6 jam</td><td>${cipStatus('di dalam')}</td></tr>
+    <tr><td>${platHTML('B 1842 KHA')}<div class="ket">Mobil · Toyota · Putih</div></td>
+      <td><div class="nama">Rudi Hartono</div><div class="ket">Penghuni · Blok C-12</div></td>
+      <td class="jam">16:48</td><td class="jam">21 menit</td><td>${cipStatus('di dalam')}</td></tr>
+  </tbody></table>`;
+  kartu.appendChild(g);
+  f.appendChild(kartu);
+  return f;
+}
+
+function halamanDaftar() {
+  const f = document.createDocumentFragment();
+  f.appendChild(el('div', 'langkah', '<b>1</b> Pilih jenis akun <b>2</b> Grup <b>3</b> Kendaraan <b>4</b> Simpan'));
+
+  const k1 = el('div', 'kartu');
+  k1.appendChild(el('div', 'kartu-kepala', '<div><h2>Daftar sebagai</h2><div class="sub">Perusahaan bisa mendaftarkan kendaraan atas nama orang lain</div></div>'));
+  const isi1 = el('div', 'kartu-isi');
+  const pilih = el('div', 'pilih-besar');
+  pilih.innerHTML = `
+    <button type="button" aria-pressed="false" data-jenis="pribadi"><b>Pribadi</b><span>Kendaraan atas nama sendiri dan keluarga serumah</span></button>
+    <button type="button" aria-pressed="true" data-jenis="perusahaan"><b>Perusahaan</b><span>Banyak kendaraan, tiap kendaraan punya penanggung jawab</span></button>`;
+  pilih.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    pilih.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    isi1.querySelector('#blok-perusahaan').hidden = b.dataset.jenis !== 'perusahaan';
+  });
+  isi1.appendChild(pilih);
+  const blok = el('div');
+  blok.id = 'blok-perusahaan';
+  blok.style.marginTop = '14px';
+  blok.innerHTML = `<div class="baris">
+      <label class="bidang">Nama perusahaan<input id="pt-nama" value="PT Sinar Niaga"></label>
+      <label class="bidang">NIB atau NPWP<input id="pt-nib" placeholder="Nomor izin usaha"></label>
+      <label class="bidang">Penanggung jawab<input id="pt-pj" value="Hendra Wijaya"></label>
+      <label class="bidang">Nomor WhatsApp<input id="pt-wa" value="0812-1122-3344"></label>
+    </div>`;
+  isi1.appendChild(blok);
+  k1.appendChild(isi1);
+  f.appendChild(k1);
+
+  const k2 = el('div', 'kartu');
+  k2.appendChild(el('div', 'kartu-kepala', '<div><h2>Grup</h2><div class="sub">Satu grup = satu gerbang atau satu lokasi</div></div>'));
+  const isi2 = el('div', 'kartu-isi');
+  isi2.innerHTML = `
+    <div class="pilih-besar">
+      <button type="button" aria-pressed="true"><b>Buat grup baru</b><span>Anda menjadi pengelola, dan menyetujui anggota yang masuk</span></button>
+      <button type="button" aria-pressed="false"><b>Ikut grup lain</b><span>Masukkan kode undangan dari pengelola</span></button>
+    </div>
+    <div class="baris" style="margin-top:14px">
+      <label class="bidang">Nama grup<input value="Cluster Griya Asri"></label>
+      <label class="bidang">Kode undangan<input value="GRY-4K8Q" readonly><span class="bantu">Bagikan kode ini ke penghuni atau karyawan</span></label>
+    </div>`;
+  isi2.querySelector('.pilih-besar').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    isi2.querySelectorAll('.pilih-besar button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  });
+  k2.appendChild(isi2);
+  f.appendChild(k2);
+  f.appendChild(el('div', 'pita', '<div><b>Data pribadi.</b> Plat nomor dan jam keluar-masuk termasuk data pribadi menurut UU PDP 27/2022. Penghuni diberi tahu apa yang dicatat dan berapa lama disimpan sebelum grup dibuat.</div>'));
+  return f;
+}
+
+function barisKendaraan(k) {
+  return `<tr><td>${platHTML(k.plat, k.warnaPlat)}</td>
+    <td><div class="nama">${k.jenis} · ${k.merek}</div><div class="ket">${k.warna}</div></td>
+    <td><div class="nama">${k.atasNama}</div><div class="ket">${k.grup}</div></td>
+    <td><span class="cip baik"><i class="titik"></i>Aktif</span></td></tr>`;
+}
+
+function halamanLokasi() {
+  const f = document.createDocumentFragment();
+  f.appendChild(el('div', 'pita', '<div><b>Satu gerbang, satu alamat.</b> Satu lokasi dengan dua pintu menjadi dua gerbang. Kendaraan, tamu, dan catatan keluar masuk selalu menempel pada gerbangnya. Pemasangan alatnya dikerjakan tim operasional di luar aplikasi ini.</div>'));
+
+  const kartu = el('div', 'kartu');
+  kartu.appendChild(el('div', 'kartu-kepala', '<div><h2>Daftarkan gerbang</h2><div class="sub">Nama gerbang memuat lokasi dan posisinya, misalnya Kantor Rungkut Gate Selatan</div></div>'));
+  const isi = el('div', 'kartu-isi');
+  const form = el('form');
+  form.innerHTML = `
+    <div class="baris">
+      <label class="bidang">Nama gerbang<input id="g-nama" placeholder="Kantor Rungkut Gate Selatan"></label>
+      <label class="bidang">Jenis lokasi
+        <select id="g-jenis"><option>Kantor</option><option>Perumahan</option><option>Gudang</option><option>Pabrik</option>
+        <option>Sekolah</option><option>Lainnya</option></select></label>
+      <label class="bidang">Alamat<input id="g-alamat" placeholder="Jl. Rungkut Industri III No. 42"></label>
+      <label class="bidang">Kota<input id="g-kota" placeholder="Surabaya"></label>
+      <label class="bidang">Titik koordinat<input id="g-koor" placeholder="-7.3297, 112.7625">
+        <span class="bantu">Boleh dikosongkan. Dipakai untuk peta dan jarak tempuh petugas.</span></label>
+      <label class="bidang">Grup penaung<input id="g-grup" placeholder="PT Sinar Niaga"></label>
+      <label class="bidang">Patokan<input id="g-patokan" placeholder="Seberang pos satpam">
+        <span class="bantu">Membantu tim pemasang menemukan gerbangnya.</span></label>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <button class="tombol utama" type="submit">Simpan gerbang</button>
+      <button class="tombol" type="reset">Kosongkan</button>
+    </div>`;
+  isi.appendChild(form);
+  kartu.appendChild(isi);
+  f.appendChild(kartu);
+
+  const daftar = el('div', 'kartu');
+  daftar.appendChild(el('div', 'kartu-kepala', `<div><h2>Gerbang terdaftar</h2><div class="sub" id="jml-gerbang">${lokasi.length} gerbang</div></div>`));
+  const g = el('div', 'gulir');
+  const render = () => {
+    g.innerHTML = `<table><thead><tr><th>Gerbang</th><th>Alamat</th><th>Grup</th><th>Di dalam</th><th>Status</th></tr></thead>
+      <tbody>${lokasi.map(l => `<tr>
+        <td><div class="nama">${l.nama}</div><div class="ket">${l.jenis}</div></td>
+        <td><div>${l.alamat}</div><div class="ket">${l.kota}</div></td>
+        <td>${l.grup}</td>
+        <td class="jam">${l.didalam}</td>
+        <td>${l.status === 'aktif'
+          ? '<span class="cip baik"><i class="titik"></i>Aktif</span>'
+          : '<span class="cip tunggu"><i class="titik"></i>Belum aktif</span>'}</td></tr>`).join('')}</tbody></table>`;
+    const j = document.getElementById('jml-gerbang');
+    if (j) j.textContent = `${lokasi.length} gerbang`;
+  };
+  render();
+  daftar.appendChild(g);
+  f.appendChild(daftar);
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nama = form.querySelector('#g-nama').value.trim();
+    const alamat = form.querySelector('#g-alamat').value.trim();
+    if (!nama || !alamat) { (nama ? form.querySelector('#g-alamat') : form.querySelector('#g-nama')).focus(); return; }
+    lokasi.unshift({
+      nama, alamat,
+      jenis: form.querySelector('#g-jenis').value,
+      kota: form.querySelector('#g-kota').value.trim() || '—',
+      grup: form.querySelector('#g-grup').value.trim() || '—',
+      status: 'belum aktif', didalam: 0
+    });
+    form.reset(); render();
+  });
+  return f;
+}
+
+function halamanKendaraan() {
+  const f = document.createDocumentFragment();
+  f.appendChild(el('div', 'langkah', '<b>3</b> Daftarkan kendaraan <b>4</b> Simpan'));
+
+  const kartu = el('div', 'kartu');
+  kartu.appendChild(el('div', 'kartu-kepala', '<div><h2>Tambah kendaraan</h2><div class="sub">Versi 1: roda 4 ke atas</div></div>'));
+  const isi = el('div', 'kartu-isi');
+  const form = el('form');
+  form.innerHTML = `
+    <div class="baris">
+      <label class="bidang">Jenis
+        <select id="f-jenis"><option>Mobil</option><option>Pikap</option><option>Truk</option><option>Bus</option>
+        <option disabled>Motor — menyusul di versi 2</option></select></label>
+      <label class="bidang">Merek
+        <select id="f-merek"><option>Toyota</option><option>Daihatsu</option><option>Honda</option><option>Mitsubishi</option>
+        <option>Suzuki</option><option>Wuling</option><option>Hyundai</option><option>Nissan</option><option>Mazda</option>
+        <option>Isuzu</option><option>Lainnya</option></select></label>
+      <label class="bidang">Warna
+        <select id="f-warna"><option>Putih</option><option>Hitam</option><option>Abu-abu</option><option>Silver</option>
+        <option>Merah</option><option>Biru</option><option>Hijau</option><option>Kuning</option><option>Coklat</option>
+        <option>Lainnya</option></select></label>
+      <label class="bidang">Plat nomor
+        <input id="f-plat" placeholder="B 1234 XYZ" autocomplete="off">
+        <span class="bantu">Huruf wilayah, angka, lalu huruf seri</span></label>
+      <label class="bidang">Atas nama<input id="f-nama" placeholder="Nama pemilik atau pemegang"></label>
+      <label class="bidang">Blok atau divisi<input id="f-grup" placeholder="Blok C-12 / Divisi Logistik"></label>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <button class="tombol utama" type="submit">Simpan kendaraan</button>
+      <button class="tombol" type="reset">Kosongkan</button>
+    </div>`;
+  isi.appendChild(form);
+  kartu.appendChild(isi);
+  f.appendChild(kartu);
+
+  const daftar = el('div', 'kartu');
+  daftar.appendChild(el('div', 'kartu-kepala', `<div><h2>Kendaraan terdaftar</h2><div class="sub" id="jml-kendaraan">${kendaraan.length} kendaraan</div></div>`));
+  const g = el('div', 'gulir');
+  const render = () => {
+    g.innerHTML = `<table><thead><tr><th>Plat</th><th>Kendaraan</th><th>Atas nama</th><th>Status</th></tr></thead>
+      <tbody>${kendaraan.map(barisKendaraan).join('')}</tbody></table>`;
+    const j = document.getElementById('jml-kendaraan');
+    if (j) j.textContent = `${kendaraan.length} kendaraan`;
+  };
+  render();
+  daftar.appendChild(g);
+  f.appendChild(daftar);
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const plat = form.querySelector('#f-plat').value.trim().toUpperCase();
+    if (!plat) { form.querySelector('#f-plat').focus(); return; }
+    kendaraan.unshift({
+      plat, warnaPlat: '',
+      jenis: form.querySelector('#f-jenis').value,
+      merek: form.querySelector('#f-merek').value,
+      warna: form.querySelector('#f-warna').value,
+      atasNama: form.querySelector('#f-nama').value.trim() || 'Belum diisi',
+      grup: form.querySelector('#f-grup').value.trim() || '—'
+    });
+    form.reset(); render();
+  });
+  return f;
+}
+
+function halamanTamu() {
+  const f = document.createDocumentFragment();
+  f.appendChild(el('div', 'langkah', '<b>5</b> Tambah tamu <b>6</b> Kendaraan tamu <b>7</b> Lama kunjungan <b>8</b> Simpan'));
+
+  const kartu = el('div', 'kartu');
+  kartu.appendChild(el('div', 'kartu-kepala', '<div><h2>Tambah tamu</h2><div class="sub">Tamu dapat kode QR; satpam tidak perlu mencatat tangan</div></div>'));
+  const isi = el('div', 'kartu-isi');
+  const form = el('form');
+  form.innerHTML = `
+    <div class="baris">
+      <label class="bidang">Nama tamu<input id="t-nama" placeholder="Nama orang atau perusahaan"></label>
+      <label class="bidang">Keperluan<input id="t-perlu" placeholder="Kirim barang / tamu keluarga"></label>
+      <label class="bidang">Jenis
+        <select id="t-jenis"><option>Mobil</option><option>Pikap</option><option>Truk</option><option>Bus</option>
+        <option disabled>Motor — menyusul di versi 2</option></select></label>
+      <label class="bidang">Merek
+        <select id="t-merek"><option>Toyota</option><option>Daihatsu</option><option>Honda</option><option>Mitsubishi</option>
+        <option>Suzuki</option><option>Wuling</option><option>Isuzu</option><option>Lainnya</option></select></label>
+      <label class="bidang">Warna
+        <select id="t-warna"><option>Putih</option><option>Hitam</option><option>Abu-abu</option><option>Silver</option>
+        <option>Merah</option><option>Biru</option><option>Lainnya</option></select></label>
+      <label class="bidang">Plat nomor<input id="t-plat" placeholder="B 1234 XYZ" autocomplete="off"></label>
+      <label class="bidang">Lama kunjungan
+        <select id="t-hari"><option value="1">1 hari</option><option value="2">2 hari</option><option value="3">3 hari</option>
+        <option value="7">7 hari</option><option value="30">30 hari</option></select>
+        <span class="bantu">Dihitung dari jam masuk. Lewat dari ini, satpam dapat peringatan.</span></label>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <button class="tombol utama" type="submit">Simpan dan buat QR</button>
+      <button class="tombol" type="reset">Kosongkan</button>
+    </div>`;
+  isi.appendChild(form);
+  kartu.appendChild(isi);
+  f.appendChild(kartu);
+
+  const daftar = el('div', 'kartu');
+  daftar.appendChild(el('div', 'kartu-kepala', '<div><h2>Kunjungan</h2><div class="sub">Jam keluar dibandingkan dengan lama kunjungan</div></div>'));
+  const g = el('div', 'gulir');
+  const render = () => {
+    g.innerHTML = `<table><thead><tr><th>Tamu</th><th>Kendaraan</th><th>Lama</th><th>Masuk</th><th>Keluar</th><th>Status</th></tr></thead>
+      <tbody>${tamu.map(t => `<tr>
+        <td><div class="nama">${t.nama}</div><div class="ket">${t.keperluan}</div></td>
+        <td>${platHTML(t.plat, t.warnaPlat)}<div class="ket">${t.jenis} · ${t.merek} · ${t.warna}</div></td>
+        <td class="jam">${t.hari} hari</td>
+        <td class="jam">${t.masuk || '—'}</td>
+        <td class="jam">${t.keluar || '—'}</td>
+        <td>${cipStatus(t.status)}</td></tr>`).join('')}</tbody></table>`;
+  };
+  render();
+  daftar.appendChild(g);
+  f.appendChild(daftar);
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const plat = form.querySelector('#t-plat').value.trim().toUpperCase();
+    const nama = form.querySelector('#t-nama').value.trim();
+    if (!plat || !nama) { (nama ? form.querySelector('#t-plat') : form.querySelector('#t-nama')).focus(); return; }
+    tamu.unshift({
+      nama, keperluan: form.querySelector('#t-perlu').value.trim() || 'Belum diisi',
+      plat, warnaPlat: '', jenis: form.querySelector('#t-jenis').value,
+      merek: form.querySelector('#t-merek').value, warna: form.querySelector('#t-warna').value,
+      hari: Number(form.querySelector('#t-hari').value), masuk: null, keluar: null, status: 'menunggu'
+    });
+    form.reset(); render();
+  });
+  return f;
+}
+
+function halamanGerbang() {
+  const f = document.createDocumentFragment();
+  const panggung = el('div', 'gerbang-panggung');
+
+  const kiri = el('div', 'kartu');
+  kiri.appendChild(el('div', 'kartu-kepala', '<div><h2>Kamera gerbang masuk</h2><div class="sub">Bacaan terakhir · 0,8 detik lalu</div></div>'));
+  const isiKiri = el('div', 'kartu-isi');
+  const kamera = el('div', 'kamera');
+  kamera.innerHTML = `
+    <div class="luring"><span class="cip tunggu"><i class="titik"></i>Mode luring · tersimpan 12 kejadian</span></div>
+    <div class="kotak" style="left:18%;top:26%;width:58%;height:54%"></div>
+    <div class="kotak plat-kotak" style="left:38%;top:62%;width:19%;height:9%">
+      <span class="tanda" style="left:0">plat · yakin 0,94</span>
+    </div>`;
+  isiKiri.appendChild(kamera);
+  isiKiri.appendChild(el('div', 'catatan', 'Kotak biru: kendaraan. Kotak emas: plat yang dibaca. Satpam tidak perlu menyentuh apa pun bila bacaannya cocok.'));
+  isiKiri.style.display = 'flex';
+  isiKiri.style.flexDirection = 'column';
+  isiKiri.style.gap = '12px';
+  kiri.appendChild(isiKiri);
+
+  const kanan = el('div', 'kartu');
+  kanan.appendChild(el('div', 'kartu-kepala', '<div><h2>Hasil</h2><div class="sub">Gerbang hanya menerima perintah buka</div></div>'));
+  const isiKanan = el('div', 'kartu-isi putusan');
+  isiKanan.innerHTML = `
+    <div>${platHTML('B 1842 KHA')}</div>
+    <div class="besar">Rudi Hartono</div>
+    <div class="catatan">Penghuni · Blok C-12 · terdaftar sejak 4 Mei 2026</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span class="cip baik"><i class="titik"></i>Plat cocok</span>
+      <span class="cip baik"><i class="titik"></i>Jenis cocok: Mobil</span>
+      <span class="cip tunggu"><i class="titik"></i>Warna tak yakin</span>
+    </div>
+    <div class="pita"><div><b>Ciri hanya dicatat.</b> Warna dan merek belum memicu peringatan ke satpam, karena pengenalnya belum cukup akurat. Gerbang tetap mengikuti plat.</div></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="tombol utama" type="button">Buka palang</button>
+      <button class="tombol" type="button">Panggil satpam</button>
+    </div>`;
+  kanan.appendChild(isiKanan);
+
+  panggung.appendChild(kiri);
+  panggung.appendChild(kanan);
+  f.appendChild(panggung);
+
+  const log = el('div', 'kartu');
+  log.appendChild(el('div', 'kartu-kepala', '<div><h2>Kejadian terakhir</h2><div class="sub">Tersimpan di gerbang, dikirim ke server saat internet tersambung</div></div>'));
+  const g = el('div', 'gulir');
+  g.innerHTML = `<table><thead><tr><th>Jam</th><th>Plat</th><th>Arah</th><th>Keputusan</th></tr></thead><tbody>
+    <tr><td class="jam">17:04</td><td>${platHTML('B 1842 KHA')}</td><td>Masuk</td><td>${cipStatus('di dalam')}</td></tr>
+    <tr><td class="jam">17:01</td><td>${platHTML('B 6623 VKA', 'kuning')}</td><td>Keluar</td><td>${cipStatus('selesai')}</td></tr>
+    <tr><td class="jam">16:58</td><td>${platHTML('B 3380 LQR')}</td><td>Masuk</td><td>${cipStatus('lewat batas')}</td></tr>
+  </tbody></table>`;
+  log.appendChild(g);
+  f.appendChild(log);
+  return f;
+}
+
+function halamanLainnya() {
+  const f = document.createDocumentFragment();
+  f.appendChild(el('div', 'pita', '<div><b>Belum dikerjakan.</b> Tiga hal di bawah ini usulan tambahan. Masing-masing butuh perangkat atau data yang belum ada, jadi tidak masuk versi 1.</div>'));
+  const d = el('div', 'daftar-rencana');
+  [['Manajemen ban', 'Umur dan tekanan ban per kendaraan, dengan pengingat ganti.', 'Butuh pencatatan manual atau sensor TPMS. Tidak ada hubungannya dengan kamera gerbang.'],
+   ['Lacak GPS', 'Posisi kendaraan di luar gerbang.', 'Butuh alat GPS per kendaraan dan biaya langganan data. Keputusan pembelian ada di owner.'],
+   ['Jadwal servis', 'Pengingat servis berkala dari jarak tempuh atau tanggal.', 'Jarak tempuh tidak bisa dibaca kamera. Harus diisi tangan, atau diambil dari alat GPS.']
+  ].forEach(([j, a, b]) => {
+    const k = el('div', 'kartu');
+    k.innerHTML = `<div class="kartu-isi"><h3>${j}</h3><div class="catatan">${a}</div>
+      <div class="pita" style="margin-top:auto"><div>${b}</div></div></div>`;
+    d.appendChild(k);
+  });
+  f.appendChild(d);
+  return f;
+}
+
+const ISI = { beranda: halamanBeranda, daftar: halamanDaftar, lokasi: halamanLokasi, kendaraan: halamanKendaraan,
+  tamu: halamanTamu, gerbang: halamanGerbang, lainnya: halamanLainnya };
+
+const nav = document.getElementById('nav');
+HALAMAN.forEach(h => {
+  const b = el('button', 'tab');
+  b.type = 'button';
+  b.dataset.id = h.id;
+  b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${IKON[h.id]}</svg><span>${h.nama}</span>`;
+  b.addEventListener('click', () => buka(h.id));
+  nav.appendChild(b);
+});
+
+function buka(id) {
+  const h = HALAMAN.find(x => x.id === id);
+  document.getElementById('judul').textContent = h.judul;
+  document.getElementById('subjudul').textContent = h.sub;
+  nav.querySelectorAll('.tab').forEach(t => {
+    if (t.dataset.id === id) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
+  });
+  const isi = document.getElementById('isi');
+  isi.textContent = '';
+  isi.appendChild(ISI[id]());
+  sembunyiPetunjuk();
+  window.scrollTo({ top: 0 });
+}
+
+document.getElementById('tema').addEventListener('click', () => {
+  const sekarang = document.documentElement.getAttribute('data-theme');
+  const gelapSistem = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const jadiGelap = sekarang ? sekarang === 'light' : !gelapSistem;
+  document.documentElement.setAttribute('data-theme', jadiGelap ? 'dark' : 'light');
+});
+
+buka('beranda');
+</script>
+</body>
+</html>

@@ -1,0 +1,1262 @@
+{
+ "rencana": 35,
+ "dugaan": "masukan 96 x 96 terlalu kecil untuk mobil, sehingga logonya hilang saat diperkecil",
+ "mesin": {
+  "ciri-merek-mobil-c96": {
+   "nama": "ciri-merek-mobil-c96",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "dataset-roboflow-brand"
+   ],
+   "ciri": "merek",
+   "jenis": "mobil",
+   "ukuran": 96,
+   "kelas": [
+    "Daihatsu",
+    "Honda",
+    "Hyundai",
+    "Isuzu",
+    "Mazda",
+    "Mitsubishi",
+    "Nissan",
+    "Suzuki",
+    "Toyota",
+    "Wuling",
+    "lainnya"
+   ],
+   "zaman": 30,
+   "zaman_terbaik": 18,
+   "gambar": {
+    "latih": 3309,
+    "validasi_owner": 17
+   },
+   "validasi_owner": {
+    "gambar": 17,
+    "benar": 9,
+    "salah": 8,
+    "tak_yakin": 0,
+    "nilai": 1
+   },
+   "sha256_onnx": "0c57b3151cc2dd9c1a86b9ba853fe62eaa1923d18911d845ec364adfe4ddd1c7",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 3.5762786865234375e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 1.9838,
+     "benar": 4,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 2,
+     "rugi": 1.6388,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 3,
+     "rugi": 1.4358,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 4,
+     "rugi": 1.2612,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 5,
+     "rugi": 1.1469,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 6,
+     "rugi": 1.0457,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 7,
+     "rugi": 0.9579,
+     "benar": 0,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -17
+    },
+    {
+     "zaman": 8,
+     "rugi": 0.9013,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 9,
+     "rugi": 0.8436,
+     "benar": 0,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -17
+    },
+    {
+     "zaman": 10,
+     "rugi": 0.7893,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 11,
+     "rugi": 0.7178,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 12,
+     "rugi": 0.6936,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.6552,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.6389,
+     "benar": 4,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.5995,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.5774,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.5565,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.5331,
+     "benar": 9,
+     "salah": 8,
+     "tak_yakin": 0,
+     "nilai": 1
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.5286,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.5151,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.4957,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.4866,
+     "benar": 8,
+     "salah": 9,
+     "tak_yakin": 0,
+     "nilai": -1
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.4706,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.4644,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.4562,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.45,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.4451,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.4369,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.4416,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.438,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    }
+   ]
+  },
+  "ciri-merek-mobil-c192": {
+   "nama": "ciri-merek-mobil-c192",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "dataset-roboflow-brand"
+   ],
+   "ciri": "merek",
+   "jenis": "mobil",
+   "ukuran": 192,
+   "kelas": [
+    "Daihatsu",
+    "Honda",
+    "Hyundai",
+    "Isuzu",
+    "Mazda",
+    "Mitsubishi",
+    "Nissan",
+    "Suzuki",
+    "Toyota",
+    "Wuling",
+    "lainnya"
+   ],
+   "zaman": 30,
+   "zaman_terbaik": 1,
+   "gambar": {
+    "latih": 3309,
+    "validasi_owner": 17
+   },
+   "validasi_owner": {
+    "gambar": 17,
+    "benar": 7,
+    "salah": 10,
+    "tak_yakin": 0,
+    "nilai": -3
+   },
+   "sha256_onnx": "522169b0de6541c0d52d1b6ace721c3d9ab2d0a6b69b974b584ac06721b2be9b",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 2.086162567138672e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 2.041,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 2,
+     "rugi": 1.7814,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 3,
+     "rugi": 1.6325,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 4,
+     "rugi": 1.513,
+     "benar": 0,
+     "salah": 17,
+     "tak_yakin": 0,
+     "nilai": -17
+    },
+    {
+     "zaman": 5,
+     "rugi": 1.3947,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 6,
+     "rugi": 1.3169,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 7,
+     "rugi": 1.2464,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 8,
+     "rugi": 1.1932,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 9,
+     "rugi": 1.1206,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 10,
+     "rugi": 1.0895,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 11,
+     "rugi": 1.0523,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 12,
+     "rugi": 1.0185,
+     "benar": 4,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 13,
+     "rugi": 0.9771,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 14,
+     "rugi": 0.9712,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 15,
+     "rugi": 0.9357,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 16,
+     "rugi": 0.9135,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 17,
+     "rugi": 0.8946,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.8748,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.8422,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.8156,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.7877,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.7696,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.7717,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.7437,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.7323,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.7105,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.7013,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.6864,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.685,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.683,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    }
+   ]
+  },
+  "ciri-merek-mobil-c256": {
+   "nama": "ciri-merek-mobil-c256",
+   "tujuan": "jualan",
+   "bahan": [
+    "tangkapan-owner",
+    "dataset-roboflow-vehicle-license-plate",
+    "dataset-roboflow-merk-warna-motor",
+    "dataset-roboflow-brand"
+   ],
+   "ciri": "merek",
+   "jenis": "mobil",
+   "ukuran": 256,
+   "kelas": [
+    "Daihatsu",
+    "Honda",
+    "Hyundai",
+    "Isuzu",
+    "Mazda",
+    "Mitsubishi",
+    "Nissan",
+    "Suzuki",
+    "Toyota",
+    "Wuling",
+    "lainnya"
+   ],
+   "zaman": 30,
+   "zaman_terbaik": 1,
+   "gambar": {
+    "latih": 3309,
+    "validasi_owner": 17
+   },
+   "validasi_owner": {
+    "gambar": 17,
+    "benar": 7,
+    "salah": 10,
+    "tak_yakin": 0,
+    "nilai": -3
+   },
+   "sha256_onnx": "02df63030ca2de5ba8982a772e41d0c8a56af891bf283415c5b66c7df9bb52a1",
+   "pemeriksaan_onnx": {
+    "gambar": 40,
+    "kelas_sama": 40,
+    "selisih_peluang": 2.980232238769531e-7
+   },
+   "catatan": [
+    {
+     "zaman": 1,
+     "rugi": 2.0663,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 2,
+     "rugi": 1.8374,
+     "benar": 4,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 3,
+     "rugi": 1.7092,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 4,
+     "rugi": 1.5917,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 5,
+     "rugi": 1.4964,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 6,
+     "rugi": 1.4089,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 7,
+     "rugi": 1.3392,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 8,
+     "rugi": 1.2827,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 9,
+     "rugi": 1.2447,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 10,
+     "rugi": 1.1997,
+     "benar": 1,
+     "salah": 16,
+     "tak_yakin": 0,
+     "nilai": -15
+    },
+    {
+     "zaman": 11,
+     "rugi": 1.1581,
+     "benar": 4,
+     "salah": 13,
+     "tak_yakin": 0,
+     "nilai": -9
+    },
+    {
+     "zaman": 12,
+     "rugi": 1.1443,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 13,
+     "rugi": 1.0938,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 14,
+     "rugi": 1.0932,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 15,
+     "rugi": 1.0428,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 16,
+     "rugi": 1.0215,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 17,
+     "rugi": 1.0039,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 18,
+     "rugi": 0.976,
+     "benar": 5,
+     "salah": 12,
+     "tak_yakin": 0,
+     "nilai": -7
+    },
+    {
+     "zaman": 19,
+     "rugi": 0.9713,
+     "benar": 2,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": -13
+    },
+    {
+     "zaman": 20,
+     "rugi": 0.9439,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 21,
+     "rugi": 0.9162,
+     "benar": 3,
+     "salah": 14,
+     "tak_yakin": 0,
+     "nilai": -11
+    },
+    {
+     "zaman": 22,
+     "rugi": 0.9203,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 23,
+     "rugi": 0.8812,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 24,
+     "rugi": 0.8664,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 25,
+     "rugi": 0.8566,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 26,
+     "rugi": 0.8477,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 27,
+     "rugi": 0.8354,
+     "benar": 6,
+     "salah": 11,
+     "tak_yakin": 0,
+     "nilai": -5
+    },
+    {
+     "zaman": 28,
+     "rugi": 0.827,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 29,
+     "rugi": 0.8193,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    },
+    {
+     "zaman": 30,
+     "rugi": 0.8237,
+     "benar": 7,
+     "salah": 10,
+     "tak_yakin": 0,
+     "nilai": -3
+    }
+   ]
+  }
+ },
+ "pilih": {
+  "ciri": "merek",
+  "jenis": "mobil",
+  "ambang": [
+   0,
+   0.5,
+   0.7,
+   0.9
+  ],
+  "b0_tebakan_tetap": "Toyota",
+  "n_validasi_owner": 17,
+  "aturan": "validasi owner mobil, nilai = benar - salah; seri: salah paling sedikit, lalu B0, lalu masukan terkecil, lalu ambang terkecil; dipakai hanya bila lebih besar dari B0",
+  "aturan_vonis": "dugaan resolusi DIDUKUNG hanya bila nilai terbaik C192 atau C256 lebih besar dari nilai terbaik C96",
+  "calon": {
+   "B0": {
+    "folder": null,
+    "ukuran": null,
+    "validasi_owner": {
+     "0.0": {
+      "benar": 6,
+      "salah": 11,
+      "tak_yakin": 0,
+      "nilai": -5
+     },
+     "0.5": {
+      "benar": 6,
+      "salah": 11,
+      "tak_yakin": 0,
+      "nilai": -5
+     },
+     "0.7": {
+      "benar": 6,
+      "salah": 11,
+      "tak_yakin": 0,
+      "nilai": -5
+     },
+     "0.9": {
+      "benar": 6,
+      "salah": 11,
+      "tak_yakin": 0,
+      "nilai": -5
+     }
+    }
+   },
+   "C96": {
+    "folder": "ciri-merek-mobil-c96",
+    "ukuran": 96,
+    "validasi_owner": {
+     "0.0": {
+      "benar": 9,
+      "salah": 8,
+      "tak_yakin": 0,
+      "nilai": 1
+     },
+     "0.5": {
+      "benar": 3,
+      "salah": 4,
+      "tak_yakin": 10,
+      "nilai": -1
+     },
+     "0.7": {
+      "benar": 1,
+      "salah": 0,
+      "tak_yakin": 16,
+      "nilai": 1
+     },
+     "0.9": {
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 17,
+      "nilai": 0
+     }
+    }
+   },
+   "C192": {
+    "folder": "ciri-merek-mobil-c192",
+    "ukuran": 192,
+    "validasi_owner": {
+     "0.0": {
+      "benar": 7,
+      "salah": 10,
+      "tak_yakin": 0,
+      "nilai": -3
+     },
+     "0.5": {
+      "benar": 0,
+      "salah": 2,
+      "tak_yakin": 15,
+      "nilai": -2
+     },
+     "0.7": {
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 17,
+      "nilai": 0
+     },
+     "0.9": {
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 17,
+      "nilai": 0
+     }
+    }
+   },
+   "C256": {
+    "folder": "ciri-merek-mobil-c256",
+    "ukuran": 256,
+    "validasi_owner": {
+     "0.0": {
+      "benar": 7,
+      "salah": 10,
+      "tak_yakin": 0,
+      "nilai": -3
+     },
+     "0.5": {
+      "benar": 1,
+      "salah": 2,
+      "tak_yakin": 14,
+      "nilai": -1
+     },
+     "0.7": {
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 17,
+      "nilai": 0
+     },
+     "0.9": {
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 17,
+      "nilai": 0
+     }
+    }
+   }
+  },
+  "terpilih": {
+   "calon": "C96",
+   "ambang": 0.7
+  },
+  "nilai_terpilih": 1,
+  "nilai_tanpa_latihan": -5,
+  "dipakai": true,
+  "nilai_terbaik": {
+   "C96": 1,
+   "C192": 0,
+   "C256": 0
+  },
+  "vonis_dugaan_resolusi": "tidak didukung"
+ },
+ "uji": {
+  "n_uji": 13,
+  "terpilih": {
+   "calon": "C96",
+   "ambang": 0.7
+  },
+  "b0_tebakan_tetap": "Toyota",
+  "vonis_dugaan_resolusi": "tidak didukung",
+  "calon": {
+   "B0": {
+    "ambang": 0,
+    "benar": 4,
+    "salah": 9,
+    "tak_yakin": 0,
+    "nilai": -5,
+    "per_kelas": {
+     "Daihatsu": {
+      "jumlah": 4,
+      "benar": 0,
+      "salah": 4,
+      "tak_yakin": 0
+     },
+     "Honda": {
+      "jumlah": 3,
+      "benar": 0,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Suzuki": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "Toyota": {
+      "jumlah": 4,
+      "benar": 4,
+      "salah": 0,
+      "tak_yakin": 0
+     },
+     "lainnya": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     }
+    },
+    "rentang_95_benar": [
+     0.127,
+     0.576
+    ],
+    "rentang_95_salah": [
+     0.424,
+     0.873
+    ]
+   },
+   "C96": {
+    "ambang": 0.7,
+    "benar": 0,
+    "salah": 1,
+    "tak_yakin": 12,
+    "nilai": -1,
+    "per_kelas": {
+     "Daihatsu": {
+      "jumlah": 4,
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 4
+     },
+     "Honda": {
+      "jumlah": 3,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 2
+     },
+     "Suzuki": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 1
+     },
+     "Toyota": {
+      "jumlah": 4,
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 4
+     },
+     "lainnya": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 0,
+      "tak_yakin": 1
+     }
+    },
+    "rentang_95_benar": [
+     0,
+     0.228
+    ],
+    "rentang_95_salah": [
+     0.014,
+     0.333
+    ]
+   },
+   "C192": {
+    "ambang": 0,
+    "benar": 4,
+    "salah": 9,
+    "tak_yakin": 0,
+    "nilai": -5,
+    "per_kelas": {
+     "Daihatsu": {
+      "jumlah": 4,
+      "benar": 1,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Honda": {
+      "jumlah": 3,
+      "benar": 0,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Suzuki": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "Toyota": {
+      "jumlah": 4,
+      "benar": 3,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "lainnya": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     }
+    },
+    "rentang_95_benar": [
+     0.127,
+     0.576
+    ],
+    "rentang_95_salah": [
+     0.424,
+     0.873
+    ]
+   },
+   "C256": {
+    "ambang": 0,
+    "benar": 4,
+    "salah": 9,
+    "tak_yakin": 0,
+    "nilai": -5,
+    "per_kelas": {
+     "Daihatsu": {
+      "jumlah": 4,
+      "benar": 1,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Honda": {
+      "jumlah": 3,
+      "benar": 0,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Suzuki": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "Toyota": {
+      "jumlah": 4,
+      "benar": 3,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "lainnya": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     }
+    },
+    "rentang_95_benar": [
+     0.127,
+     0.576
+    ],
+    "rentang_95_salah": [
+     0.424,
+     0.873
+    ]
+   },
+   "M1_lama": {
+    "ambang": 0,
+    "benar": 1,
+    "salah": 12,
+    "tak_yakin": 0,
+    "nilai": -11,
+    "per_kelas": {
+     "Daihatsu": {
+      "jumlah": 4,
+      "benar": 1,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Honda": {
+      "jumlah": 3,
+      "benar": 0,
+      "salah": 3,
+      "tak_yakin": 0
+     },
+     "Suzuki": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     },
+     "Toyota": {
+      "jumlah": 4,
+      "benar": 0,
+      "salah": 4,
+      "tak_yakin": 0
+     },
+     "lainnya": {
+      "jumlah": 1,
+      "benar": 0,
+      "salah": 1,
+      "tak_yakin": 0
+     }
+    },
+    "rentang_95_benar": [
+     0.014,
+     0.333
+    ],
+    "rentang_95_salah": [
+     0.667,
+     0.986
+    ]
+   }
+  }
+ }
+}

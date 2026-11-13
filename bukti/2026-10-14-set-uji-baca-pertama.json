@@ -1,0 +1,80 @@
+{
+  "sumber": "INDO-ALPR bagian original: train dan test penerbit digabung, lalu dibagi ulang per plat",
+  "aturan": {
+    "uji_dari_empat": 1,
+    "ambang_gelap": 60,
+    "sedikit": 30
+  },
+  "dikecualikan_tak_sesuai_pola": 276,
+  "plat_di_kedua_sisi": 0,
+  "sisi": {
+    "latih": {
+      "kedatangan": 2850,
+      "gambar": 4467,
+      "per_kelompok": {
+        "mobil-terang": {
+          "kedatangan": 2003,
+          "gambar": 3384,
+          "terlalu_sedikit": false
+        },
+        "mobil-gelap": {
+          "kedatangan": 164,
+          "gambar": 200,
+          "terlalu_sedikit": false
+        },
+        "motor-terang": {
+          "kedatangan": 646,
+          "gambar": 843,
+          "terlalu_sedikit": false
+        },
+        "motor-gelap": {
+          "kedatangan": 37,
+          "gambar": 40,
+          "terlalu_sedikit": false
+        }
+      },
+      "per_golongan": {
+        "barang": 163,
+        "barang-khusus": 656,
+        "bus": 200,
+        "khusus": 76,
+        "mobil": 1072,
+        "motor": 683
+      }
+    },
+    "uji": {
+      "kedatangan": 945,
+      "gambar": 1431,
+      "per_kelompok": {
+        "mobil-terang": {
+          "kedatangan": 642,
+          "gambar": 1099,
+          "terlalu_sedikit": false
+        },
+        "mobil-gelap": {
+          "kedatangan": 60,
+          "gambar": 67,
+          "terlalu_sedikit": false
+        },
+        "motor-terang": {
+          "kedatangan": 221,
+          "gambar": 241,
+          "terlalu_sedikit": false
+        },
+        "motor-gelap": {
+          "kedatangan": 22,
+          "gambar": 24,
+          "terlalu_sedikit": true
+        }
+      },
+      "per_golongan": {
+        "barang": 39,
+        "barang-khusus": 228,
+        "bus": 55,
+        "khusus": 27,
+        "mobil": 353,
+        "motor": 243
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+ "bingkai": 77,
+ "tak_jelas": 57,
+ "kelompok": {
+  "semua": {
+   "dinilai": 20,
+   "ada_terlewat": 16,
+   "rentang_95_ada_terlewat": [
+    0.584,
+    0.919
+   ],
+   "terlalu_sedikit": true
+  },
+  "kamera-diam-lain-siang": {
+   "dinilai": 3,
+   "ada_terlewat": 2,
+   "rentang_95_ada_terlewat": [
+    0.208,
+    0.939
+   ],
+   "terlalu_sedikit": true
+  },
+  "parkiran-campuran": {
+   "dinilai": 1,
+   "ada_terlewat": 1,
+   "rentang_95_ada_terlewat": [
+    0.207,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  },
+  "gerbang-siang": {
+   "dinilai": 11,
+   "ada_terlewat": 8,
+   "rentang_95_ada_terlewat": [
+    0.434,
+    0.903
+   ],
+   "terlalu_sedikit": true
+  },
+  "parkiran-siang": {
+   "dinilai": 4,
+   "ada_terlewat": 4,
+   "rentang_95_ada_terlewat": [
+    0.51,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  },
+  "gerbang-campuran": {
+   "dinilai": 1,
+   "ada_terlewat": 1,
+   "rentang_95_ada_terlewat": [
+    0.207,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "gambar": 60,
+ "panaskan": 5,
+ "cara": "median dari tiga putaran bergiliran",
+ "per_utas": {
+  "1": {
+   "median_ms": 28.1,
+   "p95_ms": 29.7
+  },
+  "2": {
+   "median_ms": 17.4,
+   "p95_ms": 24.9
+  },
+  "4": {
+   "median_ms": 12.3,
+   "p95_ms": 16.9
+  }
+ },
+ "putaran": [
+  {
+   "1": {
+    "median_ms": 28.1,
+    "p95_ms": 29.5
+   },
+   "2": {
+    "median_ms": 17.8,
+    "p95_ms": 31.5
+   },
+   "4": {
+    "median_ms": 12.1,
+    "p95_ms": 16.9
+   }
+  },
+  {
+   "1": {
+    "median_ms": 27.9,
+    "p95_ms": 29.9
+   },
+   "2": {
+    "median_ms": 17.4,
+    "p95_ms": 20.7
+   },
+   "4": {
+    "median_ms": 12.4,
+    "p95_ms": 16.9
+   }
+  },
+  {
+   "1": {
+    "median_ms": 28.1,
+    "p95_ms": 29.7
+   },
+   "2": {
+    "median_ms": 17.4,
+    "p95_ms": 24.9
+   },
+   "4": {
+    "median_ms": 12.3,
+    "p95_ms": 17.5
+   }
+  }
+ ]
+}

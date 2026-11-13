@@ -1,0 +1,429 @@
+{
+ "nama": "mesin-baca-1",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-indo-alpr"
+ ],
+ "keterangan": "CNN + LSTM dua arah + CTC, dilatih dari nol; tanpa bobot awal",
+ "huruf": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+ "tinggi": 48,
+ "lebar": 160,
+ "panjang_deret": 40,
+ "sha256_bobot": "c3a0a9dd3e321ce2f417e0fbad5d94a6037daef62f02d4e6bf963df8f661f159",
+ "zaman": 80,
+ "zaman_terbaik": 63,
+ "benih": 0,
+ "perangkat": "cuda",
+ "plat": {
+  "inti": 2521,
+  "validasi": 303
+ },
+ "gambar": {
+  "inti": 3954,
+  "validasi": 460
+ },
+ "tak_terbaca": 0,
+ "validasi_benar_terbaik": 146,
+ "catatan": [
+  {
+   "zaman": 1,
+   "rugi": 10.3939,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 2,
+   "rugi": 3.6189,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 3,
+   "rugi": 3.3785,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 4,
+   "rugi": 3.165,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 5,
+   "rugi": 2.9603,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 6,
+   "rugi": 2.8251,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 7,
+   "rugi": 2.7697,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 8,
+   "rugi": 2.7405,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 9,
+   "rugi": 2.7168,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 10,
+   "rugi": 2.6801,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 11,
+   "rugi": 2.6371,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 12,
+   "rugi": 2.5701,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 13,
+   "rugi": 2.5192,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 14,
+   "rugi": 2.4745,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 15,
+   "rugi": 2.4338,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 16,
+   "rugi": 2.3793,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 17,
+   "rugi": 2.3402,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 18,
+   "rugi": 2.2701,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 19,
+   "rugi": 2.1816,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 20,
+   "rugi": 2.1082,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 21,
+   "rugi": 2.0203,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 22,
+   "rugi": 1.937,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 23,
+   "rugi": 1.86,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 24,
+   "rugi": 1.7617,
+   "validasi_benar": 1
+  },
+  {
+   "zaman": 25,
+   "rugi": 1.6571,
+   "validasi_benar": 1
+  },
+  {
+   "zaman": 26,
+   "rugi": 1.5596,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 27,
+   "rugi": 1.4496,
+   "validasi_benar": 0
+  },
+  {
+   "zaman": 28,
+   "rugi": 1.3433,
+   "validasi_benar": 2
+  },
+  {
+   "zaman": 29,
+   "rugi": 1.2467,
+   "validasi_benar": 1
+  },
+  {
+   "zaman": 30,
+   "rugi": 1.1573,
+   "validasi_benar": 1
+  },
+  {
+   "zaman": 31,
+   "rugi": 1.0641,
+   "validasi_benar": 7
+  },
+  {
+   "zaman": 32,
+   "rugi": 0.9875,
+   "validasi_benar": 12
+  },
+  {
+   "zaman": 33,
+   "rugi": 0.9276,
+   "validasi_benar": 13
+  },
+  {
+   "zaman": 34,
+   "rugi": 0.8576,
+   "validasi_benar": 23
+  },
+  {
+   "zaman": 35,
+   "rugi": 0.8098,
+   "validasi_benar": 27
+  },
+  {
+   "zaman": 36,
+   "rugi": 0.7425,
+   "validasi_benar": 30
+  },
+  {
+   "zaman": 37,
+   "rugi": 0.6879,
+   "validasi_benar": 42
+  },
+  {
+   "zaman": 38,
+   "rugi": 0.6292,
+   "validasi_benar": 40
+  },
+  {
+   "zaman": 39,
+   "rugi": 0.5822,
+   "validasi_benar": 51
+  },
+  {
+   "zaman": 40,
+   "rugi": 0.5178,
+   "validasi_benar": 54
+  },
+  {
+   "zaman": 41,
+   "rugi": 0.4786,
+   "validasi_benar": 66
+  },
+  {
+   "zaman": 42,
+   "rugi": 0.4338,
+   "validasi_benar": 80
+  },
+  {
+   "zaman": 43,
+   "rugi": 0.4034,
+   "validasi_benar": 86
+  },
+  {
+   "zaman": 44,
+   "rugi": 0.3734,
+   "validasi_benar": 93
+  },
+  {
+   "zaman": 45,
+   "rugi": 0.3378,
+   "validasi_benar": 98
+  },
+  {
+   "zaman": 46,
+   "rugi": 0.3252,
+   "validasi_benar": 113
+  },
+  {
+   "zaman": 47,
+   "rugi": 0.2961,
+   "validasi_benar": 110
+  },
+  {
+   "zaman": 48,
+   "rugi": 0.2728,
+   "validasi_benar": 109
+  },
+  {
+   "zaman": 49,
+   "rugi": 0.2662,
+   "validasi_benar": 118
+  },
+  {
+   "zaman": 50,
+   "rugi": 0.2414,
+   "validasi_benar": 126
+  },
+  {
+   "zaman": 51,
+   "rugi": 0.2181,
+   "validasi_benar": 127
+  },
+  {
+   "zaman": 52,
+   "rugi": 0.207,
+   "validasi_benar": 112
+  },
+  {
+   "zaman": 53,
+   "rugi": 0.2035,
+   "validasi_benar": 124
+  },
+  {
+   "zaman": 54,
+   "rugi": 0.1875,
+   "validasi_benar": 138
+  },
+  {
+   "zaman": 55,
+   "rugi": 0.17,
+   "validasi_benar": 133
+  },
+  {
+   "zaman": 56,
+   "rugi": 0.1705,
+   "validasi_benar": 136
+  },
+  {
+   "zaman": 57,
+   "rugi": 0.1605,
+   "validasi_benar": 137
+  },
+  {
+   "zaman": 58,
+   "rugi": 0.1474,
+   "validasi_benar": 123
+  },
+  {
+   "zaman": 59,
+   "rugi": 0.1392,
+   "validasi_benar": 129
+  },
+  {
+   "zaman": 60,
+   "rugi": 0.1258,
+   "validasi_benar": 139
+  },
+  {
+   "zaman": 61,
+   "rugi": 0.1264,
+   "validasi_benar": 134
+  },
+  {
+   "zaman": 62,
+   "rugi": 0.1121,
+   "validasi_benar": 134
+  },
+  {
+   "zaman": 63,
+   "rugi": 0.1089,
+   "validasi_benar": 146
+  },
+  {
+   "zaman": 64,
+   "rugi": 0.1055,
+   "validasi_benar": 142
+  },
+  {
+   "zaman": 65,
+   "rugi": 0.1044,
+   "validasi_benar": 142
+  },
+  {
+   "zaman": 66,
+   "rugi": 0.0973,
+   "validasi_benar": 141
+  },
+  {
+   "zaman": 67,
+   "rugi": 0.0957,
+   "validasi_benar": 140
+  },
+  {
+   "zaman": 68,
+   "rugi": 0.0884,
+   "validasi_benar": 138
+  },
+  {
+   "zaman": 69,
+   "rugi": 0.0865,
+   "validasi_benar": 140
+  },
+  {
+   "zaman": 70,
+   "rugi": 0.0813,
+   "validasi_benar": 136
+  },
+  {
+   "zaman": 71,
+   "rugi": 0.0777,
+   "validasi_benar": 131
+  },
+  {
+   "zaman": 72,
+   "rugi": 0.0836,
+   "validasi_benar": 134
+  },
+  {
+   "zaman": 73,
+   "rugi": 0.0822,
+   "validasi_benar": 131
+  },
+  {
+   "zaman": 74,
+   "rugi": 0.0782,
+   "validasi_benar": 131
+  },
+  {
+   "zaman": 75,
+   "rugi": 0.0781,
+   "validasi_benar": 133
+  },
+  {
+   "zaman": 76,
+   "rugi": 0.0735,
+   "validasi_benar": 134
+  },
+  {
+   "zaman": 77,
+   "rugi": 0.071,
+   "validasi_benar": 134
+  },
+  {
+   "zaman": 78,
+   "rugi": 0.0774,
+   "validasi_benar": 130
+  },
+  {
+   "zaman": 79,
+   "rugi": 0.0745,
+   "validasi_benar": 130
+  },
+  {
+   "zaman": 80,
+   "rugi": 0.0749,
+   "validasi_benar": 128
+  }
+ ]
+}

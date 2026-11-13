@@ -1,0 +1,255 @@
+{
+ "min_bagian_plat": 0.9,
+ "aturan": [
+  {
+   "nama": "tanpa",
+   "syarat": 0,
+   "plat": 75,
+   "plat_lolos": 75,
+   "bukan": 25,
+   "bukan_lolos": 25,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "tampak",
+   "syarat": 1,
+   "plat": 75,
+   "plat_lolos": 72,
+   "bukan": 25,
+   "bukan_lolos": 19,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "rp",
+   "syarat": 1,
+   "plat": 75,
+   "plat_lolos": 75,
+   "bukan": 25,
+   "bukan_lolos": 25,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "rp_tampak",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 72,
+   "bukan": 25,
+   "bukan_lolos": 19,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "rx0.3",
+   "syarat": 1,
+   "plat": 75,
+   "plat_lolos": 74,
+   "bukan": 25,
+   "bukan_lolos": 18,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "rx0.3_tampak",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 71,
+   "bukan": 25,
+   "bukan_lolos": 14,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  },
+  {
+   "nama": "rx0.3_rp",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 74,
+   "bukan": 25,
+   "bukan_lolos": 18,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "rx0.3_rp_tampak",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 71,
+   "bukan": 25,
+   "bukan_lolos": 14,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  },
+  {
+   "nama": "ry0.4",
+   "syarat": 1,
+   "plat": 75,
+   "plat_lolos": 73,
+   "bukan": 25,
+   "bukan_lolos": 23,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "ry0.4_tampak",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 70,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.4_rp",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 73,
+   "bukan": 25,
+   "bukan_lolos": 23,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "ry0.4_rp_tampak",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 70,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.4_rx0.3",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 72,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.4_rx0.3_tampak",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 69,
+   "bukan": 25,
+   "bukan_lolos": 13,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  },
+  {
+   "nama": "ry0.4_rx0.3_rp",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 72,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.4_rx0.3_rp_tampak",
+   "syarat": 4,
+   "plat": 75,
+   "plat_lolos": 69,
+   "bukan": 25,
+   "bukan_lolos": 13,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  },
+  {
+   "nama": "ry0.6",
+   "syarat": 1,
+   "plat": 75,
+   "plat_lolos": 66,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "ry0.6_tampak",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 64,
+   "bukan": 25,
+   "bukan_lolos": 12,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.6_rp",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 66,
+   "bukan": 25,
+   "bukan_lolos": 17,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 7
+  },
+  {
+   "nama": "ry0.6_rp_tampak",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 64,
+   "bukan": 25,
+   "bukan_lolos": 12,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.6_rx0.3",
+   "syarat": 2,
+   "plat": 75,
+   "plat_lolos": 65,
+   "bukan": 25,
+   "bukan_lolos": 13,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.6_rx0.3_tampak",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 63,
+   "bukan": 25,
+   "bukan_lolos": 10,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  },
+  {
+   "nama": "ry0.6_rx0.3_rp",
+   "syarat": 3,
+   "plat": 75,
+   "plat_lolos": 65,
+   "bukan": 25,
+   "bukan_lolos": 13,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 5
+  },
+  {
+   "nama": "ry0.6_rx0.3_rp_tampak",
+   "syarat": 4,
+   "plat": 75,
+   "plat_lolos": 63,
+   "bukan": 25,
+   "bukan_lolos": 10,
+   "bukan_yakin": 7,
+   "bukan_yakin_lolos": 4
+  }
+ ],
+ "terpilih": {
+  "nama": "ry0.4_rx0.3_tampak",
+  "syarat": 3,
+  "plat": 75,
+  "plat_lolos": 69,
+  "bukan": 25,
+  "bukan_lolos": 13,
+  "bukan_yakin": 7,
+  "bukan_yakin_lolos": 4
+ }
+}

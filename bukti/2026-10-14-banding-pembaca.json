@@ -1,0 +1,330 @@
+{
+  "semua": {
+    "qwen3-vl": {
+      "mobil-terang": {
+        "kedatangan": 638,
+        "kedatangan_benar": 424,
+        "kedatangan_ragu": 26,
+        "gambar": 1094,
+        "gambar_benar": 769,
+        "gambar_luar_pola": 199,
+        "rentang_95_kedatangan": [
+          0.627,
+          0.7
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 59,
+        "kedatangan_benar": 41,
+        "kedatangan_ragu": 1,
+        "gambar": 66,
+        "gambar_benar": 47,
+        "gambar_luar_pola": 8,
+        "rentang_95_kedatangan": [
+          0.569,
+          0.797
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 219,
+        "kedatangan_benar": 146,
+        "kedatangan_ragu": 5,
+        "gambar": 239,
+        "gambar_benar": 159,
+        "gambar_luar_pola": 35,
+        "rentang_95_kedatangan": [
+          0.602,
+          0.726
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 15,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 17,
+        "gambar_luar_pola": 5,
+        "rentang_95_kedatangan": [
+          0.5,
+          0.862
+        ],
+        "terlalu_sedikit": true
+      }
+    },
+    "fast-plate-ocr": {
+      "mobil-terang": {
+        "kedatangan": 638,
+        "kedatangan_benar": 399,
+        "kedatangan_ragu": 47,
+        "gambar": 1094,
+        "gambar_benar": 703,
+        "gambar_luar_pola": 70,
+        "rentang_95_kedatangan": [
+          0.587,
+          0.662
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 59,
+        "kedatangan_benar": 47,
+        "kedatangan_ragu": 1,
+        "gambar": 66,
+        "gambar_benar": 52,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.677,
+          0.88
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 219,
+        "kedatangan_benar": 137,
+        "kedatangan_ragu": 11,
+        "gambar": 239,
+        "gambar_benar": 150,
+        "gambar_luar_pola": 9,
+        "rentang_95_kedatangan": [
+          0.56,
+          0.687
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 14,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 16,
+        "gambar_luar_pola": 2,
+        "rentang_95_kedatangan": [
+          0.454,
+          0.828
+        ],
+        "terlalu_sedikit": true
+      }
+    },
+    "mesin-baca-1": {
+      "mobil-terang": {
+        "kedatangan": 638,
+        "kedatangan_benar": 205,
+        "kedatangan_ragu": 49,
+        "gambar": 1094,
+        "gambar_benar": 393,
+        "gambar_luar_pola": 9,
+        "rentang_95_kedatangan": [
+          0.286,
+          0.359
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 59,
+        "kedatangan_benar": 16,
+        "kedatangan_ragu": 2,
+        "gambar": 66,
+        "gambar_benar": 18,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.174,
+          0.396
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 219,
+        "kedatangan_benar": 57,
+        "kedatangan_ragu": 12,
+        "gambar": 239,
+        "gambar_benar": 61,
+        "gambar_luar_pola": 4,
+        "rentang_95_kedatangan": [
+          0.207,
+          0.322
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 5,
+        "kedatangan_ragu": 2,
+        "gambar": 23,
+        "gambar_benar": 5,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.106,
+          0.451
+        ],
+        "terlalu_sedikit": true
+      }
+    }
+  },
+  "tanpa-label-pilihan-pembaca": {
+    "qwen3-vl": {
+      "mobil-terang": {
+        "kedatangan": 625,
+        "kedatangan_benar": 413,
+        "kedatangan_ragu": 26,
+        "gambar": 1066,
+        "gambar_benar": 753,
+        "gambar_luar_pola": 199,
+        "rentang_95_kedatangan": [
+          0.623,
+          0.697
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 57,
+        "kedatangan_benar": 39,
+        "kedatangan_ragu": 1,
+        "gambar": 64,
+        "gambar_benar": 45,
+        "gambar_luar_pola": 8,
+        "rentang_95_kedatangan": [
+          0.555,
+          0.79
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 208,
+        "kedatangan_benar": 135,
+        "kedatangan_ragu": 5,
+        "gambar": 228,
+        "gambar_benar": 148,
+        "gambar_luar_pola": 35,
+        "rentang_95_kedatangan": [
+          0.582,
+          0.711
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 15,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 17,
+        "gambar_luar_pola": 5,
+        "rentang_95_kedatangan": [
+          0.5,
+          0.862
+        ],
+        "terlalu_sedikit": true
+      }
+    },
+    "fast-plate-ocr": {
+      "mobil-terang": {
+        "kedatangan": 625,
+        "kedatangan_benar": 388,
+        "kedatangan_ragu": 47,
+        "gambar": 1066,
+        "gambar_benar": 690,
+        "gambar_luar_pola": 70,
+        "rentang_95_kedatangan": [
+          0.582,
+          0.658
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 57,
+        "kedatangan_benar": 45,
+        "kedatangan_ragu": 1,
+        "gambar": 64,
+        "gambar_benar": 50,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.667,
+          0.875
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 208,
+        "kedatangan_benar": 126,
+        "kedatangan_ragu": 11,
+        "gambar": 228,
+        "gambar_benar": 139,
+        "gambar_luar_pola": 9,
+        "rentang_95_kedatangan": [
+          0.538,
+          0.67
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 14,
+        "kedatangan_ragu": 0,
+        "gambar": 23,
+        "gambar_benar": 16,
+        "gambar_luar_pola": 2,
+        "rentang_95_kedatangan": [
+          0.454,
+          0.828
+        ],
+        "terlalu_sedikit": true
+      }
+    },
+    "mesin-baca-1": {
+      "mobil-terang": {
+        "kedatangan": 625,
+        "kedatangan_benar": 200,
+        "kedatangan_ragu": 48,
+        "gambar": 1066,
+        "gambar_benar": 388,
+        "gambar_luar_pola": 9,
+        "rentang_95_kedatangan": [
+          0.285,
+          0.358
+        ],
+        "terlalu_sedikit": false
+      },
+      "mobil-gelap": {
+        "kedatangan": 57,
+        "kedatangan_benar": 15,
+        "kedatangan_ragu": 2,
+        "gambar": 64,
+        "gambar_benar": 17,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.166,
+          0.39
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-terang": {
+        "kedatangan": 208,
+        "kedatangan_benar": 55,
+        "kedatangan_ragu": 12,
+        "gambar": 228,
+        "gambar_benar": 59,
+        "gambar_luar_pola": 3,
+        "rentang_95_kedatangan": [
+          0.209,
+          0.328
+        ],
+        "terlalu_sedikit": false
+      },
+      "motor-gelap": {
+        "kedatangan": 21,
+        "kedatangan_benar": 5,
+        "kedatangan_ragu": 2,
+        "gambar": 23,
+        "gambar_benar": 5,
+        "gambar_luar_pola": 0,
+        "rentang_95_kedatangan": [
+          0.106,
+          0.451
+        ],
+        "terlalu_sedikit": true
+      }
+    }
+  }
+}

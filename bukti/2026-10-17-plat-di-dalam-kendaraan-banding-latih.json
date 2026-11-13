@@ -1,0 +1,268 @@
+{
+ "bingkai": 78,
+ "video_validasi": 4,
+ "bingkai_biru_terlewat": 0,
+ "calon": [
+  {
+   "nama": "lama-saring-0.1",
+   "pencari": "lama",
+   "cara": "saring",
+   "ambang": 0.1,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 3,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 2,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "lama-saring-0.25",
+   "pencari": "lama",
+   "cara": "saring",
+   "ambang": 0.25,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 3,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 1,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "lama-saring-0.5",
+   "pencari": "lama",
+   "cara": "saring",
+   "ambang": 0.5,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 2,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "lama-potong-0.1",
+   "pencari": "lama",
+   "cara": "potong",
+   "ambang": 0.1,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 8,
+    "kotak_lebih": 2,
+    "kotak_kendaraan_lain": 5,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "lama-potong-0.25",
+   "pencari": "lama",
+   "cara": "potong",
+   "ambang": 0.25,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 7,
+    "kotak_lebih": 1,
+    "kotak_kendaraan_lain": 1,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "lama-potong-0.5",
+   "pencari": "lama",
+   "cara": "potong",
+   "ambang": 0.5,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 7,
+    "kotak_lebih": 1,
+    "kotak_kendaraan_lain": 1,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-saring-0.1",
+   "pencari": "baru",
+   "cara": "saring",
+   "ambang": 0.1,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 5,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 1,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-saring-0.25",
+   "pencari": "baru",
+   "cara": "saring",
+   "ambang": 0.25,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 4,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-saring-0.5",
+   "pencari": "baru",
+   "cara": "saring",
+   "ambang": 0.5,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 3,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-potong-0.1",
+   "pencari": "baru",
+   "cara": "potong",
+   "ambang": 0.1,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 11,
+    "kotak_lebih": 1,
+    "kotak_kendaraan_lain": 4,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-potong-0.25",
+   "pencari": "baru",
+   "cara": "potong",
+   "ambang": 0.25,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 11,
+    "kotak_lebih": 1,
+    "kotak_kendaraan_lain": 1,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  },
+  {
+   "nama": "baru-potong-0.5",
+   "pencari": "baru",
+   "cara": "potong",
+   "ambang": 0.5,
+   "semua": {
+    "plat_terbaca": 17,
+    "ditemukan": 9,
+    "kotak_lebih": 1,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   },
+   "validasi": {
+    "plat_terbaca": 0,
+    "ditemukan": 0,
+    "kotak_lebih": 0,
+    "kotak_kendaraan_lain": 0,
+    "kotak_luar": 0
+   }
+  }
+ ],
+ "terpilih": {
+  "nama": "baru-potong-0.25",
+  "pencari": "baru",
+  "cara": "potong",
+  "ambang": 0.25,
+  "semua": {
+   "plat_terbaca": 17,
+   "ditemukan": 11,
+   "kotak_lebih": 1,
+   "kotak_kendaraan_lain": 1,
+   "kotak_luar": 0
+  },
+  "validasi": {
+   "plat_terbaca": 0,
+   "ditemukan": 0,
+   "kotak_lebih": 0,
+   "kotak_kendaraan_lain": 0,
+   "kotak_luar": 0
+  },
+  "alasan": "teratas menurut aturan"
+ }
+}

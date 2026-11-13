@@ -1,0 +1,60 @@
+{
+  "model": "mesin-baca-1",
+  "sisi": "uji",
+  "perangkat": "cpu",
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 205,
+      "kedatangan_ragu": 49,
+      "gambar": 1094,
+      "gambar_benar": 393,
+      "gambar_luar_pola": 9,
+      "rentang_95_kedatangan": [
+        0.286,
+        0.359
+      ],
+      "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 16,
+      "kedatangan_ragu": 2,
+      "gambar": 66,
+      "gambar_benar": 18,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.174,
+        0.396
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 57,
+      "kedatangan_ragu": 12,
+      "gambar": 239,
+      "gambar_benar": 61,
+      "gambar_luar_pola": 4,
+      "rentang_95_kedatangan": [
+        0.207,
+        0.322
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 5,
+      "kedatangan_ragu": 2,
+      "gambar": 23,
+      "gambar_benar": 5,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.106,
+        0.451
+      ],
+      "terlalu_sedikit": true
+    }
+  },
+  "detik_per_gambar": 0.003
+}

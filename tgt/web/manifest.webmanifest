@@ -1,0 +1,16 @@
+{
+  "name": "Transportation Gate Track",
+  "short_name": "TGT",
+  "description": "Gerbang, kendaraan, dan tamu — untuk perumahan, kantor, pabrik, dan apartemen",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2f5f8",
+  "theme_color": "#8f6200",
+  "lang": "id",
+  "icons": [
+    { "src": "ikon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "ikon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

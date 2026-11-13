@@ -1,0 +1,23 @@
+{
+ "nama": "fpo-indo-1",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-indo-alpr",
+  "bobot-fast-plate-ocr"
+ ],
+ "format": "onnx",
+ "sha256_onnx": "eae2bc2bec9417be33f5028d7b80e753e6849d07328e3d4abe894a9c9c2c4823",
+ "sha256_mesin": "b4562e187cc15d8d86b72cd308c1d2ac7f7b0e942cc89bc7ccf5a192a59fd1ec",
+ "sha256_onnx_terbitan": "384bbbd2cea3ef54761d3df70822ef3a349ee1a112aeafddbe0e3ba06bc6e47b",
+ "tensor_ditukar": 192,
+ "cara": {
+  "sumbu": 5,
+  "sama": 147,
+  "bentuk-lain": 40
+ },
+ "pemeriksaan_validasi": {
+  "gambar": 460,
+  "plat_sama": 460,
+  "selisih_terbesar": 1.2964010238647461e-05
+ }
+}

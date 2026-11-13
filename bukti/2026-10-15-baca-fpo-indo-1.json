@@ -1,0 +1,59 @@
+{
+  "model": "fpo-indo-1",
+  "sisi": "uji",
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 638,
+      "kedatangan_benar": 506,
+      "kedatangan_ragu": 18,
+      "gambar": 1094,
+      "gambar_benar": 892,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.76,
+        0.823
+      ],
+      "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+      "kedatangan": 59,
+      "kedatangan_benar": 51,
+      "kedatangan_ragu": 1,
+      "gambar": 66,
+      "gambar_benar": 57,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.755,
+        0.93
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-terang": {
+      "kedatangan": 219,
+      "kedatangan_benar": 173,
+      "kedatangan_ragu": 4,
+      "gambar": 239,
+      "gambar_benar": 190,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+        0.731,
+        0.839
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+      "kedatangan": 21,
+      "kedatangan_benar": 17,
+      "kedatangan_ragu": 0,
+      "gambar": 23,
+      "gambar_benar": 19,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.6,
+        0.923
+      ],
+      "terlalu_sedikit": true
+    }
+  },
+  "detik_per_gambar": 0.044
+}

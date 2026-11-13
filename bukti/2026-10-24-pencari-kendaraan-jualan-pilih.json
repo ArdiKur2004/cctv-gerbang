@@ -1,0 +1,152 @@
+{
+ "aturan": "rantai tangkapan sisi latih: dibaca benar terbanyak; seri plat berkendaraan; seri K1; seri 0,25; dipakai bila tidak lebih rendah dari K0 lebih dari 2",
+ "calon": {
+  "K0@0.25": {
+   "folder": "kendaraan-yolox-coco",
+   "ambang": 0.25,
+   "plat_berlabel": 141,
+   "ditemukan": 129,
+   "berteks": 125,
+   "dibaca_benar": 112,
+   "kotak_di_luar_label": 6,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 50,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 62,
+     "kotak_di_luar_label": 5,
+     "kotak_di_bukan_plat": 2
+    }
+   },
+   "plat_berkendaraan": 135,
+   "plat_latih": 141
+  },
+  "K1@0.25": {
+   "folder": "kendaraan-jualan-k1",
+   "ambang": 0.25,
+   "plat_berlabel": 141,
+   "ditemukan": 130,
+   "berteks": 125,
+   "dibaca_benar": 115,
+   "kotak_di_luar_label": 0,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 55,
+     "berteks": 53,
+     "dibaca_benar": 50,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 65,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    }
+   },
+   "plat_berkendaraan": 138,
+   "plat_latih": 141
+  },
+  "K1@0.4": {
+   "folder": "kendaraan-jualan-k1",
+   "ambang": 0.4,
+   "plat_berlabel": 141,
+   "ditemukan": 130,
+   "berteks": 125,
+   "dibaca_benar": 115,
+   "kotak_di_luar_label": 0,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 55,
+     "berteks": 53,
+     "dibaca_benar": 50,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 75,
+     "berteks": 72,
+     "dibaca_benar": 65,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    }
+   },
+   "plat_berkendaraan": 137,
+   "plat_latih": 141
+  },
+  "K2@0.25": {
+   "folder": "kendaraan-jualan-k2",
+   "ambang": 0.25,
+   "plat_berlabel": 141,
+   "ditemukan": 127,
+   "berteks": 125,
+   "dibaca_benar": 114,
+   "kotak_di_luar_label": 4,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 50,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 73,
+     "berteks": 72,
+     "dibaca_benar": 64,
+     "kotak_di_luar_label": 3,
+     "kotak_di_bukan_plat": 0
+    }
+   },
+   "plat_berkendaraan": 135,
+   "plat_latih": 141
+  },
+  "K2@0.4": {
+   "folder": "kendaraan-jualan-k2",
+   "ambang": 0.4,
+   "plat_berlabel": 141,
+   "ditemukan": 127,
+   "berteks": 125,
+   "dibaca_benar": 113,
+   "kotak_di_luar_label": 5,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 58,
+     "ditemukan": 54,
+     "berteks": 53,
+     "dibaca_benar": 50,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 1
+    },
+    "motor": {
+     "plat_berlabel": 83,
+     "ditemukan": 73,
+     "berteks": 72,
+     "dibaca_benar": 63,
+     "kotak_di_luar_label": 4,
+     "kotak_di_bukan_plat": 0
+    }
+   },
+   "plat_berkendaraan": 134,
+   "plat_latih": 141
+  }
+ },
+ "terpilih": "K1@0.25",
+ "dipakai": true
+}

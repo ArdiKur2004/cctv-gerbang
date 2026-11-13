@@ -1,0 +1,31 @@
+{
+ "validasi": "data/keluaran/dataset/cctv2-c1/valid (sama persis dengan cctv3/valid)",
+ "aturan": "C3 dipilih hanya bila F1 lebih tinggi dari C1; sama atau lebih rendah, C1 tetap",
+ "calon": {
+  "C1": {
+   "folder": "pencari-cctv2-c1",
+   "f1": 0.9257,
+   "ambang": 0.6,
+   "plat": 179,
+   "plat_ditemukan": 162,
+   "kotak_palsu": 9,
+   "gambar": 203,
+   "tak_terbaca": 0,
+   "f1_validasi_saat_latih": 0.9257,
+   "zaman_terbaik": 28
+  },
+  "C3": {
+   "folder": "pencari-cctv3-c3",
+   "f1": 0.9431,
+   "ambang": 0.55,
+   "plat": 179,
+   "plat_ditemukan": 174,
+   "kotak_palsu": 16,
+   "gambar": 203,
+   "tak_terbaca": 0,
+   "f1_validasi_saat_latih": 0.9431,
+   "zaman_terbaik": 24
+  }
+ },
+ "terpilih": "C3"
+}

@@ -1,0 +1,40 @@
+{
+ "nama": "fpo-indo-1",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-indo-alpr",
+  "bobot-fast-plate-ocr"
+ ],
+ "keterangan": "fast-plate-ocr @ 9ce7a5b, cct-s-v2-global, dilatih ulang dengan bahan latih INDO-ALPR (K26)",
+ "sha256_mesin": "b4562e187cc15d8d86b72cd308c1d2ac7f7b0e942cc89bc7ccf5a192a59fd1ec",
+ "sha256_bobot_awal": "dc6db494714d88e1fb0a21b4e4e96089842dd5440418262abfc382454453c2c8",
+ "plat": {
+  "latih": 2521,
+  "validasi": 303
+ },
+ "gambar": {
+  "latih": 3954,
+  "validasi": 460
+ },
+ "tak_terbaca": 0,
+ "latihan": {
+  "zaman": 150,
+  "zaman_berjalan": 131,
+  "zaman_terbaik": 31,
+  "benih": 0,
+  "ukuran_angkatan": 64,
+  "val_plate_acc_terbaik": 0.8509,
+  "bobot_termuat": "192/192",
+  "perangkat": "NVIDIA GeForce RTX 4060"
+ },
+ "validasi": {
+  "awal": {
+   "gambar": 460,
+   "benar": 301
+  },
+  "akhir": {
+   "gambar": 460,
+   "benar": 388
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "baris": 120,
+ "tak_terbaca": 14,
+ "bukan_plat": 99,
+ "motor": 0,
+ "kelompok": {
+  "semua": {
+   "dinilai": 7,
+   "benar_yakin": 3,
+   "benar_ragu": 2,
+   "salah_ragu": 2,
+   "salah_yakin": 0,
+   "rentang_95_benar_yakin": [
+    0.158,
+    0.75
+   ],
+   "terlalu_sedikit": true
+  },
+  "siang-mobil": {
+   "dinilai": 6,
+   "benar_yakin": 2,
+   "benar_ragu": 2,
+   "salah_ragu": 2,
+   "salah_yakin": 0,
+   "rentang_95_benar_yakin": [
+    0.097,
+    0.7
+   ],
+   "terlalu_sedikit": true
+  },
+  "tak-jelas-mobil": {
+   "dinilai": 1,
+   "benar_yakin": 1,
+   "benar_ragu": 0,
+   "salah_ragu": 0,
+   "salah_yakin": 0,
+   "rentang_95_benar_yakin": [
+    0.207,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  }
+ }
+}

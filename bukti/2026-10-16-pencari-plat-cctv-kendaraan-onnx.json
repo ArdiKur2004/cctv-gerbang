@@ -1,0 +1,23 @@
+{
+ "nama": "kendaraan-yolox-coco",
+ "tujuan": "belajar",
+ "bahan": [
+  "bobot-yolox"
+ ],
+ "jenis": "tiny",
+ "ukuran": 640,
+ "kelas": {
+  "2": "mobil",
+  "3": "motor",
+  "5": "bus",
+  "7": "truk"
+ },
+ "ambang": 0.25,
+ "sha256_onnx": "cafa6ba11ab80da45bb534bc781ff117be83730461df1cc6e6d8a0682015d9d6",
+ "sha256_pth": "9de513de589ac98bb92d3bca53b5af7b9acfa9b0bacb831f7999d0f7afaee8f0",
+ "pemeriksaan": {
+  "gambar": 20,
+  "selisih_koordinat": 0.005615234375,
+  "selisih_peluang": 1.0311603546142578e-05
+ }
+}

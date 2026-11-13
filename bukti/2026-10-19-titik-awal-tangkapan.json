@@ -1,0 +1,53 @@
+{
+ "rencana": 25,
+ "task": 1,
+ "rantai": "rantai belajar Rencana 24 Task 2: kendaraan-yolox-coco, pencari-yolox-nano-640-cctv1 cara potong ambang 0,25, fpo-indo-1 ONNX",
+ "keluaran_rantai": "data/keluaran/tangkapan-owner-baca",
+ "label": "data/keluaran/label-tangkapan/label.json",
+ "latih": {
+  "sisi": "latih",
+  "iou_min": 0.3,
+  "gambar": 140,
+  "per_kelompok": {
+   "mobil": {
+    "plat_berlabel": 58,
+    "ditemukan": 51,
+    "berteks": 53,
+    "dibaca_benar": 43,
+    "kotak_di_luar_label": 3,
+    "kotak_di_bukan_plat": 3
+   },
+   "motor": {
+    "plat_berlabel": 83,
+    "ditemukan": 59,
+    "berteks": 72,
+    "dibaca_benar": 35,
+    "kotak_di_luar_label": 3,
+    "kotak_di_bukan_plat": 3
+   }
+  }
+ },
+ "uji": {
+  "sisi": "uji",
+  "iou_min": 0.3,
+  "gambar": 38,
+  "per_kelompok": {
+   "mobil": {
+    "plat_berlabel": 16,
+    "ditemukan": 14,
+    "berteks": 16,
+    "dibaca_benar": 12,
+    "kotak_di_luar_label": 0,
+    "kotak_di_bukan_plat": 0
+   },
+   "motor": {
+    "plat_berlabel": 23,
+    "ditemukan": 14,
+    "berteks": 18,
+    "dibaca_benar": 9,
+    "kotak_di_luar_label": 0,
+    "kotak_di_bukan_plat": 0
+   }
+  }
+ }
+}

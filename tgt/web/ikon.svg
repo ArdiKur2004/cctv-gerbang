@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="TGT">
+  <!-- Palang gerbang: garis miring emas, lambang yang sama dengan rel kiri aplikasi. -->
+  <rect width="192" height="192" rx="40" fill="#15212e"/>
+  <g transform="rotate(-35 96 96)">
+    <rect x="28" y="84" width="136" height="24" rx="6" fill="#e0b341"/>
+    <rect x="28" y="84" width="34" height="24" fill="#15212e" opacity=".55"/>
+    <rect x="96" y="84" width="34" height="24" fill="#15212e" opacity=".55"/>
+  </g>
+  <circle cx="40" cy="152" r="14" fill="#e0b341"/>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "model": "fast-plate-ocr @ 9ce7a5b, cct-s-v2-global, CPU",
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 642,
+      "kedatangan_benar": 390,
+      "kedatangan_ragu": 47,
+      "gambar": 1099,
+      "gambar_benar": 698,
+      "gambar_luar_pola": 70,
+      "rentang_95_kedatangan": [
+        0.569,
+        0.645
+      ],
+      "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+      "kedatangan": 60,
+      "kedatangan_benar": 45,
+      "kedatangan_ragu": 1,
+      "gambar": 67,
+      "gambar_benar": 50,
+      "gambar_luar_pola": 0,
+      "rentang_95_kedatangan": [
+        0.628,
+        0.842
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-terang": {
+      "kedatangan": 221,
+      "kedatangan_benar": 126,
+      "kedatangan_ragu": 11,
+      "gambar": 241,
+      "gambar_benar": 139,
+      "gambar_luar_pola": 9,
+      "rentang_95_kedatangan": [
+        0.504,
+        0.634
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+      "kedatangan": 22,
+      "kedatangan_benar": 14,
+      "kedatangan_ragu": 0,
+      "gambar": 24,
+      "gambar_benar": 16,
+      "gambar_luar_pola": 2,
+      "rentang_95_kedatangan": [
+        0.43,
+        0.803
+      ],
+      "terlalu_sedikit": true
+    }
+  },
+  "detik_per_gambar": 0.011
+}

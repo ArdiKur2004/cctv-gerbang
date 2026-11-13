@@ -1,0 +1,18 @@
+{
+ "nama": "pencari-yolox-tiny-416",
+ "tujuan": "belajar",
+ "bahan": [
+  "dataset-plat-lighting",
+  "bobot-yolox"
+ ],
+ "jenis": "tiny",
+ "ukuran": 416,
+ "sha256_onnx": "219675e6ceab7855861dc7ed34a4b6c2bae7f251a4a10e72dd6dffb503c663df",
+ "sha256_bobot": "ff917cd5aed06f5e1ec66ca07c1ce99784e83304ace884d668c13f3811bd7259",
+ "pemeriksaan": {
+  "gambar": 20,
+  "sama": 20,
+  "selisih_koordinat": 0.00244140625,
+  "selisih_peluang": 3.844499588012695e-06
+ }
+}

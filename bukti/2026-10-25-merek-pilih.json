@@ -1,0 +1,187 @@
+{
+ "ciri": "merek",
+ "ambang": [
+  0.0,
+  0.5,
+  0.7,
+  0.9
+ ],
+ "m0_tebakan_tetap": "Honda",
+ "n_validasi_owner": 32,
+ "n_validasi_semua": 888,
+ "aturan": "validasi owner, nilai = benar - salah; seri: salah paling sedikit, lalu M0, lalu ambang terkecil; dipakai hanya bila lebih besar dari M0",
+ "calon": {
+  "M0": {
+   "folder": null,
+   "validasi_owner": {
+    "0.0": {
+     "benar": 14,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -4
+    },
+    "0.5": {
+     "benar": 14,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -4
+    },
+    "0.7": {
+     "benar": 14,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -4
+    },
+    "0.9": {
+     "benar": 14,
+     "salah": 18,
+     "tak_yakin": 0,
+     "nilai": -4
+    }
+   },
+   "validasi_semua": {
+    "0.0": {
+     "benar": 289,
+     "salah": 599,
+     "tak_yakin": 0,
+     "nilai": -310
+    },
+    "0.5": {
+     "benar": 289,
+     "salah": 599,
+     "tak_yakin": 0,
+     "nilai": -310
+    },
+    "0.7": {
+     "benar": 289,
+     "salah": 599,
+     "tak_yakin": 0,
+     "nilai": -310
+    },
+    "0.9": {
+     "benar": 289,
+     "salah": 599,
+     "tak_yakin": 0,
+     "nilai": -310
+    }
+   }
+  },
+  "M1": {
+   "folder": "ciri-merek-m1",
+   "validasi_owner": {
+    "0.0": {
+     "benar": 17,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 2
+    },
+    "0.5": {
+     "benar": 12,
+     "salah": 7,
+     "tak_yakin": 13,
+     "nilai": 5
+    },
+    "0.7": {
+     "benar": 11,
+     "salah": 2,
+     "tak_yakin": 19,
+     "nilai": 9
+    },
+    "0.9": {
+     "benar": 8,
+     "salah": 1,
+     "tak_yakin": 23,
+     "nilai": 7
+    }
+   },
+   "validasi_semua": {
+    "0.0": {
+     "benar": 766,
+     "salah": 122,
+     "tak_yakin": 0,
+     "nilai": 644
+    },
+    "0.5": {
+     "benar": 698,
+     "salah": 60,
+     "tak_yakin": 130,
+     "nilai": 638
+    },
+    "0.7": {
+     "benar": 579,
+     "salah": 16,
+     "tak_yakin": 293,
+     "nilai": 563
+    },
+    "0.9": {
+     "benar": 350,
+     "salah": 4,
+     "tak_yakin": 534,
+     "nilai": 346
+    }
+   }
+  },
+  "M2": {
+   "folder": "ciri-merek-m2",
+   "validasi_owner": {
+    "0.0": {
+     "benar": 17,
+     "salah": 15,
+     "tak_yakin": 0,
+     "nilai": 2
+    },
+    "0.5": {
+     "benar": 12,
+     "salah": 3,
+     "tak_yakin": 17,
+     "nilai": 9
+    },
+    "0.7": {
+     "benar": 7,
+     "salah": 2,
+     "tak_yakin": 23,
+     "nilai": 5
+    },
+    "0.9": {
+     "benar": 1,
+     "salah": 2,
+     "tak_yakin": 29,
+     "nilai": -1
+    }
+   },
+   "validasi_semua": {
+    "0.0": {
+     "benar": 237,
+     "salah": 651,
+     "tak_yakin": 0,
+     "nilai": -414
+    },
+    "0.5": {
+     "benar": 126,
+     "salah": 166,
+     "tak_yakin": 596,
+     "nilai": -40
+    },
+    "0.7": {
+     "benar": 77,
+     "salah": 57,
+     "tak_yakin": 754,
+     "nilai": 20
+    },
+    "0.9": {
+     "benar": 21,
+     "salah": 10,
+     "tak_yakin": 857,
+     "nilai": 11
+    }
+   }
+  }
+ },
+ "terpilih": {
+  "calon": "M1",
+  "ambang": 0.7
+ },
+ "nilai_terpilih": 9,
+ "nilai_tanpa_latihan": -4,
+ "dipakai": true
+}

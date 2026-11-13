@@ -1,0 +1,32 @@
+{
+ "baris": 120,
+ "tak_terbaca": 91,
+ "bukan_plat": 6,
+ "motor": 85,
+ "kelompok": {
+  "semua": {
+   "dinilai": 23,
+   "benar_yakin": 14,
+   "benar_ragu": 6,
+   "salah_ragu": 1,
+   "salah_yakin": 2,
+   "rentang_95_benar_yakin": [
+    0.408,
+    0.778
+   ],
+   "terlalu_sedikit": true
+  },
+  "siang-mobil": {
+   "dinilai": 23,
+   "benar_yakin": 14,
+   "benar_ragu": 6,
+   "salah_ragu": 1,
+   "salah_yakin": 2,
+   "rentang_95_benar_yakin": [
+    0.408,
+    0.778
+   ],
+   "terlalu_sedikit": true
+  }
+ }
+}

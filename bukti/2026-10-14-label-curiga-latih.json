@@ -1,0 +1,24 @@
+{
+  "aturan": "dua pembaca sepakat pada teks berpola plat yang berbeda dari label (K22)",
+  "sisi": "latih",
+  "kedatangan": 2828,
+  "dicurigai": 75,
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 1982,
+      "dicurigai": 53
+    },
+    "mobil-gelap": {
+      "kedatangan": 163,
+      "dicurigai": 3
+    },
+    "motor-terang": {
+      "kedatangan": 646,
+      "dicurigai": 18
+    },
+    "motor-gelap": {
+      "kedatangan": 37,
+      "dicurigai": 1
+    }
+  }
+}

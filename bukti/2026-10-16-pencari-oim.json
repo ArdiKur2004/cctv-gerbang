@@ -1,0 +1,123 @@
+{
+ "ambang": 0.35,
+ "iou_min": 0.5,
+ "validasi": {
+  "semua": {
+   "plat": 99,
+   "plat_ditemukan": 27,
+   "kotak_palsu": 48,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.195,
+    0.368
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 86,
+   "plat_ditemukan": 23,
+   "kotak_palsu": 48,
+   "gambar": 71,
+   "rentang_95_ditemukan": [
+    0.185,
+    0.369
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 13,
+   "plat_ditemukan": 4,
+   "kotak_palsu": 0,
+   "gambar": 13,
+   "rentang_95_ditemukan": [
+    0.127,
+    0.576
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 23,
+   "plat_ditemukan": 0,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.0,
+    0.143
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 76,
+   "plat_ditemukan": 27,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.257,
+    0.467
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "uji": {
+  "semua": {
+   "plat": 102,
+   "plat_ditemukan": 31,
+   "kotak_palsu": 51,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.223,
+    0.399
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 99,
+   "plat_ditemukan": 30,
+   "kotak_palsu": 50,
+   "gambar": 81,
+   "rentang_95_ditemukan": [
+    0.221,
+    0.4
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 3,
+   "plat_ditemukan": 1,
+   "kotak_palsu": 1,
+   "gambar": 3,
+   "rentang_95_ditemukan": [
+    0.061,
+    0.792
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 16,
+   "plat_ditemukan": 0,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.0,
+    0.194
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 86,
+   "plat_ditemukan": 31,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.267,
+    0.466
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "detik_per_gambar": {
+  "validasi": 0.0142,
+  "uji": 0.0148
+ },
+ "tak_terbaca": 0
+}

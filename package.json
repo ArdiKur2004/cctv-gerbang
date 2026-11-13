@@ -1,0 +1,10 @@
+{
+  "name": "cctvgerbang-seed",
+  "private": true,
+  "description": "CCTV Gerbang: alat bengkel. Gerbang uji: npm test (Node) dan npm run test:lab (Python, di lab tanpa jaringan)",
+  "scripts": {
+    "test": "node --test \"tools/uji/*.test.mjs\" \"tgt/uji/*.test.mjs\"",
+    "test:lab": "powershell -NoProfile -File tools/lab.ps1 python -m pytest /kerja/tools/lab/uji -q -p no:cacheprovider",
+    "tgt": "node tgt/server.mjs"
+  }
+}

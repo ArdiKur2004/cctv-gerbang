@@ -1,0 +1,508 @@
+{
+ "aturan": {
+  "sampel_per_detik": 5,
+  "ambang_kotak": 0.25,
+  "iou_ikut": 0.3,
+  "jeda_maks_detik": 1.0,
+  "min_tampak": 2,
+  "min_setuju": 2,
+  "bagian_setuju": 0.6,
+  "margin": 0.05,
+  "ambang_kendaraan": 0.25,
+  "cara_kendaraan": "potong",
+  "letak": "ry0.4_rx0.3_tampak"
+ },
+ "sisi": "uji",
+ "video": 41,
+ "gambar_sampel": 48068,
+ "kedatangan": 291,
+ "yakin": 84,
+ "ragu": 207,
+ "tampak_sekali": 303,
+ "tersaring_kendaraan": 0,
+ "tersaring_letak": 3546,
+ "per_kategori": {
+  "campuran": 1,
+  "siang": 290
+ },
+ "detik_yakin": {
+  "n": 84,
+  "median": 0.2,
+  "p95": 1.34
+ },
+ "waktu_ms": {
+  "dekode": {
+   "n": 48068,
+   "median": 0.56,
+   "p95": 2.7
+  },
+  "kendaraan": {
+   "n": 48068,
+   "median": 68.75,
+   "p95": 80.43
+  },
+  "cari": {
+   "n": 48068,
+   "median": 62.85,
+   "p95": 476.42
+  },
+  "baca": {
+   "n": 18344,
+   "median": 14.0,
+   "p95": 15.94
+  }
+ },
+ "per_video": [
+  {
+   "urutan": 1,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 161,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 2,
+   "kategori": "campuran",
+   "sudut": "parkiran",
+   "gambar_sampel": 546,
+   "penampakan": 8,
+   "kedatangan": 1,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 3,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 17256,
+   "penampakan": 17216,
+   "kedatangan": 184,
+   "tampak_sekali": 131,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 3168
+  },
+  {
+   "urutan": 4,
+   "kategori": "siang",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 959,
+   "penampakan": 281,
+   "kedatangan": 34,
+   "tampak_sekali": 79,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 65
+  },
+  {
+   "urutan": 5,
+   "kategori": "campuran",
+   "sudut": "parkiran",
+   "gambar_sampel": 3441,
+   "penampakan": 3,
+   "kedatangan": 0,
+   "tampak_sekali": 3,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 3
+  },
+  {
+   "urutan": 6,
+   "kategori": "tak-jelas",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 803,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 7,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 1691,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 8,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 203,
+   "penampakan": 37,
+   "kedatangan": 2,
+   "tampak_sekali": 10,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 1
+  },
+  {
+   "urutan": 9,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 117,
+   "penampakan": 3,
+   "kedatangan": 0,
+   "tampak_sekali": 3,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 6
+  },
+  {
+   "urutan": 10,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 652,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 11,
+   "kategori": "tak-jelas",
+   "sudut": "parkiran",
+   "gambar_sampel": 197,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 1
+  },
+  {
+   "urutan": 12,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 189,
+   "penampakan": 47,
+   "kedatangan": 4,
+   "tampak_sekali": 10,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 5
+  },
+  {
+   "urutan": 13,
+   "kategori": "siang",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 58,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 14,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 189,
+   "penampakan": 3,
+   "kedatangan": 0,
+   "tampak_sekali": 3,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 31
+  },
+  {
+   "urutan": 15,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 244,
+   "penampakan": 1,
+   "kedatangan": 0,
+   "tampak_sekali": 1,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 16,
+   "kategori": "malam",
+   "sudut": "gerbang",
+   "gambar_sampel": 493,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 10
+  },
+  {
+   "urutan": 17,
+   "kategori": "siang",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 74,
+   "penampakan": 51,
+   "kedatangan": 4,
+   "tampak_sekali": 4,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 18,
+   "kategori": "malam",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 301,
+   "penampakan": 3,
+   "kedatangan": 0,
+   "tampak_sekali": 3,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 1
+  },
+  {
+   "urutan": 19,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 105,
+   "penampakan": 11,
+   "kedatangan": 1,
+   "tampak_sekali": 8,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 20,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 137,
+   "penampakan": 1,
+   "kedatangan": 0,
+   "tampak_sekali": 1,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 7
+  },
+  {
+   "urutan": 21,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 227,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 22,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 388,
+   "penampakan": 101,
+   "kedatangan": 11,
+   "tampak_sekali": 13,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 23,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 1069,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 24,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 362,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 25,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 208,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 26,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 365,
+   "penampakan": 59,
+   "kedatangan": 7,
+   "tampak_sekali": 6,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 27,
+   "kategori": "siang",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 1508,
+   "penampakan": 2,
+   "kedatangan": 0,
+   "tampak_sekali": 2,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 2
+  },
+  {
+   "urutan": 28,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 291,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 41
+  },
+  {
+   "urutan": 29,
+   "kategori": "tak-jelas",
+   "sudut": "parkiran",
+   "gambar_sampel": 462,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 30,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 126,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 1
+  },
+  {
+   "urutan": 31,
+   "kategori": "remang",
+   "sudut": "parkiran",
+   "gambar_sampel": 540,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 32,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 461,
+   "penampakan": 336,
+   "kedatangan": 17,
+   "tampak_sekali": 3,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 17
+  },
+  {
+   "urutan": 33,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 1109,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 34,
+   "kategori": "tak-jelas",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 4429,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 35,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 128,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 36,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 797,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  },
+  {
+   "urutan": 37,
+   "kategori": "siang",
+   "sudut": "kamera-diam-lain",
+   "gambar_sampel": 1992,
+   "penampakan": 15,
+   "kedatangan": 0,
+   "tampak_sekali": 15,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 151
+  },
+  {
+   "urutan": 38,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 52,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 12
+  },
+  {
+   "urutan": 39,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 5064,
+   "penampakan": 159,
+   "kedatangan": 26,
+   "tampak_sekali": 1,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 23
+  },
+  {
+   "urutan": 40,
+   "kategori": "siang",
+   "sudut": "parkiran",
+   "gambar_sampel": 621,
+   "penampakan": 7,
+   "kedatangan": 0,
+   "tampak_sekali": 7,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 1
+  },
+  {
+   "urutan": 41,
+   "kategori": "siang",
+   "sudut": "gerbang",
+   "gambar_sampel": 53,
+   "penampakan": 0,
+   "kedatangan": 0,
+   "tampak_sekali": 0,
+   "tersaring_kendaraan": 0,
+   "tersaring_letak": 0
+  }
+ ]
+}

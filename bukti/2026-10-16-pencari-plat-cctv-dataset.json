@@ -1,0 +1,18 @@
+{
+ "train": {
+  "gambar_cctv": 269,
+  "kotak_plat": 44,
+  "gambar_negatif": 225,
+  "kotak_ditutup": 151,
+  "gambar_tempel": 202,
+  "plat_lighting": 393
+ },
+ "valid": {
+  "gambar_cctv": 64,
+  "kotak_plat": 3,
+  "gambar_negatif": 61,
+  "kotak_ditutup": 10,
+  "gambar_tempel": 24,
+  "plat_lighting": 84
+ }
+}

@@ -1,0 +1,1008 @@
+{
+ "rencana": 28,
+ "defender": {
+  "kontrol_eicar": "terdeteksi (kode 2)",
+  "zip": {
+   "roboflow-all-cars-logo-v7": 0,
+   "roboflow-brand-v11": 0,
+   "roboflow-car-type-final-1-v2": 0
+  }
+ },
+ "buka_arsip": {
+  "roboflow-all-cars-logo-v7": {
+   "dibuka": 33843,
+   "dilewati_kembar_identik": 1
+  },
+  "roboflow-brand-v11": {
+   "dibuka": 14681,
+   "dilewati_kembar_identik": 2
+  },
+  "roboflow-car-type-final-1-v2": {
+   "dibuka": 1825,
+   "dilewati_kembar_identik": 0
+  }
+ },
+ "periksa": {
+  "roboflow-all-cars-logo-v7": {
+   "jenis_tugas": "deteksi",
+   "keamanan": {
+    "berkas": 33843,
+    "jenis_tidak_cocok": 0,
+    "tanda_program": 0,
+    "teks_tidak_bersih": 0,
+    "gambar_rusak": 0,
+    "yaml_aman": true,
+    "akhiran": {
+     ".jpg": 16920,
+     ".txt": 16922,
+     ".yaml": 1
+    }
+   },
+   "kelas": [
+    "ALETRA_unused",
+    "ASTON_MARTIN",
+    "AYLA_LCGC",
+    "BENTLEY_unused",
+    "BYD",
+    "CHERY",
+    "CHRYSLER_unused",
+    "DAIHATSU",
+    "DAIHATSU_LCGC",
+    "DAIHATSU_MIRA",
+    "DATSUN",
+    "DENZA",
+    "DFSK",
+    "DODGE",
+    "FAW_unused",
+    "FERRARI",
+    "FOTON_unused",
+    "GAC",
+    "GAC_AION",
+    "GAC_AION_HYPTECH",
+    "GEELY",
+    "GTR_unused",
+    "GWM_HAVAL",
+    "GWM_ORA",
+    "GWM_TANK",
+    "HONDA",
+    "HONQI",
+    "HONRI",
+    "HYUNDAI",
+    "JAECOO",
+    "JAECOO_J6",
+    "JAGUAR",
+    "JETOUR",
+    "KIA",
+    "LAMBORGHINI",
+    "LEPAS",
+    "LEXUS",
+    "LOTUS",
+    "MAXUS",
+    "MAZDA",
+    "MG",
+    "MINI",
+    "MITSUBISHI",
+    "NETA_LOGO",
+    "NETA_TEXT",
+    "NISSAN",
+    "OMODA",
+    "PEUGEOT",
+    "POLYTRON",
+    "RENAULT",
+    "ROLLS_ROYCE",
+    "SERES",
+    "SUZUKI",
+    "SUZUKI_LCGC",
+    "TESLA",
+    "TOYOTA",
+    "TOYOTA_ALPHARD",
+    "TOYOTA_LCGC",
+    "VINFAST",
+    "VOLKSWAGEN",
+    "VOLVO",
+    "WULING",
+    "XPENG"
+   ],
+   "sisi": {
+    "train": {
+     "gambar": 13540,
+     "label": 13540,
+     "gambar_tanpa_label": 0,
+     "label_tanpa_gambar": 0,
+     "label_kosong": 1,
+     "kotak": 14524,
+     "baris_rusak": 0,
+     "kelas_di_luar_daftar": 0,
+     "koordinat_di_luar": 0,
+     "kotak_nol": 0
+    },
+    "valid": {
+     "gambar": 3380,
+     "label": 3380,
+     "gambar_tanpa_label": 0,
+     "label_tanpa_gambar": 0,
+     "label_kosong": 0,
+     "kotak": 3659,
+     "baris_rusak": 0,
+     "kelas_di_luar_daftar": 0,
+     "koordinat_di_luar": 0,
+     "kotak_nol": 0
+    }
+   },
+   "per_kelas": {
+    "ALETRA_unused": {
+     "kotak": 17,
+     "gambar": 14
+    },
+    "ASTON_MARTIN": {
+     "kotak": 387,
+     "gambar": 387
+    },
+    "AYLA_LCGC": {
+     "kotak": 191,
+     "gambar": 190
+    },
+    "BENTLEY_unused": {
+     "kotak": 288,
+     "gambar": 288
+    },
+    "BYD": {
+     "kotak": 348,
+     "gambar": 334
+    },
+    "CHERY": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "CHRYSLER_unused": {
+     "kotak": 225,
+     "gambar": 225
+    },
+    "DAIHATSU": {
+     "kotak": 581,
+     "gambar": 574
+    },
+    "DAIHATSU_LCGC": {
+     "kotak": 271,
+     "gambar": 267
+    },
+    "DAIHATSU_MIRA": {
+     "kotak": 6,
+     "gambar": 6
+    },
+    "DATSUN": {
+     "kotak": 276,
+     "gambar": 274
+    },
+    "DENZA": {
+     "kotak": 319,
+     "gambar": 309
+    },
+    "DFSK": {
+     "kotak": 258,
+     "gambar": 256
+    },
+    "DODGE": {
+     "kotak": 235,
+     "gambar": 206
+    },
+    "FAW_unused": {
+     "kotak": 313,
+     "gambar": 312
+    },
+    "FERRARI": {
+     "kotak": 1018,
+     "gambar": 600
+    },
+    "FOTON_unused": {
+     "kotak": 109,
+     "gambar": 105
+    },
+    "GAC": {
+     "kotak": 567,
+     "gambar": 551
+    },
+    "GAC_AION": {
+     "kotak": 170,
+     "gambar": 168
+    },
+    "GAC_AION_HYPTECH": {
+     "kotak": 280,
+     "gambar": 275
+    },
+    "GEELY": {
+     "kotak": 231,
+     "gambar": 231
+    },
+    "GTR_unused": {
+     "kotak": 117,
+     "gambar": 116
+    },
+    "GWM_HAVAL": {
+     "kotak": 433,
+     "gambar": 429
+    },
+    "GWM_ORA": {
+     "kotak": 300,
+     "gambar": 297
+    },
+    "GWM_TANK": {
+     "kotak": 258,
+     "gambar": 244
+    },
+    "HONDA": {
+     "kotak": 8,
+     "gambar": 8
+    },
+    "HONQI": {
+     "kotak": 317,
+     "gambar": 313
+    },
+    "HONRI": {
+     "kotak": 84,
+     "gambar": 83
+    },
+    "HYUNDAI": {
+     "kotak": 515,
+     "gambar": 507
+    },
+    "JAECOO": {
+     "kotak": 423,
+     "gambar": 412
+    },
+    "JAECOO_J6": {
+     "kotak": 83,
+     "gambar": 83
+    },
+    "JAGUAR": {
+     "kotak": 400,
+     "gambar": 397
+    },
+    "JETOUR": {
+     "kotak": 437,
+     "gambar": 434
+    },
+    "KIA": {
+     "kotak": 472,
+     "gambar": 465
+    },
+    "LAMBORGHINI": {
+     "kotak": 291,
+     "gambar": 291
+    },
+    "LEPAS": {
+     "kotak": 103,
+     "gambar": 100
+    },
+    "LEXUS": {
+     "kotak": 370,
+     "gambar": 369
+    },
+    "LOTUS": {
+     "kotak": 270,
+     "gambar": 270
+    },
+    "MAXUS": {
+     "kotak": 181,
+     "gambar": 178
+    },
+    "MAZDA": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "MG": {
+     "kotak": 2,
+     "gambar": 2
+    },
+    "MINI": {
+     "kotak": 376,
+     "gambar": 374
+    },
+    "MITSUBISHI": {
+     "kotak": 642,
+     "gambar": 634
+    },
+    "NETA_LOGO": {
+     "kotak": 201,
+     "gambar": 201
+    },
+    "NETA_TEXT": {
+     "kotak": 166,
+     "gambar": 166
+    },
+    "NISSAN": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "OMODA": {
+     "kotak": 323,
+     "gambar": 322
+    },
+    "PEUGEOT": {
+     "kotak": 146,
+     "gambar": 145
+    },
+    "POLYTRON": {
+     "kotak": 138,
+     "gambar": 138
+    },
+    "RENAULT": {
+     "kotak": 215,
+     "gambar": 214
+    },
+    "ROLLS_ROYCE": {
+     "kotak": 722,
+     "gambar": 240
+    },
+    "SERES": {
+     "kotak": 165,
+     "gambar": 163
+    },
+    "SUZUKI": {
+     "kotak": 312,
+     "gambar": 307
+    },
+    "SUZUKI_LCGC": {
+     "kotak": 139,
+     "gambar": 139
+    },
+    "TESLA": {
+     "kotak": 410,
+     "gambar": 407
+    },
+    "TOYOTA": {
+     "kotak": 296,
+     "gambar": 293
+    },
+    "TOYOTA_ALPHARD": {
+     "kotak": 172,
+     "gambar": 172
+    },
+    "TOYOTA_LCGC": {
+     "kotak": 203,
+     "gambar": 201
+    },
+    "VINFAST": {
+     "kotak": 445,
+     "gambar": 408
+    },
+    "VOLKSWAGEN": {
+     "kotak": 471,
+     "gambar": 467
+    },
+    "VOLVO": {
+     "kotak": 208,
+     "gambar": 208
+    },
+    "WULING": {
+     "kotak": 900,
+     "gambar": 855
+    },
+    "XPENG": {
+     "kotak": 376,
+     "gambar": 372
+    }
+   },
+   "kembar": {
+    "persis_dalam_sisi": 8,
+    "persis_antar_sisi": 3,
+    "mirip_antar_sisi": 51
+   },
+   "ukuran_gambar": {
+    "lebar": [
+     139,
+     1023,
+     11517
+    ],
+    "tinggi": [
+     113,
+     675,
+     7760
+    ]
+   }
+  },
+  "roboflow-brand-v11": {
+   "jenis_tugas": "deteksi",
+   "keamanan": {
+    "berkas": 14681,
+    "jenis_tidak_cocok": 0,
+    "tanda_program": 0,
+    "teks_tidak_bersih": 0,
+    "gambar_rusak": 0,
+    "yaml_aman": true,
+    "akhiran": {
+     ".jpg": 7339,
+     ".txt": 7341,
+     ".yaml": 1
+    }
+   },
+   "kelas": [
+    "agya",
+    "aion",
+    "alphard",
+    "audi",
+    "ayla",
+    "bmw",
+    "byd",
+    "chery",
+    "chevrolet",
+    "daihatsu",
+    "datsun",
+    "denza",
+    "dfsk",
+    "ford",
+    "gac",
+    "honda",
+    "hyundai",
+    "isuzu",
+    "jeep",
+    "kia",
+    "lexus",
+    "maserati",
+    "mazda",
+    "mercedes-benz",
+    "mini-cooper",
+    "mitsubishi",
+    "morris garage",
+    "neta",
+    "nissan",
+    "omoda",
+    "peugeot",
+    "range-rover",
+    "renault",
+    "sigra",
+    "subaru",
+    "suzuki",
+    "toyota",
+    "vinfast",
+    "volkswagen",
+    "volvo",
+    "wuling"
+   ],
+   "sisi": {
+    "train": {
+     "gambar": 5871,
+     "label": 5871,
+     "gambar_tanpa_label": 0,
+     "label_tanpa_gambar": 0,
+     "label_kosong": 8,
+     "kotak": 5866,
+     "baris_rusak": 0,
+     "kelas_di_luar_daftar": 0,
+     "koordinat_di_luar": 0,
+     "kotak_nol": 0
+    },
+    "valid": {
+     "gambar": 735,
+     "label": 735,
+     "gambar_tanpa_label": 0,
+     "label_tanpa_gambar": 0,
+     "label_kosong": 0,
+     "kotak": 735,
+     "baris_rusak": 0,
+     "kelas_di_luar_daftar": 0,
+     "koordinat_di_luar": 0,
+     "kotak_nol": 0
+    },
+    "test": {
+     "gambar": 733,
+     "label": 733,
+     "gambar_tanpa_label": 0,
+     "label_tanpa_gambar": 0,
+     "label_kosong": 0,
+     "kotak": 733,
+     "baris_rusak": 0,
+     "kelas_di_luar_daftar": 0,
+     "koordinat_di_luar": 0,
+     "kotak_nol": 0
+    }
+   },
+   "per_kelas": {
+    "agya": {
+     "kotak": 216,
+     "gambar": 216
+    },
+    "aion": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "alphard": {
+     "kotak": 87,
+     "gambar": 87
+    },
+    "audi": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "ayla": {
+     "kotak": 90,
+     "gambar": 90
+    },
+    "bmw": {
+     "kotak": 74,
+     "gambar": 74
+    },
+    "byd": {
+     "kotak": 148,
+     "gambar": 148
+    },
+    "chery": {
+     "kotak": 6,
+     "gambar": 6
+    },
+    "chevrolet": {
+     "kotak": 34,
+     "gambar": 34
+    },
+    "daihatsu": {
+     "kotak": 429,
+     "gambar": 429
+    },
+    "datsun": {
+     "kotak": 3,
+     "gambar": 3
+    },
+    "denza": {
+     "kotak": 20,
+     "gambar": 20
+    },
+    "dfsk": {
+     "kotak": 4,
+     "gambar": 4
+    },
+    "ford": {
+     "kotak": 11,
+     "gambar": 11
+    },
+    "gac": {
+     "kotak": 2,
+     "gambar": 2
+    },
+    "honda": {
+     "kotak": 1353,
+     "gambar": 1353
+    },
+    "hyundai": {
+     "kotak": 332,
+     "gambar": 332
+    },
+    "isuzu": {
+     "kotak": 23,
+     "gambar": 23
+    },
+    "jeep": {
+     "kotak": 4,
+     "gambar": 4
+    },
+    "kia": {
+     "kotak": 28,
+     "gambar": 28
+    },
+    "lexus": {
+     "kotak": 26,
+     "gambar": 26
+    },
+    "maserati": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "mazda": {
+     "kotak": 159,
+     "gambar": 159
+    },
+    "mercedes-benz": {
+     "kotak": 115,
+     "gambar": 115
+    },
+    "mini-cooper": {
+     "kotak": 11,
+     "gambar": 11
+    },
+    "mitsubishi": {
+     "kotak": 547,
+     "gambar": 547
+    },
+    "morris garage": {
+     "kotak": 29,
+     "gambar": 29
+    },
+    "neta": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "nissan": {
+     "kotak": 218,
+     "gambar": 218
+    },
+    "omoda": {
+     "kotak": 18,
+     "gambar": 18
+    },
+    "peugeot": {
+     "kotak": 6,
+     "gambar": 6
+    },
+    "range-rover": {
+     "kotak": 2,
+     "gambar": 2
+    },
+    "renault": {
+     "kotak": 2,
+     "gambar": 2
+    },
+    "sigra": {
+     "kotak": 186,
+     "gambar": 186
+    },
+    "subaru": {
+     "kotak": 8,
+     "gambar": 8
+    },
+    "suzuki": {
+     "kotak": 453,
+     "gambar": 453
+    },
+    "toyota": {
+     "kotak": 2490,
+     "gambar": 2489
+    },
+    "vinfast": {
+     "kotak": 11,
+     "gambar": 11
+    },
+    "volkswagen": {
+     "kotak": 30,
+     "gambar": 30
+    },
+    "volvo": {
+     "kotak": 1,
+     "gambar": 1
+    },
+    "wuling": {
+     "kotak": 154,
+     "gambar": 154
+    }
+   },
+   "kembar": {
+    "persis_dalam_sisi": 0,
+    "persis_antar_sisi": 0,
+    "mirip_antar_sisi": 31
+   },
+   "ukuran_gambar": {
+    "lebar": [
+     1920,
+     1920,
+     1920
+    ],
+    "tinggi": [
+     1080,
+     1080,
+     1080
+    ]
+   }
+  },
+  "roboflow-car-type-final-1-v2": {
+   "jenis_tugas": "klasifikasi",
+   "keamanan": {
+    "berkas": 1825,
+    "jenis_tidak_cocok": 0,
+    "tanda_program": 0,
+    "teks_tidak_bersih": 0,
+    "gambar_rusak": 0,
+    "yaml_aman": true,
+    "akhiran": {
+     ".jpg": 1823,
+     ".txt": 2
+    }
+   },
+   "kelas": [
+    "avanza",
+    "fortuner",
+    "innova",
+    "other"
+   ],
+   "sisi": {
+    "train": {
+     "gambar": 1272,
+     "gambar_tanpa_kelas": 0
+    },
+    "valid": {
+     "gambar": 551,
+     "gambar_tanpa_kelas": 0
+    }
+   },
+   "per_kelas": {
+    "avanza": {
+     "gambar": 511
+    },
+    "fortuner": {
+     "gambar": 398
+    },
+    "innova": {
+     "gambar": 438
+    },
+    "other": {
+     "gambar": 476
+    }
+   },
+   "kembar": {
+    "persis_dalam_sisi": 109,
+    "persis_antar_sisi": 0,
+    "mirip_antar_sisi": 7
+   },
+   "ukuran_gambar": {
+    "lebar": [
+     600,
+     600,
+     600
+    ],
+    "tinggi": [
+     600,
+     600,
+     600
+    ]
+   }
+  }
+ },
+ "tambahan": {
+  "defender": {
+   "kontrol_eicar": "terdeteksi (kode 2)",
+   "zip": {
+    "roboflow-vehicle-license-plate-v3": 0,
+    "roboflow-merk-warna-motor-v19": 0
+   }
+  },
+  "buka_arsip": {
+   "roboflow-vehicle-license-plate-v3": {
+    "dibuka": 11113,
+    "dilewati_kembar_identik": 0
+   },
+   "roboflow-merk-warna-motor-v19": {
+    "dibuka": 16489,
+    "dilewati_kembar_identik": 2
+   }
+  },
+  "baris_bukan_kotak_vehicle_license_plate": {
+   "poligon_kelas_License_Plate": 1780,
+   "kotak": 10038,
+   "rusak": 0
+  },
+  "periksa": {
+   "roboflow-vehicle-license-plate-v3": {
+    "jenis_tugas": "deteksi",
+    "keamanan": {
+     "berkas": 11113,
+     "jenis_tidak_cocok": 0,
+     "tanda_program": 0,
+     "teks_tidak_bersih": 0,
+     "gambar_rusak": 0,
+     "yaml_aman": true,
+     "akhiran": {
+      ".jpg": 5555,
+      ".txt": 5557,
+      ".yaml": 1
+     }
+    },
+    "kelas": [
+     "License_Plate",
+     "cars",
+     "motorcyle",
+     "truck"
+    ],
+    "sisi": {
+     "train": {
+      "gambar": 5102,
+      "label": 5102,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 9217,
+      "baris_rusak": 1629,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     },
+     "valid": {
+      "gambar": 432,
+      "label": 432,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 785,
+      "baris_rusak": 143,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     },
+     "test": {
+      "gambar": 21,
+      "label": 21,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 36,
+      "baris_rusak": 8,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     }
+    },
+    "per_kelas": {
+     "License_Plate": {
+      "kotak": 4067,
+      "gambar": 3811
+     },
+     "cars": {
+      "kotak": 4638,
+      "gambar": 4553
+     },
+     "motorcyle": {
+      "kotak": 1144,
+      "gambar": 738
+     },
+     "truck": {
+      "kotak": 189,
+      "gambar": 189
+     }
+    },
+    "kembar": {
+     "persis_dalam_sisi": 75,
+     "persis_antar_sisi": 0,
+     "mirip_antar_sisi": 145
+    },
+    "ukuran_gambar": {
+     "lebar": [
+      640,
+      640,
+      640
+     ],
+     "tinggi": [
+      640,
+      640,
+      640
+     ]
+    }
+   },
+   "roboflow-merk-warna-motor-v19": {
+    "jenis_tugas": "deteksi",
+    "keamanan": {
+     "berkas": 16489,
+     "jenis_tidak_cocok": 0,
+     "tanda_program": 0,
+     "teks_tidak_bersih": 0,
+     "gambar_rusak": 0,
+     "yaml_aman": true,
+     "akhiran": {
+      ".jpg": 8243,
+      ".txt": 8245,
+      ".yaml": 1
+     }
+    },
+    "kelas": [
+     "Honda_Beat_Biru-Putih",
+     "Honda_Beat_Hijau",
+     "Honda_Beat_Hitam",
+     "Honda_Beat_Silver",
+     "Honda_Vario_Hitam",
+     "Honda_Vario_Merah",
+     "Honda_Vario_Putih",
+     "Yamaha_Aerox_Hitam",
+     "Yamaha_Aerox_Kuning",
+     "Yamaha_Aerox_Putih",
+     "Yamaha_NMAX_Hitam",
+     "Yamaha_NMAX_Merah",
+     "Yamaha_NMAX_Putih"
+    ],
+    "sisi": {
+     "train": {
+      "gambar": 7212,
+      "label": 7212,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 7212,
+      "baris_rusak": 0,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     },
+     "valid": {
+      "gambar": 687,
+      "label": 687,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 687,
+      "baris_rusak": 0,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     },
+     "test": {
+      "gambar": 344,
+      "label": 344,
+      "gambar_tanpa_label": 0,
+      "label_tanpa_gambar": 0,
+      "label_kosong": 0,
+      "kotak": 344,
+      "baris_rusak": 0,
+      "kelas_di_luar_daftar": 0,
+      "koordinat_di_luar": 0,
+      "kotak_nol": 0
+     }
+    },
+    "per_kelas": {
+     "Honda_Beat_Biru-Putih": {
+      "kotak": 208,
+      "gambar": 208
+     },
+     "Honda_Beat_Hijau": {
+      "kotak": 190,
+      "gambar": 190
+     },
+     "Honda_Beat_Hitam": {
+      "kotak": 550,
+      "gambar": 550
+     },
+     "Honda_Beat_Silver": {
+      "kotak": 196,
+      "gambar": 196
+     },
+     "Honda_Vario_Hitam": {
+      "kotak": 2168,
+      "gambar": 2168
+     },
+     "Honda_Vario_Merah": {
+      "kotak": 82,
+      "gambar": 82
+     },
+     "Honda_Vario_Putih": {
+      "kotak": 548,
+      "gambar": 548
+     },
+     "Yamaha_Aerox_Hitam": {
+      "kotak": 1267,
+      "gambar": 1267
+     },
+     "Yamaha_Aerox_Kuning": {
+      "kotak": 637,
+      "gambar": 637
+     },
+     "Yamaha_Aerox_Putih": {
+      "kotak": 288,
+      "gambar": 288
+     },
+     "Yamaha_NMAX_Hitam": {
+      "kotak": 912,
+      "gambar": 912
+     },
+     "Yamaha_NMAX_Merah": {
+      "kotak": 466,
+      "gambar": 466
+     },
+     "Yamaha_NMAX_Putih": {
+      "kotak": 731,
+      "gambar": 731
+     }
+    },
+    "kembar": {
+     "persis_dalam_sisi": 5,
+     "persis_antar_sisi": 0,
+     "mirip_antar_sisi": 192
+    },
+    "ukuran_gambar": {
+     "lebar": [
+      640,
+      640,
+      640
+     ],
+     "tinggi": [
+      640,
+      640,
+      640
+     ]
+    }
+   }
+  }
+ }
+}

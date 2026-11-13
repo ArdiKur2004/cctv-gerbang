@@ -1,0 +1,6 @@
+# Mesin dev memakai core.autocrlf=true; workspace memakai LF (CCTVGerbang.code-workspace: files.eol "\n").
+# Kunci LF supaya berkas tidak berubah akhir-baris tiap checkout dan diff tetap bersih.
+* text=auto eol=lf
+*.ps1 text eol=lf
+*.png binary
+*.jpg binary

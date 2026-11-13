@@ -1,0 +1,123 @@
+{
+ "ambang": 0.5,
+ "iou_min": 0.5,
+ "validasi": {
+  "semua": {
+   "plat": 99,
+   "plat_ditemukan": 91,
+   "kotak_palsu": 12,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.849,
+    0.958
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 86,
+   "plat_ditemukan": 80,
+   "kotak_palsu": 11,
+   "gambar": 71,
+   "rentang_95_ditemukan": [
+    0.856,
+    0.968
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 13,
+   "plat_ditemukan": 11,
+   "kotak_palsu": 1,
+   "gambar": 13,
+   "rentang_95_ditemukan": [
+    0.578,
+    0.957
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 23,
+   "plat_ditemukan": 22,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.79,
+    0.992
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 76,
+   "plat_ditemukan": 69,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.822,
+    0.955
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "uji": {
+  "semua": {
+   "plat": 102,
+   "plat_ditemukan": 94,
+   "kotak_palsu": 10,
+   "gambar": 84,
+   "rentang_95_ditemukan": [
+    0.853,
+    0.96
+   ],
+   "terlalu_sedikit": false
+  },
+  "terang": {
+   "plat": 99,
+   "plat_ditemukan": 91,
+   "kotak_palsu": 10,
+   "gambar": 81,
+   "rentang_95_ditemukan": [
+    0.849,
+    0.958
+   ],
+   "terlalu_sedikit": false
+  },
+  "gelap": {
+   "plat": 3,
+   "plat_ditemukan": 3,
+   "kotak_palsu": 0,
+   "gambar": 3,
+   "rentang_95_ditemukan": [
+    0.438,
+    1.0
+   ],
+   "terlalu_sedikit": true
+  },
+  "kecil": {
+   "plat": 16,
+   "plat_ditemukan": 11,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.444,
+    0.858
+   ],
+   "terlalu_sedikit": true
+  },
+  "besar": {
+   "plat": 86,
+   "plat_ditemukan": 83,
+   "kotak_palsu": 0,
+   "gambar": 0,
+   "rentang_95_ditemukan": [
+    0.902,
+    0.988
+   ],
+   "terlalu_sedikit": false
+  }
+ },
+ "detik_per_gambar": {
+  "validasi": 0.014,
+  "uji": 0.0141
+ },
+ "tak_terbaca": 0
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transportation Gate Track</title>
+<link rel="icon" href="data:,">
+<!-- Huruf dari Google Fonts. Bila tidak ada jaringan, ia gagal diam-diam dan tumpukan huruf sistem dipakai;
+     tampilannya tetap terbaca. Untuk layar satpam yang harus jalan luring (Rencana T4), huruf ini perlu
+     disimpan sendiri atau dilepas — dicatat di ROADMAP, belum dikerjakan. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="gaya.css">
+<!-- PWA: supaya layar gerbang bisa dipasang ke layar depan HP dan menerima notifikasi (K72). -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#8f6200">
+<link rel="apple-touch-icon" href="ikon.svg">
+</head>
+<body>
+
+<!-- Layar masuk dan daftar. Ditampilkan selama belum ada sesi. -->
+<div class="gerbang-masuk" id="layar-masuk" hidden>
+  <div class="kotak">
+    <div class="merek">
+      <span class="palang" aria-hidden="true"></span>
+      <div><b>Transportation Gate Track</b><span>Gerbang · Kendaraan · Tamu</span></div>
+    </div>
+
+    <div class="kartu">
+      <div class="kartu-kepala">
+        <h2 id="judul-masuk">Masuk</h2>
+      </div>
+      <div class="kartu-isi">
+        <div id="pesan-masuk"></div>
+        <!-- Masuk dua langkah: email dulu, lalu kode yang dikirim ke email itu (K72). Tidak ada sandi. -->
+        <form id="form-masuk" novalidate>
+          <label class="bidang" id="bidang-email">Alamat email
+            <input name="email" type="email" inputmode="email" autocomplete="email"
+                   placeholder="nama@contoh.com" required>
+            <span class="bantu">Kode masuk dikirim ke alamat ini. Tidak ada sandi yang perlu diingat.</span>
+          </label>
+          <label class="bidang" id="bidang-kode" hidden>Kode dari email
+            <input name="kode" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6 angka">
+            <span class="bantu" id="bantu-kode">Berlaku 5 menit.</span>
+          </label>
+          <label class="bidang" id="bidang-nama" hidden>Nama Anda
+            <input name="nama" autocomplete="name" placeholder="Nama yang dilihat satpam">
+            <span class="bantu">Hanya ditanyakan sekali, saat akun pertama dibuat.</span>
+          </label>
+          <button class="tombol utama" type="submit" id="tombol-masuk">Kirim kode</button>
+        </form>
+      </div>
+    </div>
+
+    <p class="tukar" id="tukar-masuk"></p>
+  </div>
+</div>
+
+<!-- Cangkang aplikasi, ditampilkan sesudah masuk. -->
+<div class="cangkang" id="cangkang" hidden>
+  <aside class="rel">
+    <div class="merek">
+      <span class="palang" aria-hidden="true"></span>
+      <div><b>Transportation Gate Track</b><span>Versi 1</span></div>
+    </div>
+    <nav id="nav" aria-label="Halaman"></nav>
+    <div class="rel-kaki">
+      <div class="catatan" id="nama-saya"></div>
+      <button class="tombol kecil" id="tombol-keluar" type="button">Keluar</button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="bilah">
+      <div>
+        <h1 id="judul-halaman">Beranda</h1>
+        <div class="sub" id="sub-halaman"></div>
+      </div>
+      <div class="kanan" id="aksi-halaman"></div>
+    </div>
+    <div class="isi" id="isi"></div>
+  </main>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

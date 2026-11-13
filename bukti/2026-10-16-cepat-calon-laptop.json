@@ -1,0 +1,122 @@
+{
+ "cpu": "AMD Ryzen 7 8700F 8-Core Processor",
+ "cpu_terlihat": 12,
+ "onnxruntime": "1.30.0",
+ "beban_sebelum": [
+  1.01,
+  1.18,
+  0.96
+ ],
+ "model": [
+  {
+   "berkas": "acak-yolox-nano-416.onnx",
+   "ukuran_byte": 3728457,
+   "per_utas": {
+    "1": {
+     "median_ms": 11.5,
+     "p95_ms": 12.3,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 7.0,
+     "p95_ms": 8.1,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 5.0,
+     "p95_ms": 6.1,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "acak-yolox-tiny-416.onnx",
+   "ukuran_byte": 20239573,
+   "per_utas": {
+    "1": {
+     "median_ms": 50.9,
+     "p95_ms": 52.2,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 28.0,
+     "p95_ms": 34.2,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 16.5,
+     "p95_ms": 25.9,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "acak-rfdetr-nano-384.onnx",
+   "ukuran_byte": 106798757,
+   "per_utas": {
+    "1": {
+     "median_ms": 262.9,
+     "p95_ms": 269.4,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 140.5,
+     "p95_ms": 166.0,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 83.8,
+     "p95_ms": 111.3,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "yolo-v9-t-384-license-plates-end2end.onnx",
+   "ukuran_byte": 7771218,
+   "per_utas": {
+    "1": {
+     "median_ms": 25.6,
+     "p95_ms": 26.3,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 15.7,
+     "p95_ms": 23.8,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 10.7,
+     "p95_ms": 13.9,
+     "ulang": 20
+    }
+   }
+  },
+  {
+   "berkas": "cct_s_v2_global.onnx",
+   "ukuran_byte": 5262230,
+   "per_utas": {
+    "1": {
+     "median_ms": 23.2,
+     "p95_ms": 24.7,
+     "ulang": 20
+    },
+    "2": {
+     "median_ms": 14.7,
+     "p95_ms": 16.2,
+     "ulang": 20
+    },
+    "4": {
+     "median_ms": 12.6,
+     "p95_ms": 14.5,
+     "ulang": 20
+    }
+   }
+  }
+ ],
+ "beban_sesudah": [
+  1.33,
+  1.24,
+  0.99
+ ]
+}

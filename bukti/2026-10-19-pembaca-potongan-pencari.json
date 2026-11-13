@@ -1,0 +1,778 @@
+{
+ "rencana": 30,
+ "bahan": {
+  "R3": {
+   "sumber": {
+    "indo_alpr": {
+     "latih": 3954,
+     "validasi": 460
+    },
+    "tangkapan": {
+     "latih": 96,
+     "validasi": 29
+    },
+    "plat_buatan": {
+     "latih": 0
+    },
+    "tak_terbaca": 0,
+    "validasi_berteks": 29,
+    "geser": {
+     "latih": 0
+    },
+    "rantai": [
+     {
+      "folder": "rencana-25/rantai-ambang-0.25",
+      "latih": 90,
+      "validasi": 25,
+      "kembar_dilewati": 0,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-25/rantai-ambang-0.4",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 113,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-25/rantai-ambang-0.6",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 108,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.25",
+      "latih": 91,
+      "validasi": 25,
+      "kembar_dilewati": 0,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.4",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 116,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.6",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 113,
+      "validasi_cocok": 25
+     }
+    ]
+   },
+   "gambar": {
+    "latih": 5339,
+    "validasi": 79,
+    "validasi_indo": 460
+   },
+   "bahan": [
+    "dataset-indo-alpr",
+    "tangkapan-owner"
+   ],
+   "latih_hanya_buatan": false,
+   "wilayah": true,
+   "ulang_tangkapan": 5,
+   "geser": false,
+   "validasi_terpisah": true
+  },
+  "R4": {
+   "sumber": {
+    "indo_alpr": {
+     "latih": 3954,
+     "validasi": 460
+    },
+    "tangkapan": {
+     "latih": 96,
+     "validasi": 29
+    },
+    "plat_buatan": {
+     "latih": 0
+    },
+    "tak_terbaca": 0,
+    "validasi_berteks": 29,
+    "geser": {
+     "latih": 576
+    },
+    "rantai": [
+     {
+      "folder": "rencana-25/rantai-ambang-0.25",
+      "latih": 90,
+      "validasi": 25,
+      "kembar_dilewati": 0,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-25/rantai-ambang-0.4",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 113,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-25/rantai-ambang-0.6",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 108,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.25",
+      "latih": 91,
+      "validasi": 25,
+      "kembar_dilewati": 0,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.4",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 116,
+      "validasi_cocok": 25
+     },
+     {
+      "folder": "rencana-29/rantai-ambang-0.6",
+      "latih": 0,
+      "validasi": 0,
+      "kembar_dilewati": 113,
+      "validasi_cocok": 25
+     }
+    ]
+   },
+   "gambar": {
+    "latih": 5915,
+    "validasi": 79,
+    "validasi_indo": 460
+   },
+   "bahan": [
+    "dataset-indo-alpr",
+    "tangkapan-owner"
+   ],
+   "latih_hanya_buatan": false,
+   "wilayah": true,
+   "ulang_tangkapan": 5,
+   "geser": true,
+   "validasi_terpisah": true
+  }
+ },
+ "mesin": {
+  "R3": {
+   "nama": "pembaca-lanjut-r3",
+   "tujuan": "jualan",
+   "bahan": [
+    "dataset-indo-alpr",
+    "tangkapan-owner",
+    "bobot-fast-plate-ocr"
+   ],
+   "bobot_awal": "fpo-indo-1",
+   "sha256": "e51979b9d872f89131aa3a5df0ddbe5528c77264345768170a3dd2814179eb1b",
+   "latihan": {
+    "zaman": 30,
+    "zaman_berjalan": 30,
+    "zaman_terbaik": 21,
+    "benih": 0,
+    "laju": 0.0001,
+    "ukuran_angkatan": 64,
+    "metrik_pilih": "val_plate_acc",
+    "nilai_metrik_terbaik": 0.8063,
+    "val_plate_acc_terbaik": 0.8063,
+    "perangkat": "NVIDIA GeForce RTX 4060",
+    "bobot_termuat": "192/192"
+   },
+   "validasi": {
+    "awal": {
+     "indo_alpr": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "tangkapan": {
+      "gambar": 79,
+      "benar": 58
+     },
+     "tangkapan_label": {
+      "gambar": 29,
+      "benar": 19
+     },
+     "tangkapan_rantai": {
+      "gambar": 50,
+      "benar": 39
+     },
+     "tangkapan_geser": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "semua": {
+      "gambar": 79,
+      "benar": 58
+     }
+    },
+    "indo_awal": {
+     "gambar": 460,
+     "benar": 388
+    },
+    "akhir": {
+     "indo_alpr": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "tangkapan": {
+      "gambar": 79,
+      "benar": 64
+     },
+     "tangkapan_label": {
+      "gambar": 29,
+      "benar": 24
+     },
+     "tangkapan_rantai": {
+      "gambar": 50,
+      "benar": 40
+     },
+     "tangkapan_geser": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "semua": {
+      "gambar": 79,
+      "benar": 64
+     }
+    },
+    "indo_akhir": {
+     "gambar": 460,
+     "benar": 384
+    }
+   }
+  },
+  "R4": {
+   "nama": "pembaca-lanjut-r4",
+   "tujuan": "jualan",
+   "bahan": [
+    "dataset-indo-alpr",
+    "tangkapan-owner",
+    "bobot-fast-plate-ocr"
+   ],
+   "bobot_awal": "fpo-indo-1",
+   "sha256": "37da4d0b1408c73e380bc85bbd66a9b2b33d8059eed32d3bd36e941469e87368",
+   "latihan": {
+    "zaman": 30,
+    "zaman_berjalan": 30,
+    "zaman_terbaik": 16,
+    "benih": 0,
+    "laju": 0.0001,
+    "ukuran_angkatan": 64,
+    "metrik_pilih": "val_plate_acc",
+    "nilai_metrik_terbaik": 0.8141,
+    "val_plate_acc_terbaik": 0.8141,
+    "perangkat": "NVIDIA GeForce RTX 4060",
+    "bobot_termuat": "192/192"
+   },
+   "validasi": {
+    "awal": {
+     "indo_alpr": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "tangkapan": {
+      "gambar": 79,
+      "benar": 58
+     },
+     "tangkapan_label": {
+      "gambar": 29,
+      "benar": 19
+     },
+     "tangkapan_rantai": {
+      "gambar": 50,
+      "benar": 39
+     },
+     "tangkapan_geser": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "semua": {
+      "gambar": 79,
+      "benar": 58
+     }
+    },
+    "indo_awal": {
+     "gambar": 460,
+     "benar": 388
+    },
+    "akhir": {
+     "indo_alpr": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "tangkapan": {
+      "gambar": 79,
+      "benar": 65
+     },
+     "tangkapan_label": {
+      "gambar": 29,
+      "benar": 24
+     },
+     "tangkapan_rantai": {
+      "gambar": 50,
+      "benar": 41
+     },
+     "tangkapan_geser": {
+      "gambar": 0,
+      "benar": 0
+     },
+     "semua": {
+      "gambar": 79,
+      "benar": 65
+     }
+    },
+    "indo_akhir": {
+     "gambar": 460,
+     "benar": 380
+    }
+   }
+  }
+ },
+ "onnx_R4": {
+  "sha256_onnx": "8dacef1dd986c4880eea323f91f1d02bf35e78fcc67cf4da8e6f4abe468c08c9",
+  "pemeriksaan_validasi": {
+   "gambar": 79,
+   "plat_sama": 79,
+   "selisih_terbesar": 0.0000028014183044433594
+  }
+ },
+ "pilih": {
+  "validasi_berteks": 29,
+  "aturan": "rantai C1 0,25 terbanyak; seri: potongan label; seri: R0 (R3 bila R3 dan R4 seri di atas R0); INDO-ALPR turun > 10 dari R0 ditolak; C3 0,6 hanya bila lebih tinggi",
+  "calon": {
+   "R0": {
+    "rantai_c1": 20,
+    "rantai_c3": 19,
+    "label": 19,
+    "label_gambar": 29,
+    "rantai_semua": {
+     "gambar": 50,
+     "benar": 39
+    },
+    "indo": {
+     "gambar": 460,
+     "benar": 388
+    }
+   },
+   "R3": {
+    "rantai_c1": 21,
+    "rantai_c3": 19,
+    "label": 24,
+    "label_gambar": 29,
+    "rantai_semua": {
+     "gambar": 50,
+     "benar": 40
+    },
+    "indo": {
+     "gambar": 460,
+     "benar": 384
+    }
+   },
+   "R4": {
+    "rantai_c1": 22,
+    "rantai_c3": 19,
+    "label": 24,
+    "label_gambar": 29,
+    "rantai_semua": {
+     "gambar": 50,
+     "benar": 41
+    },
+    "indo": {
+     "gambar": 460,
+     "benar": 380
+    }
+   }
+  },
+  "ditolak_penjaga_indo": [],
+  "terpilih": "R4",
+  "pencari_rantai": "C1 ambang 0,25"
+ },
+ "rantai_uji": {
+  "susunan": "kendaraan-yolox-coco cadangan utuh, pencari C1 ambang 0,25, pembaca R4 (ONNX), varian v0",
+  "nilai": {
+   "sisi": "uji",
+   "iou_min": 0.3,
+   "gambar": 38,
+   "per_kelompok": {
+    "mobil": {
+     "plat_berlabel": 16,
+     "ditemukan": 15,
+     "berteks": 16,
+     "dibaca_benar": 13,
+     "kotak_di_luar_label": 0,
+     "kotak_di_bukan_plat": 0
+    },
+    "motor": {
+     "plat_berlabel": 23,
+     "ditemukan": 19,
+     "berteks": 18,
+     "dibaca_benar": 9,
+     "kotak_di_luar_label": 1,
+     "kotak_di_bukan_plat": 0
+    }
+   }
+  },
+  "jumlah": {
+   "plat_berlabel": 39,
+   "ditemukan": 34,
+   "berteks": 34,
+   "dibaca_benar": 22,
+   "kotak_di_luar_label": 1,
+   "rentang_95_dibaca_benar": [
+    0.479,
+    0.785
+   ]
+  },
+  "pembanding_rencana_25": {
+   "plat_berlabel": 39,
+   "ditemukan": 34,
+   "berteks": 34,
+   "dibaca_benar": 21,
+   "kotak_di_luar_label": 1,
+   "rentang_95_dibaca_benar": [
+    0.45,
+    0.761
+   ]
+  },
+  "pindah_per_plat": {
+   "mobil: benar -> benar": 13,
+   "mobil: salah -> salah": 2,
+   "mobil: tak_ditemukan -> tak_ditemukan": 1,
+   "motor: benar -> benar": 8,
+   "motor: salah -> benar": 1,
+   "motor: salah -> salah": 6,
+   "motor: tak_ditemukan -> tak_ditemukan": 3
+  }
+ },
+ "pembaca_uji": {
+  "R0": {
+   "indo_alpr_uji_semua": {
+    "mobil-terang": {
+     "kedatangan": 638,
+     "kedatangan_benar": 506
+    },
+    "mobil-gelap": {
+     "kedatangan": 59,
+     "kedatangan_benar": 51
+    },
+    "motor-terang": {
+     "kedatangan": 219,
+     "kedatangan_benar": 173
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17
+    }
+   },
+   "tangkapan_uji": {
+    "per_kelompok": {
+     "motor": {
+      "gambar": 18,
+      "benar": 11
+     },
+     "mobil": {
+      "gambar": 16,
+      "benar": 13
+     }
+    },
+    "semua": {
+     "gambar": 34,
+     "benar": 24
+    },
+    "huruf_salah": 13,
+    "huruf_salah_pasangan_owner": 4,
+    "pasangan": {
+     "Q->O": 2,
+     "M->W": 2,
+     "B->D": 2,
+     "H->R": 1,
+     "A->I": 1,
+     "5->6": 1,
+     "3->5": 1,
+     "D->C": 1,
+     "A->F": 1,
+     "E->F": 1
+    }
+   }
+  },
+  "R4": {
+   "indo_alpr_uji_semua": {
+    "mobil-terang": {
+     "kedatangan": 638,
+     "kedatangan_benar": 506
+    },
+    "mobil-gelap": {
+     "kedatangan": 59,
+     "kedatangan_benar": 52
+    },
+    "motor-terang": {
+     "kedatangan": 219,
+     "kedatangan_benar": 169
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17
+    }
+   },
+   "tangkapan_uji": {
+    "per_kelompok": {
+     "motor": {
+      "gambar": 18,
+      "benar": 13
+     },
+     "mobil": {
+      "gambar": 16,
+      "benar": 13
+     }
+    },
+    "semua": {
+     "gambar": 34,
+     "benar": 26
+    },
+    "huruf_salah": 11,
+    "huruf_salah_pasangan_owner": 3,
+    "pasangan": {
+     "Q->O": 2,
+     "E->F": 2,
+     "H->R": 1,
+     "C->I": 1,
+     "(tambahan)->E": 1,
+     "5->6": 1,
+     "3->5": 1,
+     "D->C": 1,
+     "M->W": 1
+    }
+   }
+  },
+  "R4_onnx_sama_keras_tangkapan_uji": {
+   "gambar": 34,
+   "sama": 34
+  }
+ },
+ "banding_indo_alpr_uji": {
+  "semua": {
+   "R0": {
+    "mobil-terang": {
+     "kedatangan": 638,
+     "kedatangan_benar": 506,
+     "kedatangan_ragu": 18,
+     "gambar": 1094,
+     "gambar_benar": 892,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.76,
+      0.823
+     ],
+     "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+     "kedatangan": 59,
+     "kedatangan_benar": 51,
+     "kedatangan_ragu": 1,
+     "gambar": 66,
+     "gambar_benar": 57,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.755,
+      0.93
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-terang": {
+     "kedatangan": 219,
+     "kedatangan_benar": 173,
+     "kedatangan_ragu": 4,
+     "gambar": 239,
+     "gambar_benar": 190,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.731,
+      0.839
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17,
+     "kedatangan_ragu": 0,
+     "gambar": 23,
+     "gambar_benar": 19,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.6,
+      0.923
+     ],
+     "terlalu_sedikit": true
+    }
+   },
+   "R4": {
+    "mobil-terang": {
+     "kedatangan": 638,
+     "kedatangan_benar": 506,
+     "kedatangan_ragu": 23,
+     "gambar": 1094,
+     "gambar_benar": 891,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.76,
+      0.823
+     ],
+     "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+     "kedatangan": 59,
+     "kedatangan_benar": 52,
+     "kedatangan_ragu": 1,
+     "gambar": 66,
+     "gambar_benar": 58,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.775,
+      0.941
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-terang": {
+     "kedatangan": 219,
+     "kedatangan_benar": 169,
+     "kedatangan_ragu": 5,
+     "gambar": 239,
+     "gambar_benar": 186,
+     "gambar_luar_pola": 3,
+     "rentang_95_kedatangan": [
+      0.712,
+      0.822
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17,
+     "kedatangan_ragu": 0,
+     "gambar": 23,
+     "gambar_benar": 19,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.6,
+      0.923
+     ],
+     "terlalu_sedikit": true
+    }
+   }
+  },
+  "tanpa-label-pilihan-pembaca": {
+   "R0": {
+    "mobil-terang": {
+     "kedatangan": 625,
+     "kedatangan_benar": 496,
+     "kedatangan_ragu": 17,
+     "gambar": 1066,
+     "gambar_benar": 876,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.76,
+      0.823
+     ],
+     "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+     "kedatangan": 57,
+     "kedatangan_benar": 49,
+     "kedatangan_ragu": 1,
+     "gambar": 64,
+     "gambar_benar": 55,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.747,
+      0.927
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-terang": {
+     "kedatangan": 208,
+     "kedatangan_benar": 166,
+     "kedatangan_ragu": 4,
+     "gambar": 228,
+     "gambar_benar": 183,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.738,
+      0.847
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17,
+     "kedatangan_ragu": 0,
+     "gambar": 23,
+     "gambar_benar": 19,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.6,
+      0.923
+     ],
+     "terlalu_sedikit": true
+    }
+   },
+   "R4": {
+    "mobil-terang": {
+     "kedatangan": 625,
+     "kedatangan_benar": 496,
+     "kedatangan_ragu": 23,
+     "gambar": 1066,
+     "gambar_benar": 876,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.76,
+      0.823
+     ],
+     "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+     "kedatangan": 57,
+     "kedatangan_benar": 50,
+     "kedatangan_ragu": 1,
+     "gambar": 64,
+     "gambar_benar": 56,
+     "gambar_luar_pola": 0,
+     "rentang_95_kedatangan": [
+      0.768,
+      0.939
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-terang": {
+     "kedatangan": 208,
+     "kedatangan_benar": 161,
+     "kedatangan_ragu": 5,
+     "gambar": 228,
+     "gambar_benar": 178,
+     "gambar_luar_pola": 3,
+     "rentang_95_kedatangan": [
+      0.713,
+      0.826
+     ],
+     "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+     "kedatangan": 21,
+     "kedatangan_benar": 17,
+     "kedatangan_ragu": 0,
+     "gambar": 23,
+     "gambar_benar": 19,
+     "gambar_luar_pola": 1,
+     "rentang_95_kedatangan": [
+      0.6,
+      0.923
+     ],
+     "terlalu_sedikit": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+  "model": "fast-plate-ocr @ 9ce7a5b, cct-s-v2-global, CPU",
+  "sisi": "latih",
+  "per_kelompok": {
+    "mobil-terang": {
+      "kedatangan": 1982,
+      "kedatangan_benar": 1212,
+      "kedatangan_ragu": 151,
+      "gambar": 3339,
+      "gambar_benar": 2073,
+      "gambar_luar_pola": 196,
+      "rentang_95_kedatangan": [
+        0.59,
+        0.633
+      ],
+      "terlalu_sedikit": false
+    },
+    "mobil-gelap": {
+      "kedatangan": 163,
+      "kedatangan_benar": 119,
+      "kedatangan_ragu": 8,
+      "gambar": 199,
+      "gambar_benar": 147,
+      "gambar_luar_pola": 6,
+      "rentang_95_kedatangan": [
+        0.657,
+        0.792
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-terang": {
+      "kedatangan": 646,
+      "kedatangan_benar": 369,
+      "kedatangan_ragu": 35,
+      "gambar": 843,
+      "gambar_benar": 485,
+      "gambar_luar_pola": 63,
+      "rentang_95_kedatangan": [
+        0.533,
+        0.609
+      ],
+      "terlalu_sedikit": false
+    },
+    "motor-gelap": {
+      "kedatangan": 37,
+      "kedatangan_benar": 30,
+      "kedatangan_ragu": 1,
+      "gambar": 40,
+      "gambar_benar": 33,
+      "gambar_luar_pola": 1,
+      "rentang_95_kedatangan": [
+        0.658,
+        0.905
+      ],
+      "terlalu_sedikit": false
+    }
+  },
+  "detik_per_gambar": 0.014
+}
