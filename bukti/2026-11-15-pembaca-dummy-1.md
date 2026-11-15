@@ -47,9 +47,18 @@ Bardi per tipe (sama dengan publik / jumlah): Vario 125 9/15, Vario 150 19/20, S
 - Plat polos ikut naik karena huruf kisinya sama dengan bahan latih sintetis. Kenaikan di sintetis belum bukti untuk kamera asli.
 - Yang memberi harapan: yakin-tetapi-salah turun di kedua set sintetis.
 
+## Jawaban owner atas 8 plat Bardi yang berbeda (15 Nov)
+
+Owner memeriksa 8 potongan lewat `periksa-beda.html`: bacaan **publik benar 7**, **dummy benar 1**, keduanya salah 0. Jadi di 62 plat
+Bardi "yakin": publik 61, dummy 55. **Latihan dengan sintetis saja membuat pembaca lebih buruk di plat motor asli** (huruf kisi buatan
+dihafal, bentuk huruf plat asli terlupa). Satu label sementara dibetulkan dari jawaban ini (`data/keluaran/pembaca-dummy-1/periksa-beda.json`).
+
+**Akibat untuk latihan sungguhan:** sintetis hanya sebagai campuran kecil di samping INDO-ALPR dan tangkapan owner; titik awal r4;
+calon pembaca wajib dinilai di plat motor asli, bukan hanya di sintetis. Pembaca dummy tidak dipakai.
+
 ## Langkah berikutnya
 
-1. Jawaban owner atas 8 plat berbeda → apakah sintetis membantu plat motor asli.
+1. ~~Jawaban owner atas 8 plat berbeda~~ → sudah: sintetis saja merugikan (7 lawan 1).
 2. Bobot `pembaca-lanjut-r4`, `fpo-indo-1`, `data/unduhan`, INDO-ALPR, tangkapan owner dari laptop lama → latih lanjut dari r4 dengan
    campuran asli + sintetis; dibandingkan dengan r4, bukan dengan publik.
 3. Label manusia untuk 173 plat Bardi menggantikan 62 label sementara.
